@@ -1,1 +1,1 @@
-# project-demoscene-exceptions
+# Project Demoscene Exceptions
