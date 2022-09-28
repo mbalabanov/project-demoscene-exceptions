@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      2. The World According to The Exceptions | Shattering the Limits
+    </title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+  </head>
+
+  <body>
+    <div class="container mt-5">
+      <div class="row">
+        <main class="col-md-8">
+          <h1>Shattering the Limits</h1>
+          <h2>
+            How Technical Limitations Pushed the Early Demoscene to Produce
+            Digital Art
+          </h2>
+          <h3>Master's Thesis by Marin Balabanov</h3>
+          <hr />
+          <article id="limits-chapter-2">
+            <h2>Chapter 2. The World According to The Exceptions</h2>
+
+            <section id="limits-chapter-2-section-1">
+              <p>
+                The Exceptions were the demo-group that started the Atari ST
+                demoscene. From 1987 to 1989, they were the most prolific
+                demo-group. The name was abbreviated as TEX (which could easily
+                be misread as "rex" in their logo). They came from what was then
+                West Germany.
+              </p>
+
+              <p class="text-center">
+                <img
+                  src="img/picture15.png"
+                  alt="Figure 15"
+                  class="img-fluid"
+                />
+              </p>
+              <p class="text-secondary text-center">
+                Figure 15: The Logo of The Exceptions
+              </p>
+            </section>
+            <section id="limits-chapter-2-section-2">
+              <h3>2.1 Who Are The Exceptions?</h3>
+              <p>
+                Erik Simon, Jochen Hippel, and Udo Fischer were the core of The
+                Exceptions. They were all born in the mid-1960s to early 1970s,
+                so they were young adults by the time the Commodore 64 was
+                released in Europe.
+              </p>
+              <p>
+                They adopted "handles," or aliases in the demoscene. Erik was
+                <em>ES,</em> which were not only his initials but also the
+                German word for "it." Jochen was <em>Mad Max,</em> named after
+                the post-apocalyptic movies with Mel Gibson (who was not a
+                controversial figure at the time). Udo was <em>-ME-.</em> The
+                Exceptions' other members were Michael Raasch, who called
+                himself <em>Daryl</em> after the 1985 science-fiction movie
+                D.A.R.Y.L. and Gunter Bitz, who called himself
+                <em>6719,</em> the postal code of his hometown Kirchheimbolanden
+                in the Rhineland-Palatinate (Rheinland-Pfalz).
+              </p>
+              <p>
+                Erik Simon's specializations were the graphics, concept work,
+                and writing the text of the scrolling messages. In
+                <em>ST-NEWS,</em> he later described his own contribution as
+                <em
+                  >"...my specialities are graphics and the invention of effects
+                  that should be realized by the aforementioned programmers and
+                  that (in the best cases) just make them moan and groan."</em
+                ><sup
+                  ><a
+                    id="limits-chapter-2-origin-02-35"
+                    href="#limits-chapter-2-footnote-02-35"
+                    >[35]</a
+                  ></sup
+                >
+              </p>
+
+              <p class="text-center">
+                <img
+                  src="img/picture16.jpg"
+                  alt="Figure 16"
+                  class="img-fluid"
+                />
+              </p>
+              <p class="text-secondary text-center">
+                Figure 16: Erik Simon (ca. 2016), Udo Fischer (†2016), and
+                Jochen Hippel (ca. 2016)<br />
+                (Source: Marco A. Breddin. Breakin' the Borders. 2017. Microzeit
+                Verlag)
+              </p>
+
+              <p>
+                Udo, Gunter, and Michael were the programmers of the demo and
+                intro effects. They wrote their routines in assembly code using
+                an assembler. This was as close as you could get to the native
+                instructions of the processor before resorting to the pure ones
+                and zeros of machine code. Their areas of specialization were
+                raster interrupts, softscrolling, and speed-optimizations, i.e.
+                her could program the ST to show more colors than it should,
+                scroll the screen faster and smoother than it had any right to,
+                and he could optimize the efficiency of code so well, that it
+                would be executed faster.
+              </p>
+              <p>
+                Jochen—Mad Max—was the sound programmer and composer of The
+                Exceptions. His instrument was the Atari ST's admittedly subpar
+                sound chip Yamaha YM2149F (also produced as General Instruments
+                AY-3-8910). Mad Max managed to conjure sounds and music that
+                were reserved for much more advanced sound processors.
+              </p>
+              <p>
+                TEX also had associated members: AFF (Axel), Martin Fry
+                (Markus), and Dr. Byte (Carsten), who occasionally contributed.
+              </p>
+            </section>
+            <section id="limits-chapter-2-section-3">
+              <h3>2.2 The Origins of TEX on the Commodore 64</h3>
+              <p>
+                The Exceptions first came together around the legendary
+                Commodore 64. This 8-bit machine became one of the best-selling
+                computers of all time.<sup
+                  ><a
+                    id="limits-chapter-2-origin-02-36"
+                    href="#limits-chapter-2-footnote-02-36"
+                    >[36]</a
+                  ></sup
+                >
+              </p>
+              <p>
+                Udo Fischer and Erik Simon tried their hand at their first demos
+                on the C64. Udo programmed while Erik painted. Their first
+                attempts were solely of a hobbyist nature.
+              </p>
+              <p>
+                When the Atari ST, sporting the blazing-fast Motorola 68000
+                processor, was announced in 1985, they knew that this was the
+                machine for their move to the new generation of 16-bit
+                computers. Before the ST became available in Europe, and before
+                the price dropped to become affordable to any one of The
+                Exceptions, they started learning to write assembly code for the
+                Motorola 68000 on the Commodore 64. A 68000-Simulator was
+                available for the C64. It was slow and barely useable because a
+                much less powerful machine (the C64) simulated the processor of
+                a much more powerful machine (the Atari ST). Yet this allowed
+                Udo Fischer to learn the assembly instructions and get his first
+                experience on the new processor without yet owning the new
+                computer they both yearned for.<sup
+                  ><a
+                    id="limits-chapter-2-origin-02-37"
+                    href="#limits-chapter-2-footnote-02-37"
+                    >[37]</a
+                  ></sup
+                >
+              </p>
+              <p>
+                Later in 1985, a friend of theirs, Heinz, acquired an Atari ST.
+                There was not much software available this early in the
+                machine's life. Udo and Erik knew that they had a chance to try
+                their routines that they painstakingly put together in the
+                simulated 68000 on the C64. They visited Heinz and ran their
+                first small programs on the real Atari ST.
+              </p>
+
+              <p class="text-center">
+                <img
+                  src="img/picture17.gif"
+                  alt="Figure 17"
+                  class="img-fluid"
+                />
+              </p>
+              <p class="text-secondary text-center">
+                Figure 17: The cracktro by The Exceptions for the game
+                Terrorpods by Psygnosis (screenshot)
+              </p>
+
+              <p>
+                Erik Simon described this as,
+                <em
+                  >"And there it ran: Our first assembler program! It was
+                  supposed to fill the entire screen memory with the value
+                  $FFFF. The screen, however, did not simply start getting
+                  filled, but was just filled the moment our program started. We
+                  yelled like madmen, and our shrewd conclusion was: 'This
+                  processor must be fast!'"</em
+                ><sup
+                  ><a
+                    id="limits-chapter-2-origin-02-38"
+                    href="#limits-chapter-2-footnote-02-38"
+                    >[38]</a
+                  ></sup
+                >
+              </p>
+              <p>
+                Since it would take a while for any of them to get an Atari ST,
+                Udo wrote and assembled his programs on the C64, and on weekends
+                went over to Heinz's place to type the code into the ST. In
+                1986, Udo and Erik got their own Ataris. Udo purchased a model
+                with a monochrome monitor with a stable black-and-white display
+                that would allow him to spend prolonged periods of time in front
+                of the ST without overly burdening his eyes. Erik wanted to
+                produce color graphics using one of the early paint apps
+                available, <em>NEOchrome,</em> so he bought a color monitor with
+                his system. As a development environment, they found the
+                <em>K-Seka</em>
+                assembler by Kuma Soft.
+              </p>
+              <p>
+                Udo found one of the first German books about the hardware of
+                the Atari ST, <em>ST Intern,</em> by the now-defunct publisher
+                Data Becker from Düsseldorf. Apparently, the book had a few
+                factual errors in it, but this did not prevent Udo from learning
+                to produce fast code on his new computer. The Exceptions were
+                born.
+              </p>
+              <p>
+                At first, TEX was part of the cracker scene, who cracked the
+                copy protection on games and pirated them. To be fair, they only
+                ever cracked a handful of games on the Atari ST and added
+                cracktros and intros to them. They quickly moved on to only
+                producing demos and later still became commercial games
+                developers with their own company called Thalion.<sup
+                  ><a
+                    id="limits-chapter-2-origin-02-39"
+                    href="#limits-chapter-2-footnote-02-39"
+                    >[39]</a
+                  ></sup
+                >
+              </p>
+
+              <p class="text-center">
+                <img
+                  src="img/picture18.png"
+                  alt="Figure 18"
+                  class="img-fluid"
+                />
+              </p>
+              <p class="text-secondary text-center">
+                Figure 18: One of the many logos of ST-NEWS<br />(Source:
+                <a href="https://st-news.com" target="_blank"
+                  >https://st-news.com</a
+                >
+                )
+              </p>
+
+              <p>
+                In other parts of Germany, the Scandinavian countries, and the
+                Netherlands, more demo-groups formed following the example of
+                The Exceptions. The resulting works were not only demos, intros,
+                and cracktros, but also regularly published diskmags (disk
+                magazine), an enthusiast periodical publication distributed on a
+                disk and through Bulletin Board Systems. The longest running
+                diskmag was ST-NEWS. Richard Karsmakers, the editor-in-chief,
+                has archived all issues at
+                <a href="https://st-news.com" target="_blank"
+                  >https://st-news.com</a
+                >.
+              </p>
+
+              <p class="text-center">
+                <img
+                  src="img/picture19.jpg"
+                  alt="Figure 19"
+                  class="img-fluid"
+                />
+              </p>
+              <p class="text-secondary text-center">
+                Figure 19: Advertisement for the Atari 520ST<br />(Source:
+                <a
+                  href="http://www.vintagecomputing.com/index.php/archives/952/retro-scan-of-the-week-atari-520st"
+                  target="_blank"
+                  >http://www.vintagecomputing.com/index.php/archives/952/retro-scan-of-the-week-atari-520st</a
+                >
+                )
+              </p>
+            </section>
+            <section id="limits-chapter-2-section-4">
+              <h3>2.3 The Atari ST and the Amiga Demoscenes</h3>
+              <p>
+                In his licentiate thesis
+                <em>Computer Demos - What Makes Them Tick?,</em>
+                Markku Reunanen describes the relationship between demo-makers
+                on the Atari ST and the Amiga as follows:
+              </p>
+              <blockquote class="alert alert-light">
+                "Apart from its faster CPU, the Atari ST was clearly in the
+                underdog position with its modes graphics and sound hardware.
+                Effects from the Amiga were mimicked and improved through
+                ingenious programming tricks, but the flow was mostly one-way."
+                <sup
+                  ><a
+                    id="limits-chapter-2-origin-02-40"
+                    href="#limits-chapter-2-footnote-02-40"
+                    >[40]</a
+                  ></sup
+                >
+              </blockquote>
+              <p>
+                As the "underdogs," the Atari ST demo-makers felt the need to
+                attack the Amiga and its demoscene. While this was noticed by
+                the Amiga scene, they did not reciprocate this. One reason was
+                that the Commodore Amiga started to sell large quantities with
+                the introduction of the Amiga 500 in 1987, a year that the sales
+                of the Atari ST still exceeded the Amiga.<sup
+                  ><a
+                    id="limits-chapter-2-origin-02-41"
+                    href="#limits-chapter-2-footnote-02-41"
+                    >[41]</a
+                  ></sup
+                >
+                Sales of the Commodore machine started to outpace the Atari
+                machine in 1988, completely outselling the Atari ST from 1989
+                onwards.<sup
+                  ><a
+                    id="limits-chapter-2-origin-02-42"
+                    href="#limits-chapter-2-footnote-02-42"
+                    >[42]</a
+                  ></sup
+                >
+                These are important figures because the number of machines in
+                homes determines the number of potential demo developers. Once
+                the Amiga continuously outsold the ST, there was no concept of
+                true competition in the eyes of Amiga demo-makers. They were
+                making demos not only for the
+                <em>technically superior</em> platform but also for the more
+                <em>successful</em> platform.
+              </p>
+              <p>
+                Reunanen describes his observations on the key differences
+                between the two scenes as well:
+              </p>
+              <blockquote class="alert alert-light">
+                "Some specialties existed, however. The extensive use of
+                interactive selection screens in Atari megademos is a property
+                virtually unique to ST demos. Significant effort was invested in
+                the selection screens alone."
+              </blockquote>
+              <p>
+                The selection screens Reunanen refers to are the screens that
+                users are presented with for demos that consist of collections
+                of different component demos. Multiple groups of demo-makers
+                united to create these megademos with different graphics and
+                music styles, all packaged in a single demo. Of the demos
+                discussed in this thesis, the megademo designation applies to
+                the <em>Union Demo.</em> At least on the Atari ST in the years
+                from 1987 to 1989, megademos usually did not have many recurring
+                elements across all their component demo screens.
+              </p>
+              <p>Reunanen continues to state:</p>
+
+              <blockquote class="alert alert-light">
+                "Atari megademos frequently featured parts of multiple groups,
+                which is a rather uncommon feature in the scene as well."
+              </blockquote>
+              <p>
+                Therefore, we can determine that the Atari ST demoscene had two
+                distinguishing components:
+              </p>
+              <ul>
+                <li>
+                  The perception of being an underdog to the Commodore Amiga,
+                  which resulted in a friendly and sometimes unfriendly rivalry,
+                  but only in one direction. The ST was mostly ignored by the
+                  Amiga scene.
+                </li>
+                <li>
+                  The prevalence of megademos on the Atari ST, where multiple
+                  demo-groups join forces to create a collection of demos that
+                  are packed together and can be accessed via a selection
+                  screen.
+                </li>
+              </ul>
+              <p>
+                The Exceptions had purchased their 16-bit computer; it was the
+                Atari 520ST. Their loyalty was towards this machine, and they
+                were just starting to learn how to program the "guts" of their
+                machine. The scene was set—they were drenched in the pop
+                culture, the big ideas and fantasies of the day, the competition
+                was clear, and the game was about to start. In 1987, they
+                created their very first stand-alone demo for the Atari ST.
+              </p>
+            </section>
+            <section id="limits-chapter-2-section-5">
+              <h3>2.4 Conclusion: Limitations of Early Home Computers</h3>
+              <p>
+                Computers in the 1980s had a wide variety of capabilities based
+                on their hardware and retail price. The Atari ST range of
+                computers was engineered in a rush to market to compete in the
+                emerging 16-bit computer sales war. To meet the schedule and to
+                keep costs down, the engineering team had to use many
+                off-the-shelf components. The ST was released on time, but the
+                process resulted in a machine that was less capable than its
+                16-bit competitors.
+              </p>
+              <p>
+                The most similar, yet more capable, competing system was the
+                Amiga, produced by Commodore. Unfortunately, the Atari ST became
+                the underdog of the 16-bit machines. It had color limitations,
+                large screen borders, no dedicated graphics chips for horizontal
+                or vertical scrolling, no hardware support for sprites, and a
+                sound chip that was used in 8-bit computers.
+              </p>
+              <p>
+                The Exceptions started out as a cracking group on the Commodore
+                64. They switched over to the Atari ST and started creating
+                intros to their cracked games to prove that the ST could meet
+                the capabilities of the Commodore Amiga. Comparable to digital
+                graffiti, this tribalism for certain computer systems led to
+                competition between systems for the best intros and demos, and
+                on the same system led to competition between crackers,
+                intro-makers, and demo-makers to create the most impressive
+                intros and demos.
+              </p>
+            </section>
+            <hr />
+            <section id="limits-chapter-2-footnotes">
+              <h3>Footnotes</h3>
+
+              <p id="limits-chapter-2-footnote-02-35">
+                <sup>[35]</sup> ST-NEWS. The Wizards - Part I.
+                <a
+                  href="https://st-news.com/en/issues/st-news-volume-3-issue-5/education/the-wizards-part-i/"
+                  target="_blank"
+                  >https://st-news.com/en/issues/st-news-volume-3-issue-5/education/the-wizards-part-i/</a
+                >
+                (Retrieved on May 14, 2020) <br /><a
+                  href="#limits-chapter-2-origin-02-35"
+                  class="btn btn-outline-secondary btn-sm"
+                >
+                  &raquo; Back [35]</a
+                >
+              </p>
+
+              <p id="limits-chapter-2-footnote-02-36">
+                <sup>[36]</sup> Russell Barnes. Sales soar and Raspberry Pi
+                beats Commodore 64. 2017.
+                <a
+                  href="https://magpi.raspberrypi.org/articles/raspberry-pi-sales"
+                  target="_blank"
+                  >https://magpi.raspberrypi.org/articles/raspberry-pi-sales</a
+                >
+                (Retrieved on June 12, 2020) <br /><a
+                  href="#limits-chapter-2-origin-02-36"
+                  class="btn btn-outline-secondary btn-sm"
+                >
+                  &raquo; Back [36]</a
+                >
+              </p>
+              <p id="limits-chapter-2-footnote-02-37">
+                <sup>[37]</sup>
+                Erik Simon, Udo Fischer, Tarik Ahmia. Die Hexer (Teil 1).
+                ST-Magazin 68000er. 07/1988
+                <a
+                  href="http://www.stcarchiv.de/stm1988/07/die-hexer-teil-1"
+                  target="_blank"
+                  >http://www.stcarchiv.de/stm1988/07/die-hexer-teil-1</a
+                >
+                (Retrieved on May 12, 2020) <br /><a
+                  href="#limits-chapter-2-origin-02-37"
+                  class="btn btn-outline-secondary btn-sm"
+                >
+                  &raquo; Back [37]</a
+                >
+              </p>
+              <p id="limits-chapter-2-footnote-02-38">
+                <sup>[38]</sup>
+                Erik Simon, Udo Fischer, Richard Karsmakers. The Wizards Part I.
+                <a
+                  href="https://st-news.com/issues/st-news-volume-3-issue-5/education/the-wizards-part-i/"
+                  target="_blank"
+                  >https://st-news.com/issues/st-news-volume-3-issue-5/education/the-wizards-part-i/</a
+                >
+                (Retrieved on May 12, 2020) <br /><a
+                  href="#limits-chapter-2-origin-02-38"
+                  class="btn btn-outline-secondary btn-sm"
+                >
+                  &raquo; Back [38]</a
+                >
+              </p>
+              <p id="limits-chapter-2-footnote-02-39">
+                <sup>[39]</sup>
+                Thalion Source, a fansite of Thalion’s games.
+                <a href="http://home.wtal.de/gmb/" target="_blank"
+                  >http://home.wtal.de/gmb/</a
+                >
+                (Retrieved on May 7, 2020) <br /><a
+                  href="#limits-chapter-2-origin-02-39"
+                  class="btn btn-outline-secondary btn-sm"
+                >
+                  &raquo; Back [39]</a
+                >
+              </p>
+              <p id="limits-chapter-2-footnote-02-40">
+                <sup>[40]</sup>
+                Reunanen, Markku. Computer Demos - What Makes Them Tick?
+                (Supervisor: Prof. Tapio Takala). Helsinki. 2010. Aalto
+                University, School of Science and Technology, Faculty of
+                Information and Natural Sciences, Department of Media
+                Technology. Pages 86 - 87 <br /><a
+                  href="#limits-chapter-2-origin-02-40"
+                  class="btn btn-outline-secondary btn-sm"
+                >
+                  &raquo; Back [40]</a
+                >
+              </p>
+              <p id="limits-chapter-2-footnote-02-41">
+                <sup>[41]</sup>
+                Atari ST Computer Sales and Marketshare: A Comparison.
+                <a
+                  href="https://amigalove.com/viewtopic.php?t=131"
+                  target="_blank"
+                  >https://amigalove.com/viewtopic.php?t=131</a
+                >
+                (Retrieved on May 3, 2020) <br /><a
+                  href="#limits-chapter-2-origin-02-41"
+                  class="btn btn-outline-secondary btn-sm"
+                >
+                  &raquo; Back [41]</a
+                >
+              </p>
+              <p id="limits-chapter-2-footnote-02-42">
+                <sup>[42]</sup>
+                Reimer, Jeremy. 2005. Total share: 30 years of personal computer
+                market share figures. Ars Technica.
+                <a
+                  href="https://arstechnica.com/features/2005/12/total-share/5/"
+                  target="_blank"
+                  >https://arstechnica.com/features/2005/12/total-share/5/</a
+                >
+                (Retrieved on May 7, 2020) <br /><a
+                  href="#limits-chapter-2-origin-02-42"
+                  class="btn btn-outline-secondary btn-sm"
+                >
+                  &raquo; Back [42]</a
+                >
+              </p>
+            </section>
+          </article>
+        </main>
+
+        <aside class="col-md-4">
+          <div class="alert alert-warning position-fixed">
+            <h2>Shattering the Limits</h2>
+            <p>
+              <a href="index.html#toc" class="btn btn-outline-primary btn-sm"
+                >&uarr; Table of Contents</a
+              >
+            </p>
+            <hr />
+            <p>
+              <a href="#limits-chapter-2"
+                >Chapter 2. The World According to The Exceptions</a
+              >
+            </p>
+            <ul>
+              <li>
+                <a href="#limits-chapter-2-section-1">Introduction</a>
+              </li>
+              <li>
+                <a href="#limits-chapter-2-section-2"
+                  >2.1 Who Are The Exceptions?</a
+                >
+              </li>
+              <li>
+                <a href="#limits-chapter-3-section-3"
+                  >2.2 The Origins of TEX on the Commodore 64</a
+                >
+              </li>
+              <li>
+                <a href="#limits-chapter-3-section-4"
+                  >2.3 The Atari ST and the Amiga Demoscenes</a
+                >
+              </li>
+              <li>
+                <a href="#limits-chapter-3-section-5"
+                  >2.4 Conclusion: Limitations of Early Home Computers</a
+                >
+              </li>
+
+              <li>
+                <a href="#limits-chapter-2-footnotes">Footnotes</a>
+              </li>
+            </ul>
+            <hr />
+            <div class="row">
+              <div class="col-md-6">
+                <p>
+                  <a
+                    href="chapter-01.html"
+                    class="btn btn-outline-primary btn-sm"
+                    >&laquo; Previous Chapter</a
+                  >
+                </p>
+              </div>
+              <div class="col-md-6">
+                <p class="text-end">
+                  <a
+                    href="chapter-03.html"
+                    class="btn btn-outline-primary btn-sm"
+                    >Next Chapter &raquo;</a
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </body>
+</html>
