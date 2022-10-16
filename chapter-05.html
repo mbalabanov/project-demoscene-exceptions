@@ -6,6 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>5. Demo Coders Unite in 1989 | Circuits Ablaze</title>
     <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <style>
+      .video-container {
+        overflow: hidden;
+        position: relative;
+        width: 100%;
+      }
+
+      .video-container::after {
+        padding-top: 56.25%;
+        display: block;
+        content: "";
+      }
+
+      .video-container iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      }
+    </style>
   </head>
 
   <body>
@@ -54,6 +75,22 @@
             </section>
             <section id="circuits-ablaze-chapter-5-section-2">
               <h3 class="mt-5">5.1 Union Demo</h3>
+              <div class="video-container">
+                <iframe
+                  src="https://youtube.com/embed/comSfq97R9s"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                ></iframe>
+              </div>
+              <p class="text-center">
+                <a
+                  href="https://youtu.be/comSfq97R9s"
+                  target="_blank"
+                  class="btn btn-outline-primary btn-sm m-2"
+                  >Watch Video on Youtube</a
+                >
+              </p>
               <p>
                 January 1989 saw the culmination of the Atari ST demo efforts so
                 far. The multiple demo-groups had joined forces to produce the
@@ -1310,8 +1347,12 @@
 
         <aside class="col-md-4">
           <div class="alert alert-warning position-fixed mx-2">
-            <h2>Circuits Ablaze</h2>
-            <p>
+            <img
+              src="img/circuits-ablaze.jpg"
+              alt="Circuits Ablaze"
+              class="img-fluid rounded"
+            />
+            <p class="mt-2 text-center">
               <a href="index.html#toc" class="btn btn-outline-primary btn-sm"
                 >&uarr; Table of Contents</a
               >

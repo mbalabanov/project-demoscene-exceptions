@@ -6,6 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>4. Breaking the Limits in 1988 | Circuits Ablaze</title>
     <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <style>
+      .video-container {
+        overflow: hidden;
+        position: relative;
+        width: 100%;
+      }
+
+      .video-container::after {
+        padding-top: 56.25%;
+        display: block;
+        content: "";
+      }
+
+      .video-container iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      }
+    </style>
   </head>
 
   <body>
@@ -37,6 +58,22 @@
             </section>
             <section id="circuits-ablaze-chapter-4-section-2">
               <h3 class="mt-5">4.1 B.I.G. Demo</h3>
+              <div class="video-container">
+                <iframe
+                  src="https://youtube.com/embed/6_Rp6YGQzbY"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                ></iframe>
+              </div>
+              <p class="text-center">
+                <a
+                  href="https://youtu.be/6_Rp6YGQzbY"
+                  target="_blank"
+                  class="btn btn-outline-primary btn-sm m-2"
+                  >Watch Video on Youtube</a
+                >
+              </p>
               <p>
                 The <strong>B.I.G. Demo</strong> called itself the "Best In
                 Galaxy" demo and represented the culmination of The Exceptions'
@@ -807,6 +844,23 @@
             </section>
             <section id="circuits-ablaze-chapter-4-section-3">
               <h3 class="mt-5">4.2 Amiga Demo</h3>
+              <div class="video-container">
+                <iframe
+                  src="https://youtube.com/embed/k_mGUSzR1aY"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                ></iframe>
+              </div>
+              <p class="text-center">
+                <a
+                  href="https://youtu.be/k_mGUSzR1aY"
+                  target="_blank"
+                  class="btn btn-outline-primary btn-sm m-2"
+                  >Watch Video on Youtube</a
+                >
+              </p>
+
               <p>
                 The <strong>Amiga Demo</strong> directly targeted the superior
                 sound capabilities of the Commodore Amiga by converting tunes
@@ -909,6 +963,22 @@
               </p>
 
               <h4>4.2.1 The Making of the Amiga Demo</h4>
+              <div class="video-container">
+                <iframe
+                  src="https://youtube.com/embed/CR3PFcS6dng"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                ></iframe>
+              </div>
+              <p class="text-center">
+                <a
+                  href="https://youtu.be/CR3PFcS6dng"
+                  target="_blank"
+                  class="btn btn-outline-primary btn-sm m-2"
+                  >Watch Video on Youtube</a
+                >
+              </p>
               <p>
                 The Exceptions not only broke two new limits of the Atari ST by
                 opening the right border and playing Amiga-quality digimusic,
@@ -1305,8 +1375,12 @@
 
         <aside class="col-md-4">
           <div class="alert alert-warning position-fixed mx-2">
-            <h2>Circuits Ablaze</h2>
-            <p>
+            <img
+              src="img/circuits-ablaze.jpg"
+              alt="Circuits Ablaze"
+              class="img-fluid rounded"
+            />
+            <p class="mt-2 text-center">
               <a href="index.html#toc" class="btn btn-outline-primary btn-sm"
                 >&uarr; Table of Contents</a
               >
