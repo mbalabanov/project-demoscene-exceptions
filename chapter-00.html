@@ -1,640 +1,830 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Introduction: Beholding the Digital Ephemeral | Circuits Ablaze
+    </title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>
-    Introduction: Beholding the Digital Ephemeral | Circuits Ablaze
-  </title>
-  <link rel="stylesheet" href="css/bootstrap.min.css" />
-</head>
+  <body>
+    <nav
+      class="d-flex flex-wrap justify-content-center p-3 bg-primary bg-gradient text-light"
+    >
+      <a
+        href="https://marincomics.com"
+        class="d-flex align-items-center mb-md-1 me-md-auto text-dark text-decoration-none"
+      >
+        <img
+          src="https://marincomics.com/img/marincomics-logo.png"
+          alt="Marin Comics"
+          height="50px"
+        />
+      </a>
 
-<body>
-  <nav class="d-flex flex-wrap justify-content-center p-3 bg-primary bg-gradient text-light">
-    <a href="https://marincomics.com"
-      class="d-flex align-items-center mb-md-1 me-md-auto text-dark text-decoration-none">
-      <img src="https://marincomics.com/img/marincomics-logo.png" alt="Marin Comics" height="50px" />
-    </a>
-    <ul class="nav nav-pills me-4">
-      <li class="nav-item">
-        <a href="https://marincomics.com/index.html#comics" class="nav-link link-light">Comics</a>
-      </li>
-      <li class="nav-item">
-        <a href="https://marincomics.com/index.html#dev-projects" class="nav-link link-light">Dev-Projects</a>
-      </li>
-      <li class="nav-item">
-        <a href="https://marincomics.com/index.html#writing" class="nav-link link-light">Writing</a>
-      </li>
-      <li class="nav-item">
-        <a href="https://marincomics.com/index.html#videos" class="nav-link link-light">Videos</a>
-      </li>
-      <li class="nav-item">
-        <a href="https://marincomics.com/about.html" class="nav-link link-light">About</a>
-      </li>
-    </ul>
-  </nav>
-  <div class="container mt-2">
-    <div class="row">
-      <main class="col-md-8">
-        <h1>Circuits Ablaze</h1>
-        <h2>
-          How Technical Limitations Pushed the Early Demoscene to Produce
-          Digital Art
-        </h2>
-        <h3>Master's Thesis by Marin Balabanov</h3>
-        <hr />
-        <article id="circuits-ablaze-introduction">
-          <h2>Introduction: Beholding the Digital Ephemeral</h2>
-          <section id="circuits-ablaze-introduction-section-1">
-            <p>
-              For many people, algorithms are complex mathematical equations
-              that quietly work in the background, powering the technology
-              around us. But algorithms can be much more.
-            </p>
-            <p>
-              Artists use algorithms to create media art. One kind of
-              algorithmic art is called computer demos. A demo is a
-              computer-generated real-time video clip that shows what kind of
-              graphic and sound effects can be achieved using the computer
-              hardware to its full potential. In many cases, demos are
-              inspired by the aesthetics of video games.
-            </p>
-            <p>
-              The computer art subculture, known as the demoscene, is a place
-              where programs become sensory audio-visual experiences in a
-              display of the artistic, musical, and development skills of
-              their creators.
-            </p>
-            <p>
-              One does not need to be an expert to appreciate the creativity
-              and ingenuity behind software-based art, especially when
-              considering the ever-present technical limitations creators must
-              work with.
-            </p>
-            <p>
-              After all, technology is constantly evolving; a demo created
-              only a decade ago can become obsolete and lost; a victim of its
-              own creative solutions. Demos are often made using undocumented
-              capabilities and features of old computers by developers seeking
-              to push the machines to their limits and beyond.
-            </p>
-            <p>
-              Since the early 1980s, enthusiasts have developed demos on a
-              wide range of computer systems like the Commodore 64, Sinclair
-              ZX Spectrum, the Commodore Amiga, Windows PCs and the Atari
-              ST.<sup><a id="circuits-ablaze-introduction-origin-00-01"
-                  href="#circuits-ablaze-introduction-footnote-00-01">[1]</a></sup>
-              On classic retro-hardware in particular, the demo creators use
-              techniques employed in the development of games, in some cases
-              even pioneering these techniques themselves.
-            </p>
-            <p>
-              One of the most notable groups of demo creators were
-              <em>The Exceptions,</em> who were the first to create demos on
-              the Atari ST home computer in the late 1980s. They did not
-              accept the limitations of the hardware capabilities of this
-              16-bit machine and instead set out to break them. They wanted to
-              use more colors on the screen than the ST could display, produce
-              better music than the ST's limited sound chip was capable of
-              producing, and match the effects seen on more capable and more
-              expensive systems.
-            </p>
-            <p>
-              From 1987 to 1989, The Exceptions produced half a dozen demos
-              that proved that the Atari ST was far more accomplished than
-              even the manufacturer had expected. By distributing their demo
-              programs on public domain disks and Bulletin Board Systems
-              (BBS), they reached out to computer users and other enthusiasts
-              to amaze and inspire them. This is how they created the Atari ST
-              demoscene.
-            </p>
-          </section>
-          <section id="circuits-ablaze-introduction-section-2">
-            <h3 class="mt-5">
-              Topic, Objective and Methodology of This Master's Thesis
-            </h3>
-            <p>
-              This master's thesis describes the demo art created by The
-              Exceptions. The demo-group first originated as crackers but
-              moved away from illegally pirating and distributing games to
-              create demos. The thesis focuses on the analysis of their
-              productions from 1987 to 1989, which were so successful that
-              they inspired other groups internationally to create demos and
-              subsequently form a collective of demo-groups, aptly named The
-              Union.
-            </p>
-            <p>
-              At the core of this master's thesis lies the question:
-              <strong>How did technical limitations and cultural boundaries enable
-                and motivate the process of creating computer demos instead of
-                hampering and limiting it?</strong>
-            </p>
-            <p>
-              This thesis investigates the cultural context that The
-              Exceptions worked in, their motivating factors, the technical
-              areas they pioneered, and how limitations enable and motivate
-              the creation of art. It retraces the steps that led from the
-              first demos, created by The Exceptions out of the technical
-              limitations of the Atari ST. Subsequently, it recounts how they
-              broke most of the technical restrictions by teaming up with
-              other demo-makers all over Europe. Thus, they laid some of the
-              groundwork for the networked and connected community that
-              thrives today as the demoscene. The hypothesis that limitations
-              are a motivating factor in art is put to the test by applying it
-              not only to the demoscene, but to a wider variety of individuals
-              in art history.
-            </p>
-            <p>
-              Finally, the thesis examines the conservation of media art in
-              the archival context, including an examination of the different
-              methods to salvage demo files and run demos on original hardware
-              and in emulation. In the final appendix, the thesis concludes
-              with a discussion of archives of media art and the technical
-              possibilities for implementing them.
-            </p>
-            <p>
-              The examination of the demos is the central part of this thesis
-              and uses the methodology of text analysis. The appendices
-              examine different options to implement new media art archives
-              enumerating their advantages and disadvantages. The final case
-              study documents the development of a demo archive programmed for
-              this thesis.
-            </p>
-            <p>
-              Why are computer demos important objects to study in art
-              history? Many so-called "bedroom coders" in the 1980s emerged
-              from the demoscene, i.e., young programmers who started writing
-              software at the start of the home computer revolution from their
-              bedrooms before they had actual offices.<sup><a id="circuits-ablaze-introduction-origin-00-02"
-                  href="#circuits-ablaze-introduction-footnote-00-02">[2]</a></sup>
-              This led to many individual careers not only in the areas of
-              software development, but also in other areas of science,
-              technology, engineering, and math (STEM).
-            </p>
-            <p>
-              Music created in the early demoscene became the foundation for
-              an aesthetic called chip music or chip tunes, where musicians
-              choose to write their music the style of old video games. This
-              form and practice have long been a vivid area of experimentation
-              in the fringes of new media art, but in the past few years has
-              found its way into the mainstream as a retro-aesthetic, e.g., in
-              Hollywood movies such as
-              <em>Scott Pilgrim vs. The World</em> (2010) and
-              <em>Thor: Ragnarok</em> (2017). Furthermore, many musicians and
-              DJs in the 1990s emerged from the demoscene or were inspired by
-              it.<sup><a id="circuits-ablaze-introduction-origin-00-03"
-                  href="#circuits-ablaze-introduction-footnote-00-03">[3]</a></sup>
-              This is particularly true for the vivid techno music scene of
-              mid 1990s Germany, but also as recently as Kanye West, who wrote
-              his first music on a "tracker" on the Commodore Amiga.<sup><a
-                  id="circuits-ablaze-introduction-origin-00-04"
-                  href="#circuits-ablaze-introduction-footnote-00-04">[4]</a></sup>
-            </p>
-            <p>
-              In essence, computer demos are the definition of new media art
-              on the edge of technology. They expose and break the engineering
-              constraints of emergent media.
-            </p>
-          </section>
-          <section id="circuits-ablaze-introduction-section-3">
-            <h3 class="mt-5">
-              The Historic Developments and Achievements in the Years 1987 -
-              1989
-            </h3>
-            <p>
-              In demo history, the era before the mid-1990s is referred to as
-              "old school" (or "oldskool" as it is also referred to in the
-              demoscene and in the literature<sup><a id="circuits-ablaze-introduction-origin-00-05"
-                  href="#circuits-ablaze-introduction-footnote-00-05">[5]</a></sup>). The chosen scope of this thesis
-              falls in the middle of this
-              "old school" time period. Why are these particular years
-              important for the Atari ST demoscene?
-            </p>
-            <p>
-              The year 1987 saw the release of the first demo for the Atari
-              ST, created by The Exceptions. There had been demos on other
-              systems before, but overall, the demoscene was in its infancy.
-              In this first year, The Exceptions released two more demos and
-              continued their productive streak into 1988. This was the year
-              an editor from the German magazine
-              <em>ST-Magazin 68000er</em> befriended and persuaded them to
-              reveal their coding tricks in a series of articles. Not only did
-              this turn them from an insider group into minor celebrities in
-              the hobbyist computer scene of the Atari ST, but it also had
-              three important effects:
-            </p>
-            <ol>
-              <li>
-                Even though The Exceptions did not use their real names in
-                articles and only went by their cracker handles, they were now
-                exposed to a much wider audience, accelerating their
-                separation from the cracker scene, and they turned "legit,"
-                solely as creators of demos. This, in turn, advanced their
-                plans to become game developers.<sup><a id="circuits-ablaze-introduction-origin-00-06"
-                    href="#circuits-ablaze-introduction-footnote-00-06">[6]</a></sup>
-              </li>
-              <li>
-                The exposure of demos as a concept and the demos created by
-                The Exceptions, including all the tricks, processes, and
-                methods they used, had an inspirational effect on other coders
-                and would-be coders. The inner workings and intricacies of a
-                demo were laid bare, and all the audience had to do was to
-                work hard enough to understand and replicate them to create
-                demos. If the German-speaking demoscene was not already born,
-                then this was its metaphoric birth. Numerous individual
-                demo-makers and demo-groups also started creating demos for
-                the Atari ST.<sup><a id="circuits-ablaze-introduction-origin-00-07"
-                    href="#circuits-ablaze-introduction-footnote-00-07">[7]</a></sup>
-              </li>
-              <li>
-                The Exceptions and the Atari ST demoscene that was inspired
-                from them organized the first demo parties for the system with
-                the
-                <em>ST News International Christmas Coding Convention</em>
-                (STNICC) in 1990. There had been many copy parties where
-                cracked games were shared, but STNICC was the first party
-                completely devoted to demo-making.<sup><a id="circuits-ablaze-introduction-origin-00-08"
-                    href="#circuits-ablaze-introduction-footnote-00-08">[8]</a></sup>
-              </li>
-            </ol>
-            <p>
-              By 1989, The Exceptions started to team up with other
-              demo-groups like
-              <em>DeltaForce</em> and <em>The CareBears</em> (TCB) to form the
-              <em>Union.</em> This year saw the release of the first major
-              megademo for the Atari ST, a form of demo particular to this
-              system; the Union broke most of the ST's technical limits in
-              their Union Demo.
-            </p>
-            <p>
-              In these three short years, the Atari ST demoscene evolved from
-              the efforts of a tightly knit group to a union of multiple
-              demo-groups, culminating in what can be clearly identified as a
-              pre-web network of demo-makers by 1989... even though they did
-              not know it at the time.
-            </p>
-          </section>
-          <section id="circuits-ablaze-introduction-section-4">
-            <h3 class="mt-5">
-              Standing on the Shoulders of Giants: Prior Academic Research
-            </h3>
-            <p>
-              The demoscene as a field of academic study is relatively young;
-              yet several definitive works exist already. These writings by
-              academics, such as Doreen Hartmann, Daniel Botz, Lassi Tasajrvi,
-              and Markuu Reunanen, are astoundingly comprehensive and
-              insightful.
-            </p>
-            <p>
-              Hartmann's doctoral thesis was published in book form as
-              <em>Digital Art Natives.</em> Botz's
-              <em>Kunst, Code und Machine,</em> together with Tasajrvi's
-              <em>Demoscene: The Art of Real-time</em> and Reunanen's
-              licentiate thesis
-              <em>Computer Demos - What Makes Them Tick?</em> are masterful
-              exemplars of academic research cast in eloquent writing. They
-              are one of the reasons for beginning the journey to write a
-              master's thesis on this topic, albeit in a micro-analytic
-              manner, swapping their breadth for the details of a specific
-              scene for analysis.
-            </p>
-            <p>
-              There is one aspect that ties the quite different works of
-              Hartmann, Botz, Tasajrvi, and Reunannen together. Out of the
-              necessity to describe and analyze a new area of research, their
-              work is admirably overarching, defining the ground rules for
-              further research and finding and determining the historic
-              principles from the perspective of the latter-day 2000s and the
-              mature demoscene. By then, the demoscene had established its
-              formal structure.
-            </p>
-            <p>
-              The Atari ST demoscene, while immensely productive and
-              inspirational, never produced a number of demos as vast as the
-              scene around the Commodore machines, therefore research in this
-              area has always been limited. Seminal literature on the Atari ST
-              has only recently been published. Marco A. Breddin wrote a
-              trilogy of oral history books that he calls
-              <em>Atari ST and the Creative People.<sup><a id="circuits-ablaze-introduction-origin-00-09"
-                    href="#circuits-ablaze-introduction-footnote-00-09">[9]</a></sup></em>
-              The three books are
-              <em>Breakin' the Borders. A true story of digital liberation and
-                Power Without the Price</em>
-              (in 2017),
-              <em>Beyond the Borders. A fantastic journey to the outer rims of
-                68000</em>
-              (in 2018), and
-              <em>Return of the Borders. In the virtual realm of high-tech
-                pixel worlds</em>
-              (in 2019).
-            </p>
-            <p>
-              Breddin does not limit his works to the demoscene; he delivers
-              an exemplary undertaking of describing the Atari ST development,
-              gaming, music, and software scene over a ten-year period ranging
-              from the early days of the Atari ST through the release of the
-              TT workstation, the expanded Atari STE, the phenomenal Atari
-              Falcon 32-bit computer, and the Atari Jaguar video game system,
-              until the Atari Corporation went out of business in the
-              mid-1990s.
-            </p>
-            <p>
-              In the past few years, the study of demos has shifted towards
-              more detail-oriented research. In her article
-              <em>Demo Age: New Views,</em> Digital Humanities researcher
-              Canan Hastik analyzed the type and frequency of effects in
-              demos.<sup><a id="circuits-ablaze-introduction-origin-00-10"
-                  href="#circuits-ablaze-introduction-footnote-00-10">[10]</a></sup>
-              She applied methods established by the esteemed media scholar
-              Lev Manovich to analyze digital art by distilling multiple
-              individual frames of a sequence into a single image. Manovich
-              outlined his methodology in
-              <em>How To Follow Global Digital Cultures.<sup><a id="circuits-ablaze-introduction-origin-00-11"
-                    href="#circuits-ablaze-introduction-footnote-00-11">[11]</a></sup></em>
-              Hastik is currently preparing the publication of her doctoral
-              thesis,
-              <em>Knowledge Design of Digital Subcultural Heritage. Heuristics
-                from Curating Creativity, Aesthetics and Culture of the
-                Demoscene.</em>
-            </p>
-            <p>
-              The demoscene is one of many manifestations of hacker culture.
-              In this context, it is tempting to explore seminal works on
-              hackers; for example, the exciting accounts of the ingenious,
-              the illuminating, and the strange, such as Bruce Sterling's
-              hilarious
-              <em>The Hacker Crackdown: Law and Disorder on the Electronic
-                Frontier</em>
-              and Stephen Levy's historic examination
-              <em>Hackers: Heroes of the Computer Revolution.</em> A similar
-              chord is struck in
-              <em>Underground: Tales of Hacking, Madness and Obsession on the
-                Electronic Frontier</em>
-              by Suelette Dreyfus and a pre-Wikileaks Julian Assange,
-              published in multiple editions, the last of which was released
-              in 2011.
-            </p>
-            <p>
-              We could go back even further to the very origins of computing
-              as we know it with <em>Alan Turing: The Enigma</em> by Andrew
-              Hodges and Douglas Hofstadter, published in 2014. We could
-              explore the dark side of the early days of information
-              processing as described in
-              <em>IBM and the Holocaust: The Strategic Alliance Between Nazi
-                Germany and America's Most Powerful Corporation</em>
-              by Edwin Black, first published in 2001 and rereleased in an
-              expanded edition in 2012. Black recounts the sad and enraging
-              tale of how pre-computing tabulation machines were used by the
-              criminal Nazi regime in World War II Germany to analyze,
-              catalog, and ultimately decimate whole populations on an
-              industrial level. But while these historic stories are
-              engrossing as well as disturbing, a deeper examination would go
-              far beyond the scope of a master's thesis devoted to a specific
-              demoscene.
-            </p>
-            <p>
-              Demo-makers were part of the open-source movement and culture as
-              it emerged in the early 1990s. The ground-breaking works on open
-              and free software by Richard Stallman would apply here, and Eric
-              S. Raymond's
-              <em>The Cathedral and the Bazaar.</em> The downright delightful
-              <em>Hackers & Painters: Big Ideas from the Computer Age</em> by
-              Paul Graham cannot be recommended enough; it discusses not only
-              open source, but also the tension between creativity and coding.
-              A tension that particularly underlies software-based new media
-              art.
-            </p>
-          </section>
-          <section id="circuits-ablaze-introduction-section-5">
-            <h3 class="mt-5">Demos as New Media Art</h3>
-            <p>
-              Demo-makers are digital artists creating algorithmic art using
-              the same tools and the same general-purpose computers used in
-              business, gaming, and research. Like their predecessors in the
-              past, demo-makers today still explore the capabilities of
-              computer hardware to learn how to leverage it to produce art.
-              They are a subculture of new media artists aligned with the
-              description in
-              <em>Digital Art through the Looking Glass</em> by Oliver Grau
-              (et al.):
-            </p>
-            <blockquote class="alert alert-secondary">
-              "With digitisation influencing our everyday lives through
-              telecommunication, social media and mobile applications, digital
-              technologies document, organise and shape contemporary
-              societies. By creating with the same technologies, artists
-              investigate our digitised cultures and circumvent the
-              black-boxing thereof. They investigate and mediate the
-              technological influence on socio-cultural development and
-              transformation. Through transdisciplinary methods at the
-              intersection of art, science and technology, digital art
-              combines artistic creation with innovative research and
-              technological development and thereby bridges art history to
-              digital methods and contemporary socio-cultural phenomena."<sup><a
-                  id="circuits-ablaze-introduction-origin-00-12"
-                  href="#circuits-ablaze-introduction-footnote-00-12">[12]</a></sup>
-            </blockquote>
-            <p>
-              Other areas at the time, particularly coding, were not regarded
-              as acts of artistic creativity. In the decades since, the
-              consensus that inventive coding, in fact, constitutes artistic
-              creativity has grown towards acceptance, as argued by Paul
-              Graham in
-              <em>Hackers & Painters: Big Ideas from the Computer Age:</em>
-            </p>
-            <blockquote class="alert alert-secondary">
-              "...at the other extreme you have the hackers, who are trying to
-              write interesting software, and for whom computers are just a
-              medium of expression, as concrete is for architects or paint is
-              for painters."<sup><a id="circuits-ablaze-introduction-origin-00-13"
-                  href="#circuits-ablaze-introduction-footnote-00-13">[13]</a></sup>
-            </blockquote>
-            <p>
-              Standing on the shoulder of these giants, this thesis explores a
-              specific history, the Atari ST demoscene, and the most important
-              demo-group of the system's early years, The Exceptions. By
-              exploring this clearly demarcated area of research, this thesis
-              attempts to do what other works of research have only seldom
-              achieved: an in-depth and detailed examination of specific
-              manifestations and works of the early days of a small part of
-              the demoscene to offer a conclusion of general validity by
-              revealing how limitations affect and propel artists.
-            </p>
-          </section>
-
+      <ul class="nav nav-pills me-4">
+        <li class="nav-item">
+          <a
+            href="https://marincomics.com/index.html#dev-projects"
+            class="nav-link link-light"
+            >Dev-Projects</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            href="https://marincomics.com/index.html#comics"
+            class="nav-link link-light"
+            >Comics</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            href="https://marincomics.com/index.html#writing"
+            class="nav-link link-light"
+            >Writing</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            href="https://marincomics.com/index.html#videos"
+            class="nav-link link-light"
+            >Videos</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            href="https://marincomics.com/about.html"
+            class="nav-link link-light"
+            >About</a
+          >
+        </li>
+      </ul>
+    </nav>
+    <div class="container mt-2">
+      <div class="row">
+        <main class="col-md-8">
+          <h1>Circuits Ablaze</h1>
+          <h2>
+            How Technical Limitations Pushed the Early Demoscene to Produce
+            Digital Art
+          </h2>
+          <h3>Master's Thesis by Marin Balabanov</h3>
           <hr />
-          <section id="circuits-ablaze-introduction-footnotes">
-            <h3 class="mt-5">Footnotes</h3>
-
-            <p id="circuits-ablaze-introduction-footnote-00-01">
-              As tempting as it might be to pronounce ST as "Saint," it is
-              actually simply pronounced as "Es Tea."<br /><a href="#circuits-ablaze-introduction-origin-00-01"
-                class="btn btn-outline-secondary btn-sm">
-                &raquo; Back [1]</a>
-            </p>
-
-            <p id="circuits-ablaze-introduction-footnote-00-02">
-              Wiltshire, Alex (Ed.). 2015.
-              <em>Britsoft: An Oral History.</em> Read Only Memory.<br /><a
-                href="#circuits-ablaze-introduction-origin-00-02" class="btn btn-outline-secondary btn-sm">
-                &raquo; Back [2]</a>
-            </p>
-
-            <p id="circuits-ablaze-introduction-footnote-00-03">
-              Weinstein, Paul. June 2, 2016.
-              <em>8 Influential Chiptune Artists Who Pioneered the Genre.</em>
-              Soundfly,
-              <a href="https://flypaper.soundfly.com/discovery/8-influential-chiptune-artists-pioneered-genre/"
-                target="_blank">https://flypaper.soundfly.com/discovery/8-influential-chiptune-artists-pioneered-genre/</a>
-              (Retrieved on August 12, 2020) <br /><a href="#circuits-ablaze-introduction-origin-00-03"
-                class="btn btn-outline-secondary btn-sm">
-                &raquo; Back [3]</a>
-            </p>
-
-            <p id="circuits-ablaze-introduction-footnote-00-04">
-              Music trackers are sound and music applications that allow
-              musicians to address each track individually and play music
-              modules and sound samples on them. Trackers were popularized in
-              16-bit video game and the early demoscene. See
-              <a
-                href="https://www.musictech.net/guides/essential-guide/history-of-trackers/">https://www.musictech.net/guides/essential-guide/history-of-trackers/</a>
-              <br /><a href="#circuits-ablaze-introduction-origin-00-04" class="btn btn-outline-secondary btn-sm">
-                &raquo; Back [4]</a>
-            </p>
-
-            <p id="circuits-ablaze-introduction-footnote-00-05">
-              Reunanen, Markuu; Silvast, Antti. 2009.
-              <em>Demoscene Platforms: A Case Study on the Adoption of Home
-                Computers.</em>
-              University of Art and Design Helsinki. <br /><a href="#circuits-ablaze-introduction-origin-00-05"
-                class="btn btn-outline-secondary btn-sm">
-                &raquo; Back [5]</a>
-            </p>
-
-            <p id="circuits-ablaze-introduction-footnote-00-06">
-              "The publisher's revenge" Page 167. Breddin Marco A. (Foreword
-              by Prof. Dr. Gundolf S. Freyermuth). 2017.
-              <em>Breakin' the Borders. A true story of digital liberation and
-                Power Without the Price.</em>
-              Hannover. MicroZeit Verlag.<br /><a href="#circuits-ablaze-introduction-origin-00-06"
-                class="btn btn-outline-secondary btn-sm">
-                &raquo; Back [6]</a>
-            </p>
-
-            <p id="circuits-ablaze-introduction-footnote-00-07">
-              "TEX, The CareBears, ULM and the Lost Boys were like superstars
-              to us." Page 358. Breddin, Marco A.
-              <em>Breakin' the Borders.</em> <br /><a href="#circuits-ablaze-introduction-origin-00-07"
-                class="btn btn-outline-secondary btn-sm">
-                &raquo; Back [7]</a>
-            </p>
-
-            <p id="circuits-ablaze-introduction-footnote-00-08">
-              "It was the first big Atari ST party." Page 364.
-              <em>Breakin' the Borders.</em><br /><a href="#circuits-ablaze-introduction-origin-00-08"
-                class="btn btn-outline-secondary btn-sm">
-                &raquo; Back [8]</a>
-            </p>
-
-            <p id="circuits-ablaze-introduction-footnote-00-09">
-              The writer of this thesis has supported Marco Breddin's
-              crowd-funding campaigns and is listed as one of the supporters
-              in the third volume (and - of course, misspelling it.<br /><a
-                href="#circuits-ablaze-introduction-origin-00-09" class="btn btn-outline-secondary btn-sm">
-                &raquo; Back [9]</a>
-            </p>
-
-            <p id="circuits-ablaze-introduction-footnote-00-10">
-              Hastik, Canan. 2014. <em>Demo Age: New Views.</em> University of
-              Applied Sciences Darmstadt. 19 pages.
-              <a href="http://widerscreen.fi/assets/hastik-wider-1-2-2014.pdf"
-                target="_blank">http://widerscreen.fi/assets/hastik-wider-1-2-2014.pdf</a>
-              (Retrieved on June 15, 2020)<br /><a href="#circuits-ablaze-introduction-origin-00-10"
-                class="btn btn-outline-secondary btn-sm">
-                &raquo; Back [10]</a>
-            </p>
-
-            <p id="circuits-ablaze-introduction-footnote-00-11">
-              Manovich, Lev. 2009.
-              <em>How To Follow Global Digital Cultures.</em>
-              <a href="http://manovich.net/content/04-projects/062-how-to-follow-global-digital-cultures/59_article_2009.pdf"
-                target="_blank">http://manovich.net/content/04-projects/062-how-to-follow-global-digital-cultures/59_article_2009.pdf</a>
-              <br /><a href="#circuits-ablaze-introduction-origin-00-11" class="btn btn-outline-secondary btn-sm">
-                &raquo; Back [11]</a>
-            </p>
-
-            <p id="circuits-ablaze-introduction-footnote-00-12">
-              Grau, Oliver; Hoth, Janina; Wandl-Vogt (Eds.). 2019.
-              <em>Digital Art through the Looking Glass. New strategies for
-                archiving, collecting and preserving in digital
-                humanities.</em>
-              Edition Donau-Universität Krems; ÖAW Austrian Academy of
-              Sciences.<br /><a href="#circuits-ablaze-introduction-origin-00-12"
-                class="btn btn-outline-secondary btn-sm">
-                &raquo; Back [12]</a>
-            </p>
-
-            <p id="circuits-ablaze-introduction-footnote-00-13">
-              Graham, Paul. 2004.
-              <em>Hackers & Painters: Big Ideas from the Computer Age.</em>
-              O'Reilly.<br /><a href="#circuits-ablaze-introduction-origin-00-013"
-                class="btn btn-outline-secondary btn-sm">
-                &raquo; Back [13]</a>
-            </p>
-          </section>
-        </article>
-      </main>
-
-      <aside class="col-md-4">
-        <div class="alert alert-warning position-fixed mx-2" style="overflow-y: scroll; height: 80vh">
-          <img src="img/circuits-ablaze.jpg" alt="Circuits Ablaze" class="img-fluid rounded" />
-          <p class="mt-2 text-center">
-            <a href="index.html#toc" class="btn btn-outline-primary btn-sm">&uarr; Table of Contents</a>
-          </p>
-          <hr />
-          <p>
-            <a href="#circuits-ablaze-introduction">Introduction: Beholding the Digital Ephemeral</a>
-          </p>
-          <ul>
-            <li>
-              <a href="#circuits-ablaze-introduction-section-1">Introduction</a>
-            </li>
-            <li>
-              <a href="#circuits-ablaze-introduction-section-2">Topic, Objective and Methodology of This Master
-                Thesis</a>
-            </li>
-            <li>
-              <a href="#circuits-ablaze-introduction-section-3">The Historic Developments and Achievements in the Years
-                1987
-                - 1989</a>
-            </li>
-            <li>
-              <a href="#circuits-ablaze-introduction-section-4">Standing on the Shoulders of Giants: Prior Academic
-                Research</a>
-            </li>
-            <li>
-              <a href="#circuits-ablaze-introduction-footnotes">Footnotes</a>
-            </li>
-          </ul>
-          <hr />
-          <div class="row">
-            <div class="col-md-6">
+          <article id="circuits-ablaze-introduction">
+            <h2>Introduction: Beholding the Digital Ephemeral</h2>
+            <section id="circuits-ablaze-introduction-section-1">
               <p>
-                <a href="foreword.html" class="btn btn-outline-primary btn-sm">&laquo; Back to Foreword</a>
+                For many people, algorithms are complex mathematical equations
+                that quietly work in the background, powering the technology
+                around us. But algorithms can be much more.
               </p>
-            </div>
-            <div class="col-md-6">
-              <p class="text-end">
-                <a href="chapter-01.html" class="btn btn-outline-primary btn-sm">Next Chapter &raquo;</a>
+              <p>
+                Artists use algorithms to create media art. One kind of
+                algorithmic art is called computer demos. A demo is a
+                computer-generated real-time video clip that shows what kind of
+                graphic and sound effects can be achieved using the computer
+                hardware to its full potential. In many cases, demos are
+                inspired by the aesthetics of video games.
               </p>
+              <p>
+                The computer art subculture, known as the demoscene, is a place
+                where programs become sensory audio-visual experiences in a
+                display of the artistic, musical, and development skills of
+                their creators.
+              </p>
+              <p>
+                One does not need to be an expert to appreciate the creativity
+                and ingenuity behind software-based art, especially when
+                considering the ever-present technical limitations creators must
+                work with.
+              </p>
+              <p>
+                After all, technology is constantly evolving; a demo created
+                only a decade ago can become obsolete and lost; a victim of its
+                own creative solutions. Demos are often made using undocumented
+                capabilities and features of old computers by developers seeking
+                to push the machines to their limits and beyond.
+              </p>
+              <p>
+                Since the early 1980s, enthusiasts have developed demos on a
+                wide range of computer systems like the Commodore 64, Sinclair
+                ZX Spectrum, the Commodore Amiga, Windows PCs and the Atari
+                ST.<sup
+                  ><a
+                    id="circuits-ablaze-introduction-origin-00-01"
+                    href="#circuits-ablaze-introduction-footnote-00-01"
+                    >[1]</a
+                  ></sup
+                >
+                On classic retro-hardware in particular, the demo creators use
+                techniques employed in the development of games, in some cases
+                even pioneering these techniques themselves.
+              </p>
+              <p>
+                One of the most notable groups of demo creators were
+                <em>The Exceptions,</em> who were the first to create demos on
+                the Atari ST home computer in the late 1980s. They did not
+                accept the limitations of the hardware capabilities of this
+                16-bit machine and instead set out to break them. They wanted to
+                use more colors on the screen than the ST could display, produce
+                better music than the ST's limited sound chip was capable of
+                producing, and match the effects seen on more capable and more
+                expensive systems.
+              </p>
+              <p>
+                From 1987 to 1989, The Exceptions produced half a dozen demos
+                that proved that the Atari ST was far more accomplished than
+                even the manufacturer had expected. By distributing their demo
+                programs on public domain disks and Bulletin Board Systems
+                (BBS), they reached out to computer users and other enthusiasts
+                to amaze and inspire them. This is how they created the Atari ST
+                demoscene.
+              </p>
+            </section>
+            <section id="circuits-ablaze-introduction-section-2">
+              <h3 class="mt-5">
+                Topic, Objective and Methodology of This Master's Thesis
+              </h3>
+              <p>
+                This master's thesis describes the demo art created by The
+                Exceptions. The demo-group first originated as crackers but
+                moved away from illegally pirating and distributing games to
+                create demos. The thesis focuses on the analysis of their
+                productions from 1987 to 1989, which were so successful that
+                they inspired other groups internationally to create demos and
+                subsequently form a collective of demo-groups, aptly named The
+                Union.
+              </p>
+              <p>
+                At the core of this master's thesis lies the question:
+                <strong
+                  >How did technical limitations and cultural boundaries enable
+                  and motivate the process of creating computer demos instead of
+                  hampering and limiting it?</strong
+                >
+              </p>
+              <p>
+                This thesis investigates the cultural context that The
+                Exceptions worked in, their motivating factors, the technical
+                areas they pioneered, and how limitations enable and motivate
+                the creation of art. It retraces the steps that led from the
+                first demos, created by The Exceptions out of the technical
+                limitations of the Atari ST. Subsequently, it recounts how they
+                broke most of the technical restrictions by teaming up with
+                other demo-makers all over Europe. Thus, they laid some of the
+                groundwork for the networked and connected community that
+                thrives today as the demoscene. The hypothesis that limitations
+                are a motivating factor in art is put to the test by applying it
+                not only to the demoscene, but to a wider variety of individuals
+                in art history.
+              </p>
+              <p>
+                Finally, the thesis examines the conservation of media art in
+                the archival context, including an examination of the different
+                methods to salvage demo files and run demos on original hardware
+                and in emulation. In the final appendix, the thesis concludes
+                with a discussion of archives of media art and the technical
+                possibilities for implementing them.
+              </p>
+              <p>
+                The examination of the demos is the central part of this thesis
+                and uses the methodology of text analysis. The appendices
+                examine different options to implement new media art archives
+                enumerating their advantages and disadvantages. The final case
+                study documents the development of a demo archive programmed for
+                this thesis.
+              </p>
+              <p>
+                Why are computer demos important objects to study in art
+                history? Many so-called "bedroom coders" in the 1980s emerged
+                from the demoscene, i.e., young programmers who started writing
+                software at the start of the home computer revolution from their
+                bedrooms before they had actual offices.<sup
+                  ><a
+                    id="circuits-ablaze-introduction-origin-00-02"
+                    href="#circuits-ablaze-introduction-footnote-00-02"
+                    >[2]</a
+                  ></sup
+                >
+                This led to many individual careers not only in the areas of
+                software development, but also in other areas of science,
+                technology, engineering, and math (STEM).
+              </p>
+              <p>
+                Music created in the early demoscene became the foundation for
+                an aesthetic called chip music or chip tunes, where musicians
+                choose to write their music the style of old video games. This
+                form and practice have long been a vivid area of experimentation
+                in the fringes of new media art, but in the past few years has
+                found its way into the mainstream as a retro-aesthetic, e.g., in
+                Hollywood movies such as
+                <em>Scott Pilgrim vs. The World</em> (2010) and
+                <em>Thor: Ragnarok</em> (2017). Furthermore, many musicians and
+                DJs in the 1990s emerged from the demoscene or were inspired by
+                it.<sup
+                  ><a
+                    id="circuits-ablaze-introduction-origin-00-03"
+                    href="#circuits-ablaze-introduction-footnote-00-03"
+                    >[3]</a
+                  ></sup
+                >
+                This is particularly true for the vivid techno music scene of
+                mid 1990s Germany, but also as recently as Kanye West, who wrote
+                his first music on a "tracker" on the Commodore Amiga.<sup
+                  ><a
+                    id="circuits-ablaze-introduction-origin-00-04"
+                    href="#circuits-ablaze-introduction-footnote-00-04"
+                    >[4]</a
+                  ></sup
+                >
+              </p>
+              <p>
+                In essence, computer demos are the definition of new media art
+                on the edge of technology. They expose and break the engineering
+                constraints of emergent media.
+              </p>
+            </section>
+            <section id="circuits-ablaze-introduction-section-3">
+              <h3 class="mt-5">
+                The Historic Developments and Achievements in the Years 1987 -
+                1989
+              </h3>
+              <p>
+                In demo history, the era before the mid-1990s is referred to as
+                "old school" (or "oldskool" as it is also referred to in the
+                demoscene and in the literature<sup
+                  ><a
+                    id="circuits-ablaze-introduction-origin-00-05"
+                    href="#circuits-ablaze-introduction-footnote-00-05"
+                    >[5]</a
+                  ></sup
+                >). The chosen scope of this thesis falls in the middle of this
+                "old school" time period. Why are these particular years
+                important for the Atari ST demoscene?
+              </p>
+              <p>
+                The year 1987 saw the release of the first demo for the Atari
+                ST, created by The Exceptions. There had been demos on other
+                systems before, but overall, the demoscene was in its infancy.
+                In this first year, The Exceptions released two more demos and
+                continued their productive streak into 1988. This was the year
+                an editor from the German magazine
+                <em>ST-Magazin 68000er</em> befriended and persuaded them to
+                reveal their coding tricks in a series of articles. Not only did
+                this turn them from an insider group into minor celebrities in
+                the hobbyist computer scene of the Atari ST, but it also had
+                three important effects:
+              </p>
+              <ol>
+                <li>
+                  Even though The Exceptions did not use their real names in
+                  articles and only went by their cracker handles, they were now
+                  exposed to a much wider audience, accelerating their
+                  separation from the cracker scene, and they turned "legit,"
+                  solely as creators of demos. This, in turn, advanced their
+                  plans to become game developers.<sup
+                    ><a
+                      id="circuits-ablaze-introduction-origin-00-06"
+                      href="#circuits-ablaze-introduction-footnote-00-06"
+                      >[6]</a
+                    ></sup
+                  >
+                </li>
+                <li>
+                  The exposure of demos as a concept and the demos created by
+                  The Exceptions, including all the tricks, processes, and
+                  methods they used, had an inspirational effect on other coders
+                  and would-be coders. The inner workings and intricacies of a
+                  demo were laid bare, and all the audience had to do was to
+                  work hard enough to understand and replicate them to create
+                  demos. If the German-speaking demoscene was not already born,
+                  then this was its metaphoric birth. Numerous individual
+                  demo-makers and demo-groups also started creating demos for
+                  the Atari ST.<sup
+                    ><a
+                      id="circuits-ablaze-introduction-origin-00-07"
+                      href="#circuits-ablaze-introduction-footnote-00-07"
+                      >[7]</a
+                    ></sup
+                  >
+                </li>
+                <li>
+                  The Exceptions and the Atari ST demoscene that was inspired
+                  from them organized the first demo parties for the system with
+                  the
+                  <em>ST News International Christmas Coding Convention</em>
+                  (STNICC) in 1990. There had been many copy parties where
+                  cracked games were shared, but STNICC was the first party
+                  completely devoted to demo-making.<sup
+                    ><a
+                      id="circuits-ablaze-introduction-origin-00-08"
+                      href="#circuits-ablaze-introduction-footnote-00-08"
+                      >[8]</a
+                    ></sup
+                  >
+                </li>
+              </ol>
+              <p>
+                By 1989, The Exceptions started to team up with other
+                demo-groups like
+                <em>DeltaForce</em> and <em>The CareBears</em> (TCB) to form the
+                <em>Union.</em> This year saw the release of the first major
+                megademo for the Atari ST, a form of demo particular to this
+                system; the Union broke most of the ST's technical limits in
+                their Union Demo.
+              </p>
+              <p>
+                In these three short years, the Atari ST demoscene evolved from
+                the efforts of a tightly knit group to a union of multiple
+                demo-groups, culminating in what can be clearly identified as a
+                pre-web network of demo-makers by 1989... even though they did
+                not know it at the time.
+              </p>
+            </section>
+            <section id="circuits-ablaze-introduction-section-4">
+              <h3 class="mt-5">
+                Standing on the Shoulders of Giants: Prior Academic Research
+              </h3>
+              <p>
+                The demoscene as a field of academic study is relatively young;
+                yet several definitive works exist already. These writings by
+                academics, such as Doreen Hartmann, Daniel Botz, Lassi Tasajrvi,
+                and Markuu Reunanen, are astoundingly comprehensive and
+                insightful.
+              </p>
+              <p>
+                Hartmann's doctoral thesis was published in book form as
+                <em>Digital Art Natives.</em> Botz's
+                <em>Kunst, Code und Machine,</em> together with Tasajrvi's
+                <em>Demoscene: The Art of Real-time</em> and Reunanen's
+                licentiate thesis
+                <em>Computer Demos - What Makes Them Tick?</em> are masterful
+                exemplars of academic research cast in eloquent writing. They
+                are one of the reasons for beginning the journey to write a
+                master's thesis on this topic, albeit in a micro-analytic
+                manner, swapping their breadth for the details of a specific
+                scene for analysis.
+              </p>
+              <p>
+                There is one aspect that ties the quite different works of
+                Hartmann, Botz, Tasajrvi, and Reunannen together. Out of the
+                necessity to describe and analyze a new area of research, their
+                work is admirably overarching, defining the ground rules for
+                further research and finding and determining the historic
+                principles from the perspective of the latter-day 2000s and the
+                mature demoscene. By then, the demoscene had established its
+                formal structure.
+              </p>
+              <p>
+                The Atari ST demoscene, while immensely productive and
+                inspirational, never produced a number of demos as vast as the
+                scene around the Commodore machines, therefore research in this
+                area has always been limited. Seminal literature on the Atari ST
+                has only recently been published. Marco A. Breddin wrote a
+                trilogy of oral history books that he calls
+                <em
+                  >Atari ST and the Creative People.<sup
+                    ><a
+                      id="circuits-ablaze-introduction-origin-00-09"
+                      href="#circuits-ablaze-introduction-footnote-00-09"
+                      >[9]</a
+                    ></sup
+                  ></em
+                >
+                The three books are
+                <em
+                  >Breakin' the Borders. A true story of digital liberation and
+                  Power Without the Price</em
+                >
+                (in 2017),
+                <em
+                  >Beyond the Borders. A fantastic journey to the outer rims of
+                  68000</em
+                >
+                (in 2018), and
+                <em
+                  >Return of the Borders. In the virtual realm of high-tech
+                  pixel worlds</em
+                >
+                (in 2019).
+              </p>
+              <p>
+                Breddin does not limit his works to the demoscene; he delivers
+                an exemplary undertaking of describing the Atari ST development,
+                gaming, music, and software scene over a ten-year period ranging
+                from the early days of the Atari ST through the release of the
+                TT workstation, the expanded Atari STE, the phenomenal Atari
+                Falcon 32-bit computer, and the Atari Jaguar video game system,
+                until the Atari Corporation went out of business in the
+                mid-1990s.
+              </p>
+              <p>
+                In the past few years, the study of demos has shifted towards
+                more detail-oriented research. In her article
+                <em>Demo Age: New Views,</em> Digital Humanities researcher
+                Canan Hastik analyzed the type and frequency of effects in
+                demos.<sup
+                  ><a
+                    id="circuits-ablaze-introduction-origin-00-10"
+                    href="#circuits-ablaze-introduction-footnote-00-10"
+                    >[10]</a
+                  ></sup
+                >
+                She applied methods established by the esteemed media scholar
+                Lev Manovich to analyze digital art by distilling multiple
+                individual frames of a sequence into a single image. Manovich
+                outlined his methodology in
+                <em
+                  >How To Follow Global Digital Cultures.<sup
+                    ><a
+                      id="circuits-ablaze-introduction-origin-00-11"
+                      href="#circuits-ablaze-introduction-footnote-00-11"
+                      >[11]</a
+                    ></sup
+                  ></em
+                >
+                Hastik is currently preparing the publication of her doctoral
+                thesis,
+                <em
+                  >Knowledge Design of Digital Subcultural Heritage. Heuristics
+                  from Curating Creativity, Aesthetics and Culture of the
+                  Demoscene.</em
+                >
+              </p>
+              <p>
+                The demoscene is one of many manifestations of hacker culture.
+                In this context, it is tempting to explore seminal works on
+                hackers; for example, the exciting accounts of the ingenious,
+                the illuminating, and the strange, such as Bruce Sterling's
+                hilarious
+                <em
+                  >The Hacker Crackdown: Law and Disorder on the Electronic
+                  Frontier</em
+                >
+                and Stephen Levy's historic examination
+                <em>Hackers: Heroes of the Computer Revolution.</em> A similar
+                chord is struck in
+                <em
+                  >Underground: Tales of Hacking, Madness and Obsession on the
+                  Electronic Frontier</em
+                >
+                by Suelette Dreyfus and a pre-Wikileaks Julian Assange,
+                published in multiple editions, the last of which was released
+                in 2011.
+              </p>
+              <p>
+                We could go back even further to the very origins of computing
+                as we know it with <em>Alan Turing: The Enigma</em> by Andrew
+                Hodges and Douglas Hofstadter, published in 2014. We could
+                explore the dark side of the early days of information
+                processing as described in
+                <em
+                  >IBM and the Holocaust: The Strategic Alliance Between Nazi
+                  Germany and America's Most Powerful Corporation</em
+                >
+                by Edwin Black, first published in 2001 and rereleased in an
+                expanded edition in 2012. Black recounts the sad and enraging
+                tale of how pre-computing tabulation machines were used by the
+                criminal Nazi regime in World War II Germany to analyze,
+                catalog, and ultimately decimate whole populations on an
+                industrial level. But while these historic stories are
+                engrossing as well as disturbing, a deeper examination would go
+                far beyond the scope of a master's thesis devoted to a specific
+                demoscene.
+              </p>
+              <p>
+                Demo-makers were part of the open-source movement and culture as
+                it emerged in the early 1990s. The ground-breaking works on open
+                and free software by Richard Stallman would apply here, and Eric
+                S. Raymond's
+                <em>The Cathedral and the Bazaar.</em> The downright delightful
+                <em>Hackers & Painters: Big Ideas from the Computer Age</em> by
+                Paul Graham cannot be recommended enough; it discusses not only
+                open source, but also the tension between creativity and coding.
+                A tension that particularly underlies software-based new media
+                art.
+              </p>
+            </section>
+            <section id="circuits-ablaze-introduction-section-5">
+              <h3 class="mt-5">Demos as New Media Art</h3>
+              <p>
+                Demo-makers are digital artists creating algorithmic art using
+                the same tools and the same general-purpose computers used in
+                business, gaming, and research. Like their predecessors in the
+                past, demo-makers today still explore the capabilities of
+                computer hardware to learn how to leverage it to produce art.
+                They are a subculture of new media artists aligned with the
+                description in
+                <em>Digital Art through the Looking Glass</em> by Oliver Grau
+                (et al.):
+              </p>
+              <blockquote class="alert alert-secondary">
+                "With digitisation influencing our everyday lives through
+                telecommunication, social media and mobile applications, digital
+                technologies document, organise and shape contemporary
+                societies. By creating with the same technologies, artists
+                investigate our digitised cultures and circumvent the
+                black-boxing thereof. They investigate and mediate the
+                technological influence on socio-cultural development and
+                transformation. Through transdisciplinary methods at the
+                intersection of art, science and technology, digital art
+                combines artistic creation with innovative research and
+                technological development and thereby bridges art history to
+                digital methods and contemporary socio-cultural phenomena."<sup
+                  ><a
+                    id="circuits-ablaze-introduction-origin-00-12"
+                    href="#circuits-ablaze-introduction-footnote-00-12"
+                    >[12]</a
+                  ></sup
+                >
+              </blockquote>
+              <p>
+                Other areas at the time, particularly coding, were not regarded
+                as acts of artistic creativity. In the decades since, the
+                consensus that inventive coding, in fact, constitutes artistic
+                creativity has grown towards acceptance, as argued by Paul
+                Graham in
+                <em>Hackers & Painters: Big Ideas from the Computer Age:</em>
+              </p>
+              <blockquote class="alert alert-secondary">
+                "...at the other extreme you have the hackers, who are trying to
+                write interesting software, and for whom computers are just a
+                medium of expression, as concrete is for architects or paint is
+                for painters."<sup
+                  ><a
+                    id="circuits-ablaze-introduction-origin-00-13"
+                    href="#circuits-ablaze-introduction-footnote-00-13"
+                    >[13]</a
+                  ></sup
+                >
+              </blockquote>
+              <p>
+                Standing on the shoulder of these giants, this thesis explores a
+                specific history, the Atari ST demoscene, and the most important
+                demo-group of the system's early years, The Exceptions. By
+                exploring this clearly demarcated area of research, this thesis
+                attempts to do what other works of research have only seldom
+                achieved: an in-depth and detailed examination of specific
+                manifestations and works of the early days of a small part of
+                the demoscene to offer a conclusion of general validity by
+                revealing how limitations affect and propel artists.
+              </p>
+            </section>
+
+            <hr />
+            <section id="circuits-ablaze-introduction-footnotes">
+              <h3 class="mt-5">Footnotes</h3>
+
+              <p id="circuits-ablaze-introduction-footnote-00-01">
+                As tempting as it might be to pronounce ST as "Saint," it is
+                actually simply pronounced as "Es Tea."<br /><a
+                  href="#circuits-ablaze-introduction-origin-00-01"
+                  class="btn btn-outline-secondary btn-sm"
+                >
+                  &raquo; Back [1]</a
+                >
+              </p>
+
+              <p id="circuits-ablaze-introduction-footnote-00-02">
+                Wiltshire, Alex (Ed.). 2015.
+                <em>Britsoft: An Oral History.</em> Read Only Memory.<br /><a
+                  href="#circuits-ablaze-introduction-origin-00-02"
+                  class="btn btn-outline-secondary btn-sm"
+                >
+                  &raquo; Back [2]</a
+                >
+              </p>
+
+              <p id="circuits-ablaze-introduction-footnote-00-03">
+                Weinstein, Paul. June 2, 2016.
+                <em>8 Influential Chiptune Artists Who Pioneered the Genre.</em>
+                Soundfly,
+                <a
+                  href="https://flypaper.soundfly.com/discovery/8-influential-chiptune-artists-pioneered-genre/"
+                  target="_blank"
+                  >https://flypaper.soundfly.com/discovery/8-influential-chiptune-artists-pioneered-genre/</a
+                >
+                (Retrieved on August 12, 2020) <br /><a
+                  href="#circuits-ablaze-introduction-origin-00-03"
+                  class="btn btn-outline-secondary btn-sm"
+                >
+                  &raquo; Back [3]</a
+                >
+              </p>
+
+              <p id="circuits-ablaze-introduction-footnote-00-04">
+                Music trackers are sound and music applications that allow
+                musicians to address each track individually and play music
+                modules and sound samples on them. Trackers were popularized in
+                16-bit video game and the early demoscene. See
+                <a
+                  href="https://www.musictech.net/guides/essential-guide/history-of-trackers/"
+                  >https://www.musictech.net/guides/essential-guide/history-of-trackers/</a
+                >
+                <br /><a
+                  href="#circuits-ablaze-introduction-origin-00-04"
+                  class="btn btn-outline-secondary btn-sm"
+                >
+                  &raquo; Back [4]</a
+                >
+              </p>
+
+              <p id="circuits-ablaze-introduction-footnote-00-05">
+                Reunanen, Markuu; Silvast, Antti. 2009.
+                <em
+                  >Demoscene Platforms: A Case Study on the Adoption of Home
+                  Computers.</em
+                >
+                University of Art and Design Helsinki. <br /><a
+                  href="#circuits-ablaze-introduction-origin-00-05"
+                  class="btn btn-outline-secondary btn-sm"
+                >
+                  &raquo; Back [5]</a
+                >
+              </p>
+
+              <p id="circuits-ablaze-introduction-footnote-00-06">
+                "The publisher's revenge" Page 167. Breddin Marco A. (Foreword
+                by Prof. Dr. Gundolf S. Freyermuth). 2017.
+                <em
+                  >Breakin' the Borders. A true story of digital liberation and
+                  Power Without the Price.</em
+                >
+                Hannover. MicroZeit Verlag.<br /><a
+                  href="#circuits-ablaze-introduction-origin-00-06"
+                  class="btn btn-outline-secondary btn-sm"
+                >
+                  &raquo; Back [6]</a
+                >
+              </p>
+
+              <p id="circuits-ablaze-introduction-footnote-00-07">
+                "TEX, The CareBears, ULM and the Lost Boys were like superstars
+                to us." Page 358. Breddin, Marco A.
+                <em>Breakin' the Borders.</em> <br /><a
+                  href="#circuits-ablaze-introduction-origin-00-07"
+                  class="btn btn-outline-secondary btn-sm"
+                >
+                  &raquo; Back [7]</a
+                >
+              </p>
+
+              <p id="circuits-ablaze-introduction-footnote-00-08">
+                "It was the first big Atari ST party." Page 364.
+                <em>Breakin' the Borders.</em><br /><a
+                  href="#circuits-ablaze-introduction-origin-00-08"
+                  class="btn btn-outline-secondary btn-sm"
+                >
+                  &raquo; Back [8]</a
+                >
+              </p>
+
+              <p id="circuits-ablaze-introduction-footnote-00-09">
+                The writer of this thesis has supported Marco Breddin's
+                crowd-funding campaigns and is listed as one of the supporters
+                in the third volume (and - of course, misspelling it.<br /><a
+                  href="#circuits-ablaze-introduction-origin-00-09"
+                  class="btn btn-outline-secondary btn-sm"
+                >
+                  &raquo; Back [9]</a
+                >
+              </p>
+
+              <p id="circuits-ablaze-introduction-footnote-00-10">
+                Hastik, Canan. 2014. <em>Demo Age: New Views.</em> University of
+                Applied Sciences Darmstadt. 19 pages.
+                <a
+                  href="http://widerscreen.fi/assets/hastik-wider-1-2-2014.pdf"
+                  target="_blank"
+                  >http://widerscreen.fi/assets/hastik-wider-1-2-2014.pdf</a
+                >
+                (Retrieved on June 15, 2020)<br /><a
+                  href="#circuits-ablaze-introduction-origin-00-10"
+                  class="btn btn-outline-secondary btn-sm"
+                >
+                  &raquo; Back [10]</a
+                >
+              </p>
+
+              <p id="circuits-ablaze-introduction-footnote-00-11">
+                Manovich, Lev. 2009.
+                <em>How To Follow Global Digital Cultures.</em>
+                <a
+                  href="http://manovich.net/content/04-projects/062-how-to-follow-global-digital-cultures/59_article_2009.pdf"
+                  target="_blank"
+                  >http://manovich.net/content/04-projects/062-how-to-follow-global-digital-cultures/59_article_2009.pdf</a
+                >
+                <br /><a
+                  href="#circuits-ablaze-introduction-origin-00-11"
+                  class="btn btn-outline-secondary btn-sm"
+                >
+                  &raquo; Back [11]</a
+                >
+              </p>
+
+              <p id="circuits-ablaze-introduction-footnote-00-12">
+                Grau, Oliver; Hoth, Janina; Wandl-Vogt (Eds.). 2019.
+                <em
+                  >Digital Art through the Looking Glass. New strategies for
+                  archiving, collecting and preserving in digital
+                  humanities.</em
+                >
+                Edition Donau-Universität Krems; ÖAW Austrian Academy of
+                Sciences.<br /><a
+                  href="#circuits-ablaze-introduction-origin-00-12"
+                  class="btn btn-outline-secondary btn-sm"
+                >
+                  &raquo; Back [12]</a
+                >
+              </p>
+
+              <p id="circuits-ablaze-introduction-footnote-00-13">
+                Graham, Paul. 2004.
+                <em>Hackers & Painters: Big Ideas from the Computer Age.</em>
+                O'Reilly.<br /><a
+                  href="#circuits-ablaze-introduction-origin-00-013"
+                  class="btn btn-outline-secondary btn-sm"
+                >
+                  &raquo; Back [13]</a
+                >
+              </p>
+            </section>
+          </article>
+        </main>
+
+        <aside class="col-md-4">
+          <div
+            class="alert alert-warning position-fixed mx-2"
+            style="overflow-y: scroll; height: 80vh"
+          >
+            <img
+              src="img/circuits-ablaze.jpg"
+              alt="Circuits Ablaze"
+              class="img-fluid rounded"
+            />
+            <p class="mt-2 text-center">
+              <a href="index.html#toc" class="btn btn-outline-primary btn-sm"
+                >&uarr; Table of Contents</a
+              >
+            </p>
+            <hr />
+            <p>
+              <a href="#circuits-ablaze-introduction"
+                >Introduction: Beholding the Digital Ephemeral</a
+              >
+            </p>
+            <ul>
+              <li>
+                <a href="#circuits-ablaze-introduction-section-1"
+                  >Introduction</a
+                >
+              </li>
+              <li>
+                <a href="#circuits-ablaze-introduction-section-2"
+                  >Topic, Objective and Methodology of This Master Thesis</a
+                >
+              </li>
+              <li>
+                <a href="#circuits-ablaze-introduction-section-3"
+                  >The Historic Developments and Achievements in the Years 1987
+                  - 1989</a
+                >
+              </li>
+              <li>
+                <a href="#circuits-ablaze-introduction-section-4"
+                  >Standing on the Shoulders of Giants: Prior Academic
+                  Research</a
+                >
+              </li>
+              <li>
+                <a href="#circuits-ablaze-introduction-footnotes">Footnotes</a>
+              </li>
+            </ul>
+            <hr />
+            <div class="row">
+              <div class="col-md-6">
+                <p>
+                  <a href="foreword.html" class="btn btn-outline-primary btn-sm"
+                    >&laquo; Back to Foreword</a
+                  >
+                </p>
+              </div>
+              <div class="col-md-6">
+                <p class="text-end">
+                  <a
+                    href="chapter-01.html"
+                    class="btn btn-outline-primary btn-sm"
+                    >Next Chapter &raquo;</a
+                  >
+                </p>
+              </div>
             </div>
           </div>
-        </div>
-      </aside>
+        </aside>
+      </div>
     </div>
-  </div>
-</body>
-
+  </body>
 </html>

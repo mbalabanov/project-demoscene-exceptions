@@ -1,1063 +1,1215 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Appendix II: Concepts for a Demo Archive | Circuits Ablaze</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <style>
+      .video-container {
+        overflow: hidden;
+        position: relative;
+        width: 100%;
+      }
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Appendix II: Concepts for a Demo Archive | Circuits Ablaze</title>
-  <link rel="stylesheet" href="css/bootstrap.min.css" />
-  <style>
-    .video-container {
-      overflow: hidden;
-      position: relative;
-      width: 100%;
-    }
+      .video-container::after {
+        padding-top: 56.25%;
+        display: block;
+        content: "";
+      }
 
-    .video-container::after {
-      padding-top: 56.25%;
-      display: block;
-      content: "";
-    }
+      .video-container iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      }
+    </style>
+  </head>
 
-    .video-container iframe {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-    }
-  </style>
-</head>
+  <body>
+    <nav
+      class="d-flex flex-wrap justify-content-center p-3 bg-primary bg-gradient text-light"
+    >
+      <a
+        href="https://marincomics.com"
+        class="d-flex align-items-center mb-md-1 me-md-auto text-dark text-decoration-none"
+      >
+        <img
+          src="https://marincomics.com/img/marincomics-logo.png"
+          alt="Marin Comics"
+          height="50px"
+        />
+      </a>
 
-<body>
-  <nav class="d-flex flex-wrap justify-content-center p-3 bg-primary bg-gradient text-light">
-    <a href="https://marincomics.com"
-      class="d-flex align-items-center mb-md-1 me-md-auto text-dark text-decoration-none">
-      <img src="https://marincomics.com/img/marincomics-logo.png" alt="Marin Comics" height="50px" />
-    </a>
-    <ul class="nav nav-pills me-4">
-      <li class="nav-item">
-        <a href="https://marincomics.com/index.html#comics" class="nav-link link-light">Comics</a>
-      </li>
-      <li class="nav-item">
-        <a href="https://marincomics.com/index.html#dev-projects" class="nav-link link-light">Dev-Projects</a>
-      </li>
-      <li class="nav-item">
-        <a href="https://marincomics.com/index.html#writing" class="nav-link link-light">Writing</a>
-      </li>
-      <li class="nav-item">
-        <a href="https://marincomics.com/index.html#videos" class="nav-link link-light">Videos</a>
-      </li>
-      <li class="nav-item">
-        <a href="https://marincomics.com/about.html" class="nav-link link-light">About</a>
-      </li>
-    </ul>
-  </nav>
-  <div class="container mt-2">
-    <div class="row">
-      <main class="col-md-8">
-        <h1>Circuits Ablaze</h1>
-        <h2>
-          How Technical Limitations Pushed the Early Demoscene to Produce
-          Digital Art
-        </h2>
-        <h3>Master's Thesis by Marin Balabanov</h3>
-        <hr />
-        <article id="circuits-ablaze-appendix-1">
-          <h2>Appendix II: Concepts for a Demo Archive</h2>
-          <section id="circuits-ablaze-appendix-2-section-1">
-            <p>
-              This second appendix covers the archiving and documentation of
-              software-based new media art, like demos. The proposed solutions
-              focus on demos but are equally applicable to other online
-              archives of other types of digital media art.
-            </p>
-          </section>
+      <ul class="nav nav-pills me-4">
+        <li class="nav-item">
+          <a
+            href="https://marincomics.com/index.html#dev-projects"
+            class="nav-link link-light"
+            >Dev-Projects</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            href="https://marincomics.com/index.html#comics"
+            class="nav-link link-light"
+            >Comics</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            href="https://marincomics.com/index.html#writing"
+            class="nav-link link-light"
+            >Writing</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            href="https://marincomics.com/index.html#videos"
+            class="nav-link link-light"
+            >Videos</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            href="https://marincomics.com/about.html"
+            class="nav-link link-light"
+            >About</a
+          >
+        </li>
+      </ul>
+    </nav>
+    <div class="container mt-2">
+      <div class="row">
+        <main class="col-md-8">
+          <h1>Circuits Ablaze</h1>
+          <h2>
+            How Technical Limitations Pushed the Early Demoscene to Produce
+            Digital Art
+          </h2>
+          <h3>Master's Thesis by Marin Balabanov</h3>
+          <hr />
+          <article id="circuits-ablaze-appendix-1">
+            <h2>Appendix II: Concepts for a Demo Archive</h2>
+            <section id="circuits-ablaze-appendix-2-section-1">
+              <p>
+                This second appendix covers the archiving and documentation of
+                software-based new media art, like demos. The proposed solutions
+                focus on demos but are equally applicable to other online
+                archives of other types of digital media art.
+              </p>
+            </section>
 
-          <section id="circuits-ablaze-appendix-2-section-2">
-            <h3 class="mt-5">
-              A2.1 The Necessity of Conserving New Media Art in General
-            </h3>
-            <p>
-              When we think of physical art conservation, we imagine
-              conservators meticulously touching up and refurbishing the
-              brushstrokes of a painting or painstakingly cleaning out decades
-              and centuries of pollution from a sculpture's pores and cracks.
-              We know why this arduous and time-consuming work is necessary.
-              We understand that physical artworks are more than just relics
-              of the past; they are our cultural heritage that shows us the
-              origins of civilization's currents and flows, what cultures
-              believed in, where they might have made mistakes, and which
-              ideas sprung forth from them. We understand that physical art
-              needs to be examined, preserved, researched, and documented so
-              that we not only see it through the eyes of the present but can
-              grasp what it represents in its original context.
-            </p>
-            <p>
-              As difficult as it is to conserve physical artifacts, they have
-              been brought into existence, and even though they succumb to
-              decay and corrosion, they are observable and can be beheld
-              without any further doing by following generations. This is not
-              true of most new media art, particularly of software-based art
-              such as demos.
-            </p>
-            <p>
-              Software-based art needs to be made to run so that it can be
-              beheld. It was created on the technology of the past. Some
-              software can only run on obsolete technology and needs to be
-              adapted to more current technology. The technology used for
-              other software is undocumented and forgotten, making it very
-              difficult or even impossible to run the art anymore.
-            </p>
-            <p>
-              As software-based art, demos are potential victims of the same
-              risks of being lost. They were programmed to run as close to the
-              actual hardware as possible, often written in assembly language
-              that is specific to a processor architecture. They mostly take
-              advantage of a computer's undocumented capabilities and
-              features. In some cases, these features were specific to a
-              specific model of machine. Without documentation, demos can be
-              lost in the sands of time. It is not enough to simply salvage a
-              demo's files and then launch them whenever needed. Information
-              about the exact system configuration is necessary to make them
-              run at all and as authentically as possible.
-            </p>
+            <section id="circuits-ablaze-appendix-2-section-2">
+              <h3 class="mt-5">
+                A2.1 The Necessity of Conserving New Media Art in General
+              </h3>
+              <p>
+                When we think of physical art conservation, we imagine
+                conservators meticulously touching up and refurbishing the
+                brushstrokes of a painting or painstakingly cleaning out decades
+                and centuries of pollution from a sculpture's pores and cracks.
+                We know why this arduous and time-consuming work is necessary.
+                We understand that physical artworks are more than just relics
+                of the past; they are our cultural heritage that shows us the
+                origins of civilization's currents and flows, what cultures
+                believed in, where they might have made mistakes, and which
+                ideas sprung forth from them. We understand that physical art
+                needs to be examined, preserved, researched, and documented so
+                that we not only see it through the eyes of the present but can
+                grasp what it represents in its original context.
+              </p>
+              <p>
+                As difficult as it is to conserve physical artifacts, they have
+                been brought into existence, and even though they succumb to
+                decay and corrosion, they are observable and can be beheld
+                without any further doing by following generations. This is not
+                true of most new media art, particularly of software-based art
+                such as demos.
+              </p>
+              <p>
+                Software-based art needs to be made to run so that it can be
+                beheld. It was created on the technology of the past. Some
+                software can only run on obsolete technology and needs to be
+                adapted to more current technology. The technology used for
+                other software is undocumented and forgotten, making it very
+                difficult or even impossible to run the art anymore.
+              </p>
+              <p>
+                As software-based art, demos are potential victims of the same
+                risks of being lost. They were programmed to run as close to the
+                actual hardware as possible, often written in assembly language
+                that is specific to a processor architecture. They mostly take
+                advantage of a computer's undocumented capabilities and
+                features. In some cases, these features were specific to a
+                specific model of machine. Without documentation, demos can be
+                lost in the sands of time. It is not enough to simply salvage a
+                demo's files and then launch them whenever needed. Information
+                about the exact system configuration is necessary to make them
+                run at all and as authentically as possible.
+              </p>
 
-            <p class="text-center" id="circuits-ablaze-figure-97">
-              <img src="img/picture104.jpg" alt="Figure 97" class="img-fluid" />
-            </p>
-            <p class="text-secondary text-center">
-              Figure 97: <em>Media Arts Histories</em> and
-              <em>Museum and Archive on the Move</em> by Univ.-Prof. Dr.
-              Oliver Grau
-            </p>
-          </section>
-          <section id="circuits-ablaze-appendix-2-section-3">
-            <h3 class="mt-5">
-              A2.2 The Quest for the Preservation of Digital Art
-            </h3>
-            <p>
-              The Department for Image Science at Danube University Krems has
-              researched the challenges facing digital art preservation and
-              has fought for best practices in its conservation. For more than
-              two decades, the Archive of Digital Art (ADA) has pioneered the
-              collection and documentation of digital artwork at
-              <a href="http://digitalartarchive.at" target="_blank">http://digitalartarchive.at</a>
-            </p>
-            <p>
-              ADA is managed and operated at the Danube University Krems under
-              the leadership of Univ.-Prof. Dr. Oliver Grau, based on the
-              fundamentals first established in his publication "Virtual Art:
-              From Illusion to Immersion" nearly twenty years ago and further
-              cemented in
-              <em>Museum and Archive on the Move: Changing Cultural
-                Institutions in the Digital Era.</em>
-            </p>
-            <p>
-              In its mission statement, the Archive of Digital Art describes
-              its work below:
-            </p>
-            <blockquote class="alert alert-secondary">
-              "As a pioneer in the field of Media Arts research, the "Archive
-              of Digital Art" (ADA) has documented the rapidly evolving field
-              of digital art since 1999. This research-oriented overview of
-              works at the intersection of art, science, and technology has
-              been developed in cooperation with international media artists,
-              researchers and institutions as a collective project."<sup><a id="circuits-ablaze-appendix-2-origin-a2-99"
-                  href="#circuits-ablaze-appendix-2-footnote-a2-99">[99]</a></sup>
-            </blockquote>
+              <p class="text-center" id="circuits-ablaze-figure-97">
+                <img
+                  src="img/picture104.jpg"
+                  alt="Figure 97"
+                  class="img-fluid"
+                />
+              </p>
+              <p class="text-secondary text-center">
+                Figure 97: <em>Media Arts Histories</em> and
+                <em>Museum and Archive on the Move</em> by Univ.-Prof. Dr.
+                Oliver Grau
+              </p>
+            </section>
+            <section id="circuits-ablaze-appendix-2-section-3">
+              <h3 class="mt-5">
+                A2.2 The Quest for the Preservation of Digital Art
+              </h3>
+              <p>
+                The Department for Image Science at Danube University Krems has
+                researched the challenges facing digital art preservation and
+                has fought for best practices in its conservation. For more than
+                two decades, the Archive of Digital Art (ADA) has pioneered the
+                collection and documentation of digital artwork at
+                <a href="http://digitalartarchive.at" target="_blank"
+                  >http://digitalartarchive.at</a
+                >
+              </p>
+              <p>
+                ADA is managed and operated at the Danube University Krems under
+                the leadership of Univ.-Prof. Dr. Oliver Grau, based on the
+                fundamentals first established in his publication "Virtual Art:
+                From Illusion to Immersion" nearly twenty years ago and further
+                cemented in
+                <em
+                  >Museum and Archive on the Move: Changing Cultural
+                  Institutions in the Digital Era.</em
+                >
+              </p>
+              <p>
+                In its mission statement, the Archive of Digital Art describes
+                its work below:
+              </p>
+              <blockquote class="alert alert-secondary">
+                "As a pioneer in the field of Media Arts research, the "Archive
+                of Digital Art" (ADA) has documented the rapidly evolving field
+                of digital art since 1999. This research-oriented overview of
+                works at the intersection of art, science, and technology has
+                been developed in cooperation with international media artists,
+                researchers and institutions as a collective project."<sup
+                  ><a
+                    id="circuits-ablaze-appendix-2-origin-a2-99"
+                    href="#circuits-ablaze-appendix-2-footnote-a2-99"
+                    >[99]</a
+                  ></sup
+                >
+              </blockquote>
 
-            <p class="text-center" id="circuits-ablaze-figure-98">
-              <img src="img/picture105.png" alt="Figure 98" class="img-fluid" />
-            </p>
-            <p class="text-secondary text-center">
-              Figure 98: ADA, the Archive of Digital Art at
-              https://www.digitalartarchive.at
-            </p>
+              <p class="text-center" id="circuits-ablaze-figure-98">
+                <img
+                  src="img/picture105.png"
+                  alt="Figure 98"
+                  class="img-fluid"
+                />
+              </p>
+              <p class="text-secondary text-center">
+                Figure 98: ADA, the Archive of Digital Art at
+                https://www.digitalartarchive.at
+              </p>
 
-            <p>
-              Furthermore, the mission statement delimits the objectives of
-              the conservation of the digital as opposed to the physical:
-            </p>
-            <blockquote class="alert alert-secondary">
-              "Since today's digital artworks are processual, ephemeral,
-              interactive, multimedia-based, and fundamentally context
-              dependent because of their different structure, they require a
-              modified, or 'expanded concept of documentation.' We ascribe
-              high importance to artistic inventions like innovative
-              interfaces, displays or software."
-            </blockquote>
-            <p>
-              The Archive of Digital Art (ADA) will serve, together with its
-              sister project the Interactive Archive and Meta-Thesaurus for
-              Media Art Research (AT.MAR), as a flagship endeavor, a
-              pioneering beacon to aspire to in the conception of an archive
-              of demo art.
-            </p>
-          </section>
-          <section id="circuits-ablaze-appendix-2-section-4">
-            <h3>A2.3 Objectives of a Demo Archive</h3>
-            <p>
-              Based on the exemplary work of Dr. Grau and his team at ADA,
-              this section explores the options in archiving art, specifically
-              from the demoscene.
-            </p>
-            <p>
-              Oliver Grau describes the archive's changing purpose in
-              <em>Museum and Archive on the Move: Changing Cultural
-                Institutions in the Digital Era:</em>
-            </p>
-            <blockquote class="alert alert-secondary">
-              "The archive, historically the physical place where historical
-              records are accumulated, preserved and often interpreted, faces
-              a drastic transformation as well." And furthermore, "The future
-              archive will connect the object or document with other archives,
-              artefacts, information, people, and events. The archive will
-              progressively absorb duties and features from other institutions
-              and cultural entities, such as databases, installations, games,
-              networks, knowledge tools, etc."
-            </blockquote>
-            <p>
-              In <em>MediaArtHistories,</em> Grau describes the objective of
-              any digital art archive:
-            </p>
-            <blockquote class="alert alert-secondary">
-              "Over the last thirty years media art has evolved into a vital
-              factor of the contemporary artistic scene. Digital art has
-              become the art of our times, yet it has not 'arrived' in the
-              cultural institutions of our societies. It is still rarely
-              collected, it is not included or supported under the auspices of
-              art history or other academic disciplines, and it is almost
-              inaccessible for the non-north-Western public and their
-              scholars. To change this is our goal!"
-            </blockquote>
-            <p>
-              Therefore, the main purpose of the concrete archival efforts in
-              the demoscene can be distilled down to the following objectives:
-            </p>
+              <p>
+                Furthermore, the mission statement delimits the objectives of
+                the conservation of the digital as opposed to the physical:
+              </p>
+              <blockquote class="alert alert-secondary">
+                "Since today's digital artworks are processual, ephemeral,
+                interactive, multimedia-based, and fundamentally context
+                dependent because of their different structure, they require a
+                modified, or 'expanded concept of documentation.' We ascribe
+                high importance to artistic inventions like innovative
+                interfaces, displays or software."
+              </blockquote>
+              <p>
+                The Archive of Digital Art (ADA) will serve, together with its
+                sister project the Interactive Archive and Meta-Thesaurus for
+                Media Art Research (AT.MAR), as a flagship endeavor, a
+                pioneering beacon to aspire to in the conception of an archive
+                of demo art.
+              </p>
+            </section>
+            <section id="circuits-ablaze-appendix-2-section-4">
+              <h3>A2.3 Objectives of a Demo Archive</h3>
+              <p>
+                Based on the exemplary work of Dr. Grau and his team at ADA,
+                this section explores the options in archiving art, specifically
+                from the demoscene.
+              </p>
+              <p>
+                Oliver Grau describes the archive's changing purpose in
+                <em
+                  >Museum and Archive on the Move: Changing Cultural
+                  Institutions in the Digital Era:</em
+                >
+              </p>
+              <blockquote class="alert alert-secondary">
+                "The archive, historically the physical place where historical
+                records are accumulated, preserved and often interpreted, faces
+                a drastic transformation as well." And furthermore, "The future
+                archive will connect the object or document with other archives,
+                artefacts, information, people, and events. The archive will
+                progressively absorb duties and features from other institutions
+                and cultural entities, such as databases, installations, games,
+                networks, knowledge tools, etc."
+              </blockquote>
+              <p>
+                In <em>MediaArtHistories,</em> Grau describes the objective of
+                any digital art archive:
+              </p>
+              <blockquote class="alert alert-secondary">
+                "Over the last thirty years media art has evolved into a vital
+                factor of the contemporary artistic scene. Digital art has
+                become the art of our times, yet it has not 'arrived' in the
+                cultural institutions of our societies. It is still rarely
+                collected, it is not included or supported under the auspices of
+                art history or other academic disciplines, and it is almost
+                inaccessible for the non-north-Western public and their
+                scholars. To change this is our goal!"
+              </blockquote>
+              <p>
+                Therefore, the main purpose of the concrete archival efforts in
+                the demoscene can be distilled down to the following objectives:
+              </p>
 
-            <h4>A2.3.1. Description of the Demo Artifact</h4>
-            <p>
-              The scholarly description should provide details of the demo
-              artifact itself. This includes descriptions of the depicted
-              imagery, music and text content, the system it was designed for,
-              and the historical context of its release (e.g., at a demo
-              party, in a public domain library, in a BBS, or as part of a
-              diskzine, etc.). Ideally, the context and process of its
-              creation should be provided.
-            </p>
-            <p>
-              Furthermore, the description should include which limitations
-              the demo exceeded in the hardware it was created on or that were
-              imposed at the outset of its creation (e.g., arbitrary RAM
-              limits, time limits during a demo party, etc.). Where available,
-              the description should include information on the technologies
-              used, including the hardware, graphics software, music
-              composition applications, programming language, etc.
-            </p>
-            <p>
-              Just as applicable to the scholarly analysis of demo art, Oliver
-              Grau argues for an overarching strategy in the art-historic
-              critique and analysis of <em>all</em> media art:
-            </p>
-            <blockquote class="alert alert-secondary">
-              "Visual born digital objects often remain on the margin of
-              research even though they mark a vast amount of online data.
-              Additionally, they are still not incorporated into the art
-              historical canon or exist only as a niche phenomenon rather than
-              a main contemporary art movement."<sup><a id="circuits-ablaze-appendix-2-origin-a2-100"
-                  href="#circuits-ablaze-appendix-2-footnote-a2-100">[100]</a></sup>
-            </blockquote>
+              <h4>A2.3.1. Description of the Demo Artifact</h4>
+              <p>
+                The scholarly description should provide details of the demo
+                artifact itself. This includes descriptions of the depicted
+                imagery, music and text content, the system it was designed for,
+                and the historical context of its release (e.g., at a demo
+                party, in a public domain library, in a BBS, or as part of a
+                diskzine, etc.). Ideally, the context and process of its
+                creation should be provided.
+              </p>
+              <p>
+                Furthermore, the description should include which limitations
+                the demo exceeded in the hardware it was created on or that were
+                imposed at the outset of its creation (e.g., arbitrary RAM
+                limits, time limits during a demo party, etc.). Where available,
+                the description should include information on the technologies
+                used, including the hardware, graphics software, music
+                composition applications, programming language, etc.
+              </p>
+              <p>
+                Just as applicable to the scholarly analysis of demo art, Oliver
+                Grau argues for an overarching strategy in the art-historic
+                critique and analysis of <em>all</em> media art:
+              </p>
+              <blockquote class="alert alert-secondary">
+                "Visual born digital objects often remain on the margin of
+                research even though they mark a vast amount of online data.
+                Additionally, they are still not incorporated into the art
+                historical canon or exist only as a niche phenomenon rather than
+                a main contemporary art movement."<sup
+                  ><a
+                    id="circuits-ablaze-appendix-2-origin-a2-100"
+                    href="#circuits-ablaze-appendix-2-footnote-a2-100"
+                    >[100]</a
+                  ></sup
+                >
+              </blockquote>
 
-            <h4>
-              A2.3.2. Interlinking of Artifacts with Their related Artists,
-              Events, and Assets
-            </h4>
-            <p>
-              The demo archive cannot be the be-all, end-all of an artifact's
-              information. It must show the relationships between the
-              described pieces and their creators and events, such as
-              exhibitions or demo parties. This information does not have to
-              be in the actual demo archive but can reference other archives
-              or sources outside of the demo archive. In most cases, the
-              demo's actual assets, such as the source code, will be in a code
-              repository like GitHub or Gitlab. Assets, artists, and events
-              should be linked to the artifacts and put into the right context
-              to understand their relationships.
-            </p>
+              <h4>
+                A2.3.2. Interlinking of Artifacts with Their related Artists,
+                Events, and Assets
+              </h4>
+              <p>
+                The demo archive cannot be the be-all, end-all of an artifact's
+                information. It must show the relationships between the
+                described pieces and their creators and events, such as
+                exhibitions or demo parties. This information does not have to
+                be in the actual demo archive but can reference other archives
+                or sources outside of the demo archive. In most cases, the
+                demo's actual assets, such as the source code, will be in a code
+                repository like GitHub or Gitlab. Assets, artists, and events
+                should be linked to the artifacts and put into the right context
+                to understand their relationships.
+              </p>
 
-            <h4>A2.3.3. Digital Assets of the Demo</h4>
-            <p>
-              Since demos are software-based new media art, they can be
-              reduced to two sets of assets:
-            </p>
-            <ul>
-              <li>
-                The source code, graphical assets (sprites and image tiles),
-                and music files (chip music compositions, music modules, and
-                sound samples).
-              </li>
-              <li>
-                The executable file that run on the original hardware. These
-                are the compiled/assembled programs.
-              </li>
-            </ul>
-            <p>
-              Ideally, the digital assets would provide direct links to a code
-              repository of the source code, such as on GitHub or GitLab, as
-              well as links to the packaged executables, either on disk images
-              or as program files.
-            </p>
-            <p>
-              The assets can also include descriptive files, like screenshots
-              of the demo running on original hardware and full video
-              recordings of the demo, such as on YouTube).
-            </p>
+              <h4>A2.3.3. Digital Assets of the Demo</h4>
+              <p>
+                Since demos are software-based new media art, they can be
+                reduced to two sets of assets:
+              </p>
+              <ul>
+                <li>
+                  The source code, graphical assets (sprites and image tiles),
+                  and music files (chip music compositions, music modules, and
+                  sound samples).
+                </li>
+                <li>
+                  The executable file that run on the original hardware. These
+                  are the compiled/assembled programs.
+                </li>
+              </ul>
+              <p>
+                Ideally, the digital assets would provide direct links to a code
+                repository of the source code, such as on GitHub or GitLab, as
+                well as links to the packaged executables, either on disk images
+                or as program files.
+              </p>
+              <p>
+                The assets can also include descriptive files, like screenshots
+                of the demo running on original hardware and full video
+                recordings of the demo, such as on YouTube).
+              </p>
 
-            <h4>
-              A2.3.4 Documentation and Instructions for Conservation Purposes
-            </h4>
-            <p>
-              Finally, a good demo archive should include documentation on the
-              preservation and conservation of the demo art. This can include
-              instructions on:
-            </p>
-            <ul>
-              <li>
-                How to run the demo on historic hardware and which
-                configurations it will run on.
-              </li>
-              <li>
-                How to run the demo on historic hardware that has been updated
-                with contemporary hardware, e.g., with a USB replacement for
-                the disk drive and with a scan doubler for output on LCDs.
-              </li>
-              <li>
-                How to run the demo using an emulator on a modern PC
-                (including the exact configuration and ROMs) or on an FPGA
-                implementation of the retro hardware.
-              </li>
-              <li>
-                If possible, instructions on how to recreate the demos using
-                contemporary technologies, like HTML5, JavaScript, and CSS.
-              </li>
-            </ul>
-            <p>
-              Furthermore, the documentation can include the ideal way of
-              running and experiencing the demo, e.g., on a CRT display as
-              opposed to a more modern LCD. If there are no assets preserved,
-              then instructions on how to preserve the demo files (i.e., pull
-              them from the physical media like floppy disks and store them in
-              an archival format) can be provided.
-            </p>
-          </section>
-          <section id="circuits-ablaze-appendix-2-section-5">
-            <h3 class="mt-5">
-              A2.4 Achieving Critical Mass Through a Collaborative Effort
-            </h3>
-            <p>
-              There have been thousands, perhaps even tens of thousands, of
-              demos created over the decades. Therefore, it would take a great
-              effort to describe, document, and preserve all of them. No
-              single organization will be able to cover all the demos ever
-              created, and no single organization has to. There is a
-              passionate and vocal community around the demoscene, and many of
-              the original creators are still alive and active. The best way
-              to approach a comprehensive effort to archive and document demos
-              is to tap into the community's dedication and passion and
-              provide a platform for a focused collaborative effort.
-              Authorship of individual articles on demo artifacts, demo
-              parties, and the demo creators should be shared.
-            </p>
-            <p>
-              One editor might create the skeleton of an article, perhaps only
-              including the demo's name and the system it ran on. Another user
-              can then elaborate on that and add a more detailed description.
-              Yet another user can add screenshots or other assets to the
-              article. If one user makes a mistake or adds erroneous
-              information, other users can and will make the necessary
-              corrections. Over time, an established archive has the potential
-              to cover ever larger parts of the demoscene.
-            </p>
-            <p>
-              In
-              <em>Digital Art through the Looking Glass: New strategies for
-                archiving, collecting and preserving in Digital
-                Humanities,</em>
-              Grau particularly emphasizes the collaborative and
-              transdisciplinary aspects so vital to an archive of digital art:
-            </p>
-            <blockquote class="alert alert-secondary">
-              "Digital art preservation necessitates a network of
-              collaborations: between the artists and technicians that
-              developed and constructed the work, the institutional staff
-              responsible for collection and preservation, scholars and
-              conservationists."<sup><a id="circuits-ablaze-appendix-2-origin-a2-101"
-                  href="#circuits-ablaze-appendix-2-footnote-a2-101">[101]</a></sup>
-            </blockquote>
-          </section>
-          <section id="circuits-ablaze-appendix-2-section-6">
-            <h3 class="mt-5">A2.5 A New Demo Archive?</h3>
-            <p>
-              Why would it be necessary to create a new archive of demos?
-              There are the two major cross-platform demo archives, pouet.net
-              and demozoo.org, that store demo files and some information
-              about the release, such as the name of the demo group and the
-              release date. In particular, pouet.net is extremely
-              comprehensive.
-            </p>
-            <p>
-              Unfortunately, neither of these two archives actually document
-              the demos. They do not describe the demo's content, do not
-              analyze, and, most of all, do not document the techniques used
-              to create the demo and describe the necessary original hardware
-              to run it authentically, and the method to run it in emulation.
-            </p>
-            <p>
-              Demoscene enthusiasts might find it obvious at present and do
-              not need any further documentation, but this is not sustainable
-              in the future. Even enthusiasts have trouble finding the right
-              combination of factors. Providing the right documentation can
-              ensure that decades-old demo art can still be experienced.
-            </p>
-            <p>
-              Furthermore, a potential new archive can include art historians
-              and technical archeologists' perspectives on the pieces. They
-              can include interpretations, examinations, and in-depth
-              research.
-            </p>
-            <p>
-              <em>Pouet.net</em> and <em>demozoo.org</em> are excellent
-              repositories for demo art, but they are not enough. An archive
-              is needed not only for the files and some meta information, but
-              also for research and documentation on the demo materials'
-              conservation.
-            </p>
-            <p>What would a "future-proof" demo archive look like?</p>
-          </section>
+              <h4>
+                A2.3.4 Documentation and Instructions for Conservation Purposes
+              </h4>
+              <p>
+                Finally, a good demo archive should include documentation on the
+                preservation and conservation of the demo art. This can include
+                instructions on:
+              </p>
+              <ul>
+                <li>
+                  How to run the demo on historic hardware and which
+                  configurations it will run on.
+                </li>
+                <li>
+                  How to run the demo on historic hardware that has been updated
+                  with contemporary hardware, e.g., with a USB replacement for
+                  the disk drive and with a scan doubler for output on LCDs.
+                </li>
+                <li>
+                  How to run the demo using an emulator on a modern PC
+                  (including the exact configuration and ROMs) or on an FPGA
+                  implementation of the retro hardware.
+                </li>
+                <li>
+                  If possible, instructions on how to recreate the demos using
+                  contemporary technologies, like HTML5, JavaScript, and CSS.
+                </li>
+              </ul>
+              <p>
+                Furthermore, the documentation can include the ideal way of
+                running and experiencing the demo, e.g., on a CRT display as
+                opposed to a more modern LCD. If there are no assets preserved,
+                then instructions on how to preserve the demo files (i.e., pull
+                them from the physical media like floppy disks and store them in
+                an archival format) can be provided.
+              </p>
+            </section>
+            <section id="circuits-ablaze-appendix-2-section-5">
+              <h3 class="mt-5">
+                A2.4 Achieving Critical Mass Through a Collaborative Effort
+              </h3>
+              <p>
+                There have been thousands, perhaps even tens of thousands, of
+                demos created over the decades. Therefore, it would take a great
+                effort to describe, document, and preserve all of them. No
+                single organization will be able to cover all the demos ever
+                created, and no single organization has to. There is a
+                passionate and vocal community around the demoscene, and many of
+                the original creators are still alive and active. The best way
+                to approach a comprehensive effort to archive and document demos
+                is to tap into the community's dedication and passion and
+                provide a platform for a focused collaborative effort.
+                Authorship of individual articles on demo artifacts, demo
+                parties, and the demo creators should be shared.
+              </p>
+              <p>
+                One editor might create the skeleton of an article, perhaps only
+                including the demo's name and the system it ran on. Another user
+                can then elaborate on that and add a more detailed description.
+                Yet another user can add screenshots or other assets to the
+                article. If one user makes a mistake or adds erroneous
+                information, other users can and will make the necessary
+                corrections. Over time, an established archive has the potential
+                to cover ever larger parts of the demoscene.
+              </p>
+              <p>
+                In
+                <em
+                  >Digital Art through the Looking Glass: New strategies for
+                  archiving, collecting and preserving in Digital
+                  Humanities,</em
+                >
+                Grau particularly emphasizes the collaborative and
+                transdisciplinary aspects so vital to an archive of digital art:
+              </p>
+              <blockquote class="alert alert-secondary">
+                "Digital art preservation necessitates a network of
+                collaborations: between the artists and technicians that
+                developed and constructed the work, the institutional staff
+                responsible for collection and preservation, scholars and
+                conservationists."<sup
+                  ><a
+                    id="circuits-ablaze-appendix-2-origin-a2-101"
+                    href="#circuits-ablaze-appendix-2-footnote-a2-101"
+                    >[101]</a
+                  ></sup
+                >
+              </blockquote>
+            </section>
+            <section id="circuits-ablaze-appendix-2-section-6">
+              <h3 class="mt-5">A2.5 A New Demo Archive?</h3>
+              <p>
+                Why would it be necessary to create a new archive of demos?
+                There are the two major cross-platform demo archives, pouet.net
+                and demozoo.org, that store demo files and some information
+                about the release, such as the name of the demo group and the
+                release date. In particular, pouet.net is extremely
+                comprehensive.
+              </p>
+              <p>
+                Unfortunately, neither of these two archives actually document
+                the demos. They do not describe the demo's content, do not
+                analyze, and, most of all, do not document the techniques used
+                to create the demo and describe the necessary original hardware
+                to run it authentically, and the method to run it in emulation.
+              </p>
+              <p>
+                Demoscene enthusiasts might find it obvious at present and do
+                not need any further documentation, but this is not sustainable
+                in the future. Even enthusiasts have trouble finding the right
+                combination of factors. Providing the right documentation can
+                ensure that decades-old demo art can still be experienced.
+              </p>
+              <p>
+                Furthermore, a potential new archive can include art historians
+                and technical archeologists' perspectives on the pieces. They
+                can include interpretations, examinations, and in-depth
+                research.
+              </p>
+              <p>
+                <em>Pouet.net</em> and <em>demozoo.org</em> are excellent
+                repositories for demo art, but they are not enough. An archive
+                is needed not only for the files and some meta information, but
+                also for research and documentation on the demo materials'
+                conservation.
+              </p>
+              <p>What would a "future-proof" demo archive look like?</p>
+            </section>
 
-          <section id="circuits-ablaze-appendix-2-section-7">
-            <h3 class="mt-5">
-              A2.6 Technical Solutions for Implementing a Demo Archive
-            </h3>
-            <p>
-              In this section, technical solutions will be presented to map
-              out the requirements for an archive of demo art and media, a
-              digital archive dedicated to the preservation and documentation
-              of demo art. It should be conceived as a free digital art
-              database that showcases, analyzes, and preserves demo art from
-              the 1980s to the present day, serving as a rich trove of
-              historical and contemporary demo art that is open for all to
-              share, interact with, and explore.
-            </p>
-            <p>
-              As previously established, it is not enough to simply salvage
-              and archive demo files. The archive's technical infrastructure
-              must provide for this in any case. Yet, a truly sustainable
-              archive provides space to present demo research, analysis, and
-              interpretation, and the information on configuring the obsolete
-              hardware or emulators that are needed to run them. Details on
-              the hardware and software setup are vital to run a demo as
-              authentically as possible.
-            </p>
-            <p>
-              Above all, this archive should be designed to be open and
-              accessible for anyone in the community to join. Like Wikipedia,
-              the archive should allow users to edit articles as well as
-              create them. By focusing on collaboration in the passionate and
-              vocal demoscene subculture, the archive can tap into the vast
-              reservoirs of knowledge that this community holds. An open model
-              of collaboration allows for swifter documentation and analysis.
-            </p>
+            <section id="circuits-ablaze-appendix-2-section-7">
+              <h3 class="mt-5">
+                A2.6 Technical Solutions for Implementing a Demo Archive
+              </h3>
+              <p>
+                In this section, technical solutions will be presented to map
+                out the requirements for an archive of demo art and media, a
+                digital archive dedicated to the preservation and documentation
+                of demo art. It should be conceived as a free digital art
+                database that showcases, analyzes, and preserves demo art from
+                the 1980s to the present day, serving as a rich trove of
+                historical and contemporary demo art that is open for all to
+                share, interact with, and explore.
+              </p>
+              <p>
+                As previously established, it is not enough to simply salvage
+                and archive demo files. The archive's technical infrastructure
+                must provide for this in any case. Yet, a truly sustainable
+                archive provides space to present demo research, analysis, and
+                interpretation, and the information on configuring the obsolete
+                hardware or emulators that are needed to run them. Details on
+                the hardware and software setup are vital to run a demo as
+                authentically as possible.
+              </p>
+              <p>
+                Above all, this archive should be designed to be open and
+                accessible for anyone in the community to join. Like Wikipedia,
+                the archive should allow users to edit articles as well as
+                create them. By focusing on collaboration in the passionate and
+                vocal demoscene subculture, the archive can tap into the vast
+                reservoirs of knowledge that this community holds. An open model
+                of collaboration allows for swifter documentation and analysis.
+              </p>
 
-            <h4>A2.6.1 Features of a Potential Archive of Demo Art</h4>
-            <p>
-              The most central feature of an archive should be the ability to
-              search for demo artwork. Once users have found what they are
-              looking for, they can select the piece they are interested in
-              and learn more on a dedicated page for each item that details
-              information through descriptions, characteristic tables, images,
-              and videos. The archive should provide cross references to
-              information about the artist and the history of the demo's
-              creation, with information about exhibitions where the digital
-              art was displayed or the demo party where it was created. The
-              archive should provide the executable files, source code, and
-              disk images needed to run the demo if available.
-            </p>
-            <p>
-              The objective should be to create a sophisticated database that
-              represents a centralized source and repository of demo art.
-            </p>
+              <h4>A2.6.1 Features of a Potential Archive of Demo Art</h4>
+              <p>
+                The most central feature of an archive should be the ability to
+                search for demo artwork. Once users have found what they are
+                looking for, they can select the piece they are interested in
+                and learn more on a dedicated page for each item that details
+                information through descriptions, characteristic tables, images,
+                and videos. The archive should provide cross references to
+                information about the artist and the history of the demo's
+                creation, with information about exhibitions where the digital
+                art was displayed or the demo party where it was created. The
+                archive should provide the executable files, source code, and
+                disk images needed to run the demo if available.
+              </p>
+              <p>
+                The objective should be to create a sophisticated database that
+                represents a centralized source and repository of demo art.
+              </p>
 
-            <h4>
-              A2.6.2 Options for an Open and Collaborative Archive of Demo Art
-            </h4>
-            <p>
-              There are several different technical approaches to establishing
-              an online archive. The most important factor is the
-              collaborative aspect; users should be able to register as
-              editors and input information about demos and other related
-              topics. This collaborative process can either go through a
-              review before publication or be published immediately to undergo
-              scrutiny by users, who will then edit and polish the article.
-            </p>
-            <p>
-              This section discusses possible technical implementations. There
-              are three major directions that can be taken:
-            </p>
-            <ul>
-              <li>
-                <strong>Open-Source Solutions:</strong> Either through the use
-                of already-established web software currently in operation,
-                e.g., Wikipedia, or by using the underlying technology, the
-                <em>Wiki,</em> a collaborative environment on the web,
-                specifically the open-source project called
-                <em>MediaWiki.</em>
-              </li>
-              <li>
-                <strong>Proprietary Solution:</strong> General archiving
-                solutions are nearly as old as the computer industry, so there
-                are a number of commercially available, proprietary products
-                for art archives. This section will briefly discuss
-                <em>Artwork Archive</em> as an example.
-              </li>
-              <li>
-                <strong>Custom Implementation:</strong> Considering how
-                advanced current web technologies are and how easy it is to
-                use their available components; it is perfectly feasible to
-                build an archive as a bespoke implementation to cover all the
-                required features. The final part of this section describes a
-                case study for implementing a tailor-made online demo archive
-                solution using Angular, NodeJS, and Heroku.
-              </li>
-            </ul>
-            <h4>A2.6.3 Approach I: Open-Source Solutions</h4>
-            <p>
-              A Wiki is quite familiar to a general audience as Wikipedia, its
-              most well-established implementation. This type of hypertext
-              publication is edited and managed collaboratively by a community
-              of registered users.
-            </p>
-            <p>
-              <em>Why not simply use Wikipedia to archive demo art or any kind
-                of digital art?</em>
-              The online encyclopedia is well-established and well-known. It
-              is a knowledge source referenced by millions of users across the
-              globe. There are hundreds of thousands of users already
-              contributing or helping others contribute, writing new articles,
-              and correcting existing articles on Wikipedia.
-            </p>
-            <p>
-              Using Wikipedia is the easiest solution. It is as simple as
-              creating the necessary users who can then start adding in-depth
-              descriptions of the demos.
-            </p>
-            <p>
-              Before moving forward with this solution, two issues need to be
-              considered.
-            </p>
+              <h4>
+                A2.6.2 Options for an Open and Collaborative Archive of Demo Art
+              </h4>
+              <p>
+                There are several different technical approaches to establishing
+                an online archive. The most important factor is the
+                collaborative aspect; users should be able to register as
+                editors and input information about demos and other related
+                topics. This collaborative process can either go through a
+                review before publication or be published immediately to undergo
+                scrutiny by users, who will then edit and polish the article.
+              </p>
+              <p>
+                This section discusses possible technical implementations. There
+                are three major directions that can be taken:
+              </p>
+              <ul>
+                <li>
+                  <strong>Open-Source Solutions:</strong> Either through the use
+                  of already-established web software currently in operation,
+                  e.g., Wikipedia, or by using the underlying technology, the
+                  <em>Wiki,</em> a collaborative environment on the web,
+                  specifically the open-source project called
+                  <em>MediaWiki.</em>
+                </li>
+                <li>
+                  <strong>Proprietary Solution:</strong> General archiving
+                  solutions are nearly as old as the computer industry, so there
+                  are a number of commercially available, proprietary products
+                  for art archives. This section will briefly discuss
+                  <em>Artwork Archive</em> as an example.
+                </li>
+                <li>
+                  <strong>Custom Implementation:</strong> Considering how
+                  advanced current web technologies are and how easy it is to
+                  use their available components; it is perfectly feasible to
+                  build an archive as a bespoke implementation to cover all the
+                  required features. The final part of this section describes a
+                  case study for implementing a tailor-made online demo archive
+                  solution using Angular, NodeJS, and Heroku.
+                </li>
+              </ul>
+              <h4>A2.6.3 Approach I: Open-Source Solutions</h4>
+              <p>
+                A Wiki is quite familiar to a general audience as Wikipedia, its
+                most well-established implementation. This type of hypertext
+                publication is edited and managed collaboratively by a community
+                of registered users.
+              </p>
+              <p>
+                <em
+                  >Why not simply use Wikipedia to archive demo art or any kind
+                  of digital art?</em
+                >
+                The online encyclopedia is well-established and well-known. It
+                is a knowledge source referenced by millions of users across the
+                globe. There are hundreds of thousands of users already
+                contributing or helping others contribute, writing new articles,
+                and correcting existing articles on Wikipedia.
+              </p>
+              <p>
+                Using Wikipedia is the easiest solution. It is as simple as
+                creating the necessary users who can then start adding in-depth
+                descriptions of the demos.
+              </p>
+              <p>
+                Before moving forward with this solution, two issues need to be
+                considered.
+              </p>
 
-            <h5>
-              A2.6.3.1 Wikipedia's Notability Policy and Other Guidelines
-            </h5>
-            <p>
-              Wikipedia targets a wide audience; therefore, it has a
-              notability policy stating:
-            </p>
-            <blockquote class="alert alert-secondary">
-              "On Wikipedia, notability is a test used by editors to decide
-              whether a given topic warrants its own article."<sup><a id="circuits-ablaze-appendix-2-origin-a2-102"
-                  href="#circuits-ablaze-appendix-2-footnote-a2-102">[102]</a></sup>
-            </blockquote>
-            <p>
-              The highly specialized nature of individual pieces of demo art
-              (and other digital art) might contradict this notability policy
-              because separately describing each individual piece might be too
-              obscure to be notable. Of course, it would have to be tested to
-              see if this would really happen. But in any case, using
-              Wikipedia as a platform as a digital art archive requires
-              accepting this entity's policies.
-            </p>
-            <p>
-              In the long run, this can be counterproductive to submit to
-              someone else's rules because the policies can change and
-              conflict with the archival efforts.
-            </p>
+              <h5>
+                A2.6.3.1 Wikipedia's Notability Policy and Other Guidelines
+              </h5>
+              <p>
+                Wikipedia targets a wide audience; therefore, it has a
+                notability policy stating:
+              </p>
+              <blockquote class="alert alert-secondary">
+                "On Wikipedia, notability is a test used by editors to decide
+                whether a given topic warrants its own article."<sup
+                  ><a
+                    id="circuits-ablaze-appendix-2-origin-a2-102"
+                    href="#circuits-ablaze-appendix-2-footnote-a2-102"
+                    >[102]</a
+                  ></sup
+                >
+              </blockquote>
+              <p>
+                The highly specialized nature of individual pieces of demo art
+                (and other digital art) might contradict this notability policy
+                because separately describing each individual piece might be too
+                obscure to be notable. Of course, it would have to be tested to
+                see if this would really happen. But in any case, using
+                Wikipedia as a platform as a digital art archive requires
+                accepting this entity's policies.
+              </p>
+              <p>
+                In the long run, this can be counterproductive to submit to
+                someone else's rules because the policies can change and
+                conflict with the archival efforts.
+              </p>
 
-            <h5>
-              A2.6.3.2 Institutional Credit and Delivery on Funded Project
-              Objectives
-            </h5>
-            <p>
-              Writing and correcting the large number of demo art articles
-              required to cover the whole field is a daunting task. Solely
-              relying on volunteers and enthusiasts will yield very
-              heterogeneous results. An archive requires a degree of
-              standardization in its articles, a clear overall taxonomy, and a
-              normalization of its data sets.
-            </p>
-            <p>
-              This can only be achieved by a concerted effort between
-              academics and experts working on the archive for years, which
-              would require funding. Any grants for funds define objectives
-              and metrics that need to be met so that a project can be deemed
-              a success. With its "free for all to edit" approach, Wikipedia
-              makes it difficult, or even impossible, to enforce
-              standardization according to outside principles. Therefore, a
-              more institutionalized and curated approach is necessary while
-              still employing the strengths of the Wiki principle but under
-              the archive's management control.
-            </p>
+              <h5>
+                A2.6.3.2 Institutional Credit and Delivery on Funded Project
+                Objectives
+              </h5>
+              <p>
+                Writing and correcting the large number of demo art articles
+                required to cover the whole field is a daunting task. Solely
+                relying on volunteers and enthusiasts will yield very
+                heterogeneous results. An archive requires a degree of
+                standardization in its articles, a clear overall taxonomy, and a
+                normalization of its data sets.
+              </p>
+              <p>
+                This can only be achieved by a concerted effort between
+                academics and experts working on the archive for years, which
+                would require funding. Any grants for funds define objectives
+                and metrics that need to be met so that a project can be deemed
+                a success. With its "free for all to edit" approach, Wikipedia
+                makes it difficult, or even impossible, to enforce
+                standardization according to outside principles. Therefore, a
+                more institutionalized and curated approach is necessary while
+                still employing the strengths of the Wiki principle but under
+                the archive's management control.
+              </p>
 
-            <h5>A2.6.3.3 MediaWiki</h5>
-            <p>
-              A curated and institutionalized archive can be operated with
-              open-source software. MediaWiki is probably the most widely
-              adopted open-source implementation, and is available free of
-              charge at
-              <a href="https://www.mediawiki.org" target="_blank">https://www.mediawiki.org</a>. It is PHP-based and
-              requires an SQL or Oracle database for
-              data storage. It can be installed on a suitable cloud storage or
-              webspace.
-            </p>
-            <p>
-              MediaWiki is an elaborate content management system (CMS) with a
-              focus on articles. Users can quickly access well-structured and
-              networked article collections. Its key functionality is the
-              ability to supplement and improve articles just as easily as
-              reading them. MediaWiki enables users to edit content themselves
-              and communicate with one another, and it logs all changes made
-              to articles such that users can compare and contrast previous
-              texts and even restore old versions if necessary.
-            </p>
+              <h5>A2.6.3.3 MediaWiki</h5>
+              <p>
+                A curated and institutionalized archive can be operated with
+                open-source software. MediaWiki is probably the most widely
+                adopted open-source implementation, and is available free of
+                charge at
+                <a href="https://www.mediawiki.org" target="_blank"
+                  >https://www.mediawiki.org</a
+                >. It is PHP-based and requires an SQL or Oracle database for
+                data storage. It can be installed on a suitable cloud storage or
+                webspace.
+              </p>
+              <p>
+                MediaWiki is an elaborate content management system (CMS) with a
+                focus on articles. Users can quickly access well-structured and
+                networked article collections. Its key functionality is the
+                ability to supplement and improve articles just as easily as
+                reading them. MediaWiki enables users to edit content themselves
+                and communicate with one another, and it logs all changes made
+                to articles such that users can compare and contrast previous
+                texts and even restore old versions if necessary.
+              </p>
 
-            <p class="text-center" id="circuits-ablaze-figure-99">
-              <img src="img/picture106.png" alt="Figure 99" class="img-fluid" />
-            </p>
-            <p class="text-secondary text-center">
-              Figure 99: Wikipedia.org as the most prominent implementation of
-              a Wiki
-            </p>
+              <p class="text-center" id="circuits-ablaze-figure-99">
+                <img
+                  src="img/picture106.png"
+                  alt="Figure 99"
+                  class="img-fluid"
+                />
+              </p>
+              <p class="text-secondary text-center">
+                Figure 99: Wikipedia.org as the most prominent implementation of
+                a Wiki
+              </p>
 
-            <p>
-              Using a MediaWiki provides visitors and editors alike with the
-              same user interface as Wikipedia while maintaining the control
-              necessary for a concerted archival effort.
-            </p>
+              <p>
+                Using a MediaWiki provides visitors and editors alike with the
+                same user interface as Wikipedia while maintaining the control
+                necessary for a concerted archival effort.
+              </p>
 
-            <h5>A2.6.3.4 The Advantages of MediaWiki</h5>
-            <ul>
-              <li>It is open source and free to use.</li>
-              <li>
-                It has a well-established user interface due to the adoption
-                by Wikipedia.
-              </li>
-              <li>MediaWiki provides a full text search of all content.</li>
-              <li>
-                User accounts and rights can be assigned individually or in
-                groups.
-              </li>
-              <li>
-                MediaWiki has a large range of functionalities out of the box.
-              </li>
-              <li>It provides access to previous versions of articles.</li>
-              <li>
-                It complies with governmental requirements for web
-                accessibility.
-              </li>
-              <li>The theme and layout can be easily adapted.</li>
-            </ul>
+              <h5>A2.6.3.4 The Advantages of MediaWiki</h5>
+              <ul>
+                <li>It is open source and free to use.</li>
+                <li>
+                  It has a well-established user interface due to the adoption
+                  by Wikipedia.
+                </li>
+                <li>MediaWiki provides a full text search of all content.</li>
+                <li>
+                  User accounts and rights can be assigned individually or in
+                  groups.
+                </li>
+                <li>
+                  MediaWiki has a large range of functionalities out of the box.
+                </li>
+                <li>It provides access to previous versions of articles.</li>
+                <li>
+                  It complies with governmental requirements for web
+                  accessibility.
+                </li>
+                <li>The theme and layout can be easily adapted.</li>
+              </ul>
 
-            <h5>A2.6.3.5 The Disadvantages of MediaWiki</h5>
-            <ul>
-              <li>
-                The collaborative and open editing process requires
-                administrator attention and oversight to prevent vandalism and
-                maintain consistency in the content's presentation.
-              </li>
-              <li>
-                The adaptation of the user interface and theme is not as
-                flexible as a custom solution.
-              </li>
-              <li>
-                The administration of critical access rights, such as those of
-                full administrator accounts, require intervention in the
-                database.
-              </li>
-            </ul>
+              <h5>A2.6.3.5 The Disadvantages of MediaWiki</h5>
+              <ul>
+                <li>
+                  The collaborative and open editing process requires
+                  administrator attention and oversight to prevent vandalism and
+                  maintain consistency in the content's presentation.
+                </li>
+                <li>
+                  The adaptation of the user interface and theme is not as
+                  flexible as a custom solution.
+                </li>
+                <li>
+                  The administration of critical access rights, such as those of
+                  full administrator accounts, require intervention in the
+                  database.
+                </li>
+              </ul>
 
-            <h5>A2.6.3.6 Examples of MediaWiki Sites</h5>
-            <ul>
-              <li>
-                <em>Wikipedia</em> (<a href="http://wikipedia.org/">http://wikipedia.org/</a>) - The online encyclopedia
-                based on MediaWiki.
-              </li>
-              <li>
-                <em>Wookieepedia: The Star Wars Wiki</em> (<a href="https://starwars.fandom.com/wiki/Main_Page"
-                  target="_blank">https://starwars.fandom.com/wiki/Main_Page</a>) - The online encyclopedia on the
-                universe in the Star Wars
-                films, comics, TV shows, novels, and toys.
-              </li>
-              <li>
-                <em>VoWi Wiki</em> (<a href="http://vowi.fsinf.at/wiki/" target="_blank">http://vowi.fsinf.at/wiki/</a>
-                ) - A MediaWiki for students at the University of Vienna that
-                collects course descriptions, transcripts, and old exam
-                information.
-              </li>
-              <li>
-                <em>MediaWiki sites</em> (<a href="https://www.mediawiki.org/wiki/Sites_using_MediaWiki/en"
-                  target="_blank">https://www.mediawiki.org/wiki/Sites_using_MediaWiki/en</a>) - A list of Wiki projects
-                that use MediaWiki.
-              </li>
-            </ul>
-            <p>
-              MediaWiki is an off-the-shelf product that can be used for
-              digital archiving and is retrofitted for that purpose. But what
-              would software look like that was conceived from the ground up
-              to meet the requirements of the documentation and archiving of
-              digital art?
-            </p>
+              <h5>A2.6.3.6 Examples of MediaWiki Sites</h5>
+              <ul>
+                <li>
+                  <em>Wikipedia</em> (<a href="http://wikipedia.org/"
+                    >http://wikipedia.org/</a
+                  >) - The online encyclopedia based on MediaWiki.
+                </li>
+                <li>
+                  <em>Wookieepedia: The Star Wars Wiki</em> (<a
+                    href="https://starwars.fandom.com/wiki/Main_Page"
+                    target="_blank"
+                    >https://starwars.fandom.com/wiki/Main_Page</a
+                  >) - The online encyclopedia on the universe in the Star Wars
+                  films, comics, TV shows, novels, and toys.
+                </li>
+                <li>
+                  <em>VoWi Wiki</em> (<a
+                    href="http://vowi.fsinf.at/wiki/"
+                    target="_blank"
+                    >http://vowi.fsinf.at/wiki/</a
+                  >
+                  ) - A MediaWiki for students at the University of Vienna that
+                  collects course descriptions, transcripts, and old exam
+                  information.
+                </li>
+                <li>
+                  <em>MediaWiki sites</em> (<a
+                    href="https://www.mediawiki.org/wiki/Sites_using_MediaWiki/en"
+                    target="_blank"
+                    >https://www.mediawiki.org/wiki/Sites_using_MediaWiki/en</a
+                  >) - A list of Wiki projects that use MediaWiki.
+                </li>
+              </ul>
+              <p>
+                MediaWiki is an off-the-shelf product that can be used for
+                digital archiving and is retrofitted for that purpose. But what
+                would software look like that was conceived from the ground up
+                to meet the requirements of the documentation and archiving of
+                digital art?
+              </p>
 
-            <h4>A2.6.4 Approach II: A Proprietary Commercial Solution</h4>
-            <p>
-              There are ready-to-install, commercially available solutions
-              that are advantageous in that they are ready to use without
-              needing to be installed or configured on a server.
-            </p>
-            <p>
-              One of these proprietary solutions is called Artwork Archive. It
-              is a cloud-based database specifically for the archiving of art.
-              It offers a subscription-based pricing model and is a managed
-              product that runs in a web browser with all the data stored on
-              the company servers.
-            </p>
+              <h4>A2.6.4 Approach II: A Proprietary Commercial Solution</h4>
+              <p>
+                There are ready-to-install, commercially available solutions
+                that are advantageous in that they are ready to use without
+                needing to be installed or configured on a server.
+              </p>
+              <p>
+                One of these proprietary solutions is called Artwork Archive. It
+                is a cloud-based database specifically for the archiving of art.
+                It offers a subscription-based pricing model and is a managed
+                product that runs in a web browser with all the data stored on
+                the company servers.
+              </p>
 
-            <p class="text-center" id="circuits-ablaze-figure-100">
-              <img src="img/picture107.png" alt="Figure 100" class="img-fluid" />
-            </p>
-            <p class="text-secondary text-center">
-              Figure 100: Artwork Archive on a mobile browser and a desktop
-              market. (Source:
-              <a href="https://www.artworkarchive.com" target="_blank">https://www.artworkarchive.com</a>)
-            </p>
+              <p class="text-center" id="circuits-ablaze-figure-100">
+                <img
+                  src="img/picture107.png"
+                  alt="Figure 100"
+                  class="img-fluid"
+                />
+              </p>
+              <p class="text-secondary text-center">
+                Figure 100: Artwork Archive on a mobile browser and a desktop
+                market. (Source:
+                <a href="https://www.artworkarchive.com" target="_blank"
+                  >https://www.artworkarchive.com</a
+                >)
+              </p>
 
-            <p>
-              On its website
-              <a href="https://www.artworkarchive.com" target="_blank">https://www.artworkarchive.com</a>, the following
-              description is seen: "Artwork Archive provides
-              artists, collectors and organizations powerful tools to manage
-              their artwork, career or collection." It helps track inventory,
-              contacts, galleries, and sales of artwork. It is more suited to
-              living collections or the works of living artists that are sold
-              and change ownership.
-            </p>
-            <p>
-              Artwork Archive's main feature is the cataloging process. Each
-              piece of artwork is cataloged with a description, keywords,
-              images, and records on locations, exhibitions, and other
-              details. Art collections can be managed in the inventory system.
-            </p>
+              <p>
+                On its website
+                <a href="https://www.artworkarchive.com" target="_blank"
+                  >https://www.artworkarchive.com</a
+                >, the following description is seen: "Artwork Archive provides
+                artists, collectors and organizations powerful tools to manage
+                their artwork, career or collection." It helps track inventory,
+                contacts, galleries, and sales of artwork. It is more suited to
+                living collections or the works of living artists that are sold
+                and change ownership.
+              </p>
+              <p>
+                Artwork Archive's main feature is the cataloging process. Each
+                piece of artwork is cataloged with a description, keywords,
+                images, and records on locations, exhibitions, and other
+                details. Art collections can be managed in the inventory system.
+              </p>
 
-            <h5>
-              A2.6.4.1 The Advantages of Commercial Proprietary Solution
-            </h5>
-            <ul>
-              <li>It is ready to use without needing to be installed.</li>
-              <li>
-                It is already adapted to the specific archival requirements of
-                artwork, offering a large range of functionalities out of the
-                box.
-              </li>
-              <li>It provides a full text search of all content.</li>
-              <li>
-                User accounts and rights can be assigned individually or in
-                groups.
-              </li>
-            </ul>
+              <h5>
+                A2.6.4.1 The Advantages of Commercial Proprietary Solution
+              </h5>
+              <ul>
+                <li>It is ready to use without needing to be installed.</li>
+                <li>
+                  It is already adapted to the specific archival requirements of
+                  artwork, offering a large range of functionalities out of the
+                  box.
+                </li>
+                <li>It provides a full text search of all content.</li>
+                <li>
+                  User accounts and rights can be assigned individually or in
+                  groups.
+                </li>
+              </ul>
 
-            <h5>
-              A2.6.4.2 The Disadvantages of a Commercial Proprietary Solution
-            </h5>
-            <ul>
-              <li>
-                It is expensive and offers a subscription-based pricing model.
-              </li>
-              <li>
-                Using proprietary solutions leads to "Vendor-Lock-In," which
-                means the archive's data is stored in a commercial vendor's
-                format and storage with the interest of prolonging the
-                business relationship.
-              </li>
-              <li>Users have little influence on the development roadmap.</li>
-            </ul>
+              <h5>
+                A2.6.4.2 The Disadvantages of a Commercial Proprietary Solution
+              </h5>
+              <ul>
+                <li>
+                  It is expensive and offers a subscription-based pricing model.
+                </li>
+                <li>
+                  Using proprietary solutions leads to "Vendor-Lock-In," which
+                  means the archive's data is stored in a commercial vendor's
+                  format and storage with the interest of prolonging the
+                  business relationship.
+                </li>
+                <li>Users have little influence on the development roadmap.</li>
+              </ul>
 
-            <h4>A2.6.5 Approach III: Developing a Custom Demo Archive</h4>
-            <p>
-              This section describes a practical case study called ADAM, or
-              the Archive of Demo Art & Media. This project was developed by
-              this thesis' writer in July and August of 2020 as an exercise in
-              the use of web technologies and a prototype for an archive of
-              new media art.
-            </p>
+              <h4>A2.6.5 Approach III: Developing a Custom Demo Archive</h4>
+              <p>
+                This section describes a practical case study called ADAM, or
+                the Archive of Demo Art & Media. This project was developed by
+                this thesis' writer in July and August of 2020 as an exercise in
+                the use of web technologies and a prototype for an archive of
+                new media art.
+              </p>
 
-            <p class="text-center" id="circuits-ablaze-figure-101">
-              <img src="img/picture108.png" alt="Figure 101" class="img-fluid" />
-            </p>
-            <p class="text-secondary text-center">
-              Figure 101: ADAM, the Archive of Demo Art & Media (all
-              documentation at
-              <a href="https://mbalabanov.github.io/adam/" target="_blank">https://mbalabanov.github.io/adam/</a>)
-            </p>
+              <p class="text-center" id="circuits-ablaze-figure-101">
+                <img
+                  src="img/picture108.png"
+                  alt="Figure 101"
+                  class="img-fluid"
+                />
+              </p>
+              <p class="text-secondary text-center">
+                Figure 101: ADAM, the Archive of Demo Art & Media (all
+                documentation at
+                <a href="https://mbalabanov.github.io/adam/" target="_blank"
+                  >https://mbalabanov.github.io/adam/</a
+                >)
+              </p>
 
-            <p>
-              At
-              <a href="https://demoarchive.art" target="_blank">https://demoarchive.art</a>, users can search for
-              digital demo artwork. On the detail
-              pages, they will find a description of the respective demo
-              artifacts, as well as photos, screenshots, and links to videos.
-              Also, if available, they will find ZIP files or disk images with
-              the artifacts' original files. There is also room for
-              information about the artists, at which events their works were
-              exhibited, and at which demo parties their works were created.
-              The objective here was to program a custom digital archive
-              solution using modern technologies, a noSQL database, strict
-              separation between user interface, API (application programming
-              interface), and the database; l hosted on a managed and secure
-              cloud platform.
-            </p>
-            <p>
-              ADAM is a practical implementation, but it also lays the
-              conceptual groundwork for the user interface of a demo archive.
-              It was inspired by the Archive of Digital Art (ADA) at Danube
-              University Krems. ADAM only contains placeholder content at the
-              time of this writing, showcasing its user interface, the
-              powerful search and filter features, and its user management.
-            </p>
-            <p>
-              While ADA's technical foundations are "a PostgreSQL Open Source
-              Database, written in C++ programming language, with a Linux
-              kernel operating system, and a TYPO3 content management
-              system,"<sup><a id="circuits-ablaze-appendix-2-origin-a2-103"
-                  href="#circuits-ablaze-appendix-2-footnote-a2-103">[103]</a></sup>
-              the ADAM project serves as a practice application of
-              contemporary web technologies, such as JavaScript using NodeJS
-              and the Angular framework, MongoDB as a database, and hosting on
-              the Heroku cloud service.
-            </p>
-            <p>
-              The full project documentation in German, including the source
-              code (HTML, CSS, and JavaScript using NodeJS and Angular) under
-              a Creative Commons license, can be found here:
-              <a href="https://mbalabanov.github.io/adam/" target="_blank">https://mbalabanov.github.io/adam/</a>
-            </p>
-            <p>ADAM consists of three parts:</p>
-            <ol>
-              <li>
-                The <strong>API server</strong> on
-                <a href="https://adam-interface.herokuapp.com" target="_blank">https://adam-interface.herokuapp.com</a>
-                with interfaces to call up the data.
-              </li>
-              <li>
-                The <strong>website (web app) with a public area</strong> on
-                <a href="https://demoarchive.art" target="_blank">https://demoarchive.art</a>
-                where visitors can find information about the demo art
-              </li>
-              <li>
-                An <strong>editorial area,</strong> also on
-                <a href="https://demoarchive.art" target="_blank">https://demoarchive.art</a>, in which editors can
-                enter and edit new content and
-                administrators can manage rights.
-              </li>
-            </ol>
+              <p>
+                At
+                <a href="https://demoarchive.art" target="_blank"
+                  >https://demoarchive.art</a
+                >, users can search for digital demo artwork. On the detail
+                pages, they will find a description of the respective demo
+                artifacts, as well as photos, screenshots, and links to videos.
+                Also, if available, they will find ZIP files or disk images with
+                the artifacts' original files. There is also room for
+                information about the artists, at which events their works were
+                exhibited, and at which demo parties their works were created.
+                The objective here was to program a custom digital archive
+                solution using modern technologies, a noSQL database, strict
+                separation between user interface, API (application programming
+                interface), and the database; l hosted on a managed and secure
+                cloud platform.
+              </p>
+              <p>
+                ADAM is a practical implementation, but it also lays the
+                conceptual groundwork for the user interface of a demo archive.
+                It was inspired by the Archive of Digital Art (ADA) at Danube
+                University Krems. ADAM only contains placeholder content at the
+                time of this writing, showcasing its user interface, the
+                powerful search and filter features, and its user management.
+              </p>
+              <p>
+                While ADA's technical foundations are "a PostgreSQL Open Source
+                Database, written in C++ programming language, with a Linux
+                kernel operating system, and a TYPO3 content management
+                system,"<sup
+                  ><a
+                    id="circuits-ablaze-appendix-2-origin-a2-103"
+                    href="#circuits-ablaze-appendix-2-footnote-a2-103"
+                    >[103]</a
+                  ></sup
+                >
+                the ADAM project serves as a practice application of
+                contemporary web technologies, such as JavaScript using NodeJS
+                and the Angular framework, MongoDB as a database, and hosting on
+                the Heroku cloud service.
+              </p>
+              <p>
+                The full project documentation in German, including the source
+                code (HTML, CSS, and JavaScript using NodeJS and Angular) under
+                a Creative Commons license, can be found here:
+                <a href="https://mbalabanov.github.io/adam/" target="_blank"
+                  >https://mbalabanov.github.io/adam/</a
+                >
+              </p>
+              <p>ADAM consists of three parts:</p>
+              <ol>
+                <li>
+                  The <strong>API server</strong> on
+                  <a href="https://adam-interface.herokuapp.com" target="_blank"
+                    >https://adam-interface.herokuapp.com</a
+                  >
+                  with interfaces to call up the data.
+                </li>
+                <li>
+                  The <strong>website (web app) with a public area</strong> on
+                  <a href="https://demoarchive.art" target="_blank"
+                    >https://demoarchive.art</a
+                  >
+                  where visitors can find information about the demo art
+                </li>
+                <li>
+                  An <strong>editorial area,</strong> also on
+                  <a href="https://demoarchive.art" target="_blank"
+                    >https://demoarchive.art</a
+                  >, in which editors can enter and edit new content and
+                  administrators can manage rights.
+                </li>
+              </ol>
 
-            <p class="text-center" id="circuits-ablaze-figure-102">
-              <img src="img/picture109.png" alt="Figure 102" class="img-fluid" />
-            </p>
-            <p class="text-secondary text-center">
-              Figure 102: The architecture of ADAM
-            </p>
+              <p class="text-center" id="circuits-ablaze-figure-102">
+                <img
+                  src="img/picture109.png"
+                  alt="Figure 102"
+                  class="img-fluid"
+                />
+              </p>
+              <p class="text-secondary text-center">
+                Figure 102: The architecture of ADAM
+              </p>
 
-            <p>
-              This three-tiered structure might look fragmented with too many
-              component parts, but it in fact has many advantages. By
-              separating the different functions, ADAM can offer not only the
-              web-frontend for users visiting with a web browser, but at a
-              later time, also offer a mobile app. This is made possible by
-              the separate application programming interface (API). The API
-              also allows for ADAM to connect with other art archives and
-              provides its data for a federated search.
-            </p>
-            <p>
-              And the final advantage is that when a new and better technology
-              becomes available, any part of ADAM can be replaced individually
-              without interfering with the operations of the others.
-            </p>
+              <p>
+                This three-tiered structure might look fragmented with too many
+                component parts, but it in fact has many advantages. By
+                separating the different functions, ADAM can offer not only the
+                web-frontend for users visiting with a web browser, but at a
+                later time, also offer a mobile app. This is made possible by
+                the separate application programming interface (API). The API
+                also allows for ADAM to connect with other art archives and
+                provides its data for a federated search.
+              </p>
+              <p>
+                And the final advantage is that when a new and better technology
+                becomes available, any part of ADAM can be replaced individually
+                without interfering with the operations of the others.
+              </p>
 
-            <div class="video-container">
-              <iframe src="https://www.youtube.com/embed/rZMfmWkXdAY" frameborder="0"
-                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen></iframe>
-            </div>
-            <p class="text-center">
-              <a href="https://youtu.be/rZMfmWkXdAY" target="_blank" class="btn btn-outline-primary btn-sm m-2">Watch
-                Video on Youtube</a>
-            </p>
+              <div class="video-container">
+                <iframe
+                  src="https://www.youtube.com/embed/rZMfmWkXdAY"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                ></iframe>
+              </div>
+              <p class="text-center">
+                <a
+                  href="https://youtu.be/rZMfmWkXdAY"
+                  target="_blank"
+                  class="btn btn-outline-primary btn-sm m-2"
+                  >Watch Video on Youtube</a
+                >
+              </p>
 
-            <h5>A2.6.5.1 Components and Installation</h5>
-            <p>The project consists of the following repositories:</p>
-            <ul>
-              <li>
-                ADAM <strong>API Server</strong>
-                <a href="http://github.com/mbalabanov/adam" target="_blank">http://github.com/mbalabanov/adam</a>
-                (runs on Heroku at
-                <a href="adam-interface.herokuapp.com" target="_blank">adam-interface.herokuapp.com</a>)
-              </li>
-              <li>
-                ADAM <strong>Web Frontend</strong>
-                <a href="http://github.com/mbalabanov/adam-api"
-                  target="_blank">http://github.com/mbalabanov/adam-api</a>
-                (runs on Heroku on adam-frontend.herokuapp.com with CNAME
-                entry on
-                <a href="http://app.demoarchive.art" target="_blank">http://app.demoarchive.art</a>
-                )
-              </li>
-            </ul>
+              <h5>A2.6.5.1 Components and Installation</h5>
+              <p>The project consists of the following repositories:</p>
+              <ul>
+                <li>
+                  ADAM <strong>API Server</strong>
+                  <a href="http://github.com/mbalabanov/adam" target="_blank"
+                    >http://github.com/mbalabanov/adam</a
+                  >
+                  (runs on Heroku at
+                  <a href="adam-interface.herokuapp.com" target="_blank"
+                    >adam-interface.herokuapp.com</a
+                  >)
+                </li>
+                <li>
+                  ADAM <strong>Web Frontend</strong>
+                  <a
+                    href="http://github.com/mbalabanov/adam-api"
+                    target="_blank"
+                    >http://github.com/mbalabanov/adam-api</a
+                  >
+                  (runs on Heroku on adam-frontend.herokuapp.com with CNAME
+                  entry on
+                  <a href="http://app.demoarchive.art" target="_blank"
+                    >http://app.demoarchive.art</a
+                  >
+                  )
+                </li>
+              </ul>
 
-            <h5>A2.6.5.2 Local Installation</h5>
-            <p>
-              The ADAM API Server (repository at
-              <a href="http://github.com/mbalabanov/adam-api" target="_blank">http://github.com/mbalabanov/adam-api</a>
-              ) runs on NodeJS/Express. Once the repository has been cloned,
-              the dependencies can be installed by entering:
-            </p>
-            <div class="mx-5">
-              <pre>cd adam-api</pre>
-              <pre>npm install</pre>
-            </div>
-            <p>
-              The API server can be started locally on port 5003 by entering:
-            </p>
-            <div class="mx-5">
-              <pre>npm start</pre>
-            </div>
+              <h5>A2.6.5.2 Local Installation</h5>
+              <p>
+                The ADAM API Server (repository at
+                <a href="http://github.com/mbalabanov/adam-api" target="_blank"
+                  >http://github.com/mbalabanov/adam-api</a
+                >
+                ) runs on NodeJS/Express. Once the repository has been cloned,
+                the dependencies can be installed by entering:
+              </p>
+              <div class="mx-5">
+                <pre>cd adam-api</pre>
+                <pre>npm install</pre>
+              </div>
+              <p>
+                The API server can be started locally on port 5003 by entering:
+              </p>
+              <div class="mx-5">
+                <pre>npm start</pre>
+              </div>
 
-            <p>
-              The <strong>ADAM Web Frontend</strong> at
-              <a href="http://github.com/mbalabanov/adam" target="_blank">http://github.com/mbalabanov/adam</a>
-              is an Angular Universal SSR app (server-side rendering). Once
-              cloned, the dependencies are installed by entering the following
-              commands:
-            </p>
-            <div class="mx-5">
-              <pre>cd adam</pre>
-              <pre>npm install</pre>
-            </div>
+              <p>
+                The <strong>ADAM Web Frontend</strong> at
+                <a href="http://github.com/mbalabanov/adam" target="_blank"
+                  >http://github.com/mbalabanov/adam</a
+                >
+                is an Angular Universal SSR app (server-side rendering). Once
+                cloned, the dependencies are installed by entering the following
+                commands:
+              </p>
+              <div class="mx-5">
+                <pre>cd adam</pre>
+                <pre>npm install</pre>
+              </div>
 
-            <p>
-              The web frontend can be launched locally on port 4200 by
-              entering:
-            </p>
-            <div class="mx-5">
-              <pre>ng serve</pre>
-            </div>
+              <p>
+                The web frontend can be launched locally on port 4200 by
+                entering:
+              </p>
+              <div class="mx-5">
+                <pre>ng serve</pre>
+              </div>
 
-            <p>
-              Please note: If you want to use the locally running API server
-              for the web frontend, you will find the URL of the API in the
-              file <em>src/app/apirequestservice.service.ts</em>. Simply
-              change this to <em>http://localhost:5003,</em> then everything
-              will only run locally. You can run the frontend on
-              <em>http://localhost:4200</em> and refer all data from the API
-              to
-              <em>http://localhost:5003</em>
-            </p>
+              <p>
+                Please note: If you want to use the locally running API server
+                for the web frontend, you will find the URL of the API in the
+                file <em>src/app/apirequestservice.service.ts</em>. Simply
+                change this to <em>http://localhost:5003,</em> then everything
+                will only run locally. You can run the frontend on
+                <em>http://localhost:4200</em> and refer all data from the API
+                to
+                <em>http://localhost:5003</em>
+              </p>
 
-            <h5>A2.6.5.3 ADAM's Web Frontend</h5>
-            <p>
-              When users visit
-              <a href="https://demoarchive.art" target="_blank">https://demoarchive.art</a>, they are presented with
-              ADAM's public web frontend. Here,
-              they can learn about the project, search for artifacts (demos),
-              persons (demo creators), and events (demo parties, exhibitions).
-            </p>
+              <h5>A2.6.5.3 ADAM's Web Frontend</h5>
+              <p>
+                When users visit
+                <a href="https://demoarchive.art" target="_blank"
+                  >https://demoarchive.art</a
+                >, they are presented with ADAM's public web frontend. Here,
+                they can learn about the project, search for artifacts (demos),
+                persons (demo creators), and events (demo parties, exhibitions).
+              </p>
 
-            <p>The web app has the following sitemap:</p>
+              <p>The web app has the following sitemap:</p>
 
-            <p class="text-center" id="circuits-ablaze-figure-103">
-              <img src="img/picture110.png" alt="Figure 103" class="img-fluid" />
-            </p>
-            <p class="text-secondary text-center">
-              Figure 103: The sitemap of ADAM, the Archive of Demo Art & Media
-            </p>
+              <p class="text-center" id="circuits-ablaze-figure-103">
+                <img
+                  src="img/picture110.png"
+                  alt="Figure 103"
+                  class="img-fluid"
+                />
+              </p>
+              <p class="text-secondary text-center">
+                Figure 103: The sitemap of ADAM, the Archive of Demo Art & Media
+              </p>
 
-            <p>The main views are home, search results, and item details:</p>
+              <p>The main views are home, search results, and item details:</p>
 
-            <p class="text-center" id="circuits-ablaze-figure-104">
-              <img src="img/picture111.png" alt="Figure 104" class="img-fluid" />
-            </p>
-            <p class="text-secondary text-center">
-              Figure 104: The views of home and the search results
-            </p>
+              <p class="text-center" id="circuits-ablaze-figure-104">
+                <img
+                  src="img/picture111.png"
+                  alt="Figure 104"
+                  class="img-fluid"
+                />
+              </p>
+              <p class="text-secondary text-center">
+                Figure 104: The views of home and the search results
+              </p>
 
-            <p>
-              The item details are the archive's centerpiece. They show
-              detailed information of an artifact, person, and event with
-              characteristics, descriptions, images, tags/keywords, and links
-              to related materials, such as other entries in the archive and
-              external resources like videos, websites, and assets.
-            </p>
-            <p class="text-center" id="circuits-ablaze-figure-105">
-              <img src="img/picture112.png" alt="Figure 105" class="img-fluid" />
-            </p>
-            <p class="text-secondary text-center">
-              Figure 105: The view of the item details
-            </p>
+              <p>
+                The item details are the archive's centerpiece. They show
+                detailed information of an artifact, person, and event with
+                characteristics, descriptions, images, tags/keywords, and links
+                to related materials, such as other entries in the archive and
+                external resources like videos, websites, and assets.
+              </p>
+              <p class="text-center" id="circuits-ablaze-figure-105">
+                <img
+                  src="img/picture112.png"
+                  alt="Figure 105"
+                  class="img-fluid"
+                />
+              </p>
+              <p class="text-secondary text-center">
+                Figure 105: The view of the item details
+              </p>
 
-            <h5>A2.6.5.4 Editor's Area</h5>
-            <p>
-              Users can register as editors and log in to make changes to the
-              archive. On the 'edit items' page, they can create new archive
-              items and edit the featured items in the carousel on the front
-              page, as well as edit news articles and compliance pages.
-            </p>
+              <h5>A2.6.5.4 Editor's Area</h5>
+              <p>
+                Users can register as editors and log in to make changes to the
+                archive. On the 'edit items' page, they can create new archive
+                items and edit the featured items in the carousel on the front
+                page, as well as edit news articles and compliance pages.
+              </p>
 
-            <p class="text-center" id="circuits-ablaze-figure-106">
-              <img src="img/picture113.png" alt="Figure 106" class="img-fluid" />
-            </p>
-            <p class="text-secondary text-center">
-              Figure 106: The editor's area of ADAM
-            </p>
+              <p class="text-center" id="circuits-ablaze-figure-106">
+                <img
+                  src="img/picture113.png"
+                  alt="Figure 106"
+                  class="img-fluid"
+                />
+              </p>
+              <p class="text-secondary text-center">
+                Figure 106: The editor's area of ADAM
+              </p>
 
-            <p>
-              Additionally, the public view of ADAM provides information pages
-              on news and the pages required for legal compliance: including
-              contact, privacy policy (for EU GDPR and Austrian DSGVO
-              compliance), cookie policy (for EU GDPR and Austrian DSGVO
-              compliance), imprint and legal Information (for compliance with
-              Austrian and German site owner disclosure laws), and terms of
-              use.
-            </p>
+              <p>
+                Additionally, the public view of ADAM provides information pages
+                on news and the pages required for legal compliance: including
+                contact, privacy policy (for EU GDPR and Austrian DSGVO
+                compliance), cookie policy (for EU GDPR and Austrian DSGVO
+                compliance), imprint and legal Information (for compliance with
+                Austrian and German site owner disclosure laws), and terms of
+                use.
+              </p>
 
-            <p class="text-center" id="circuits-ablaze-figure-107">
-              <img src="img/picture114.png" alt="Figure 107" class="img-fluid" />
-            </p>
-            <p class="text-secondary text-center">
-              Figure 107: The views of new articles, contact, and compliance
-              pages
-            </p>
+              <p class="text-center" id="circuits-ablaze-figure-107">
+                <img
+                  src="img/picture114.png"
+                  alt="Figure 107"
+                  class="img-fluid"
+                />
+              </p>
+              <p class="text-secondary text-center">
+                Figure 107: The views of new articles, contact, and compliance
+                pages
+              </p>
 
-            <p>
-              Please note that all images in this project are only
-              placeholders from
-              <a href="http://adobestock.com" target="_blank">http://adobestock.com</a>. Although they are part of the
-              project's code repository, they
-              are not released for general use.
-            </p>
+              <p>
+                Please note that all images in this project are only
+                placeholders from
+                <a href="http://adobestock.com" target="_blank"
+                  >http://adobestock.com</a
+                >. Although they are part of the project's code repository, they
+                are not released for general use.
+              </p>
 
-            <h5>A2.6.5.5 Functional Diagram of the ADAM Web Frontend</h5>
+              <h5>A2.6.5.5 Functional Diagram of the ADAM Web Frontend</h5>
 
-            <pre id="circuits-ablaze-figure-108">
+              <pre id="circuits-ablaze-figure-108">
     +-+-+-+-+ +-+-+-+-+-+-+-+-+ +-+-+-+-+-+-+-+-+-+
     |A|D|A|M| |F|R|O|N|T|E|N|D| |S|T|R|U|C|T|U|R|E|
     +-+-+-+-+ +-+-+-+-+-+-+-+-+ +-+-+-+-+-+-+-+-+-+
@@ -1164,158 +1316,178 @@
                      GET the news item).
                      3. footer.component.
                      4. cookiewarning.component.
-</pre>
-            <p class="text-secondary text-center">
-              Figure 108: Functional diagram of the ADAM web frontend
-            </p>
+</pre
+              >
+              <p class="text-secondary text-center">
+                Figure 108: Functional diagram of the ADAM web frontend
+              </p>
 
-            <h5>A2.6.5.6 ADAM Backend: API and DB</h5>
-            <p>
-              The database in MongoDB is organized into the following
-              collections: <em>Artifacts,</em> <em>Persons,</em>
-              <em>Events,</em> <em>Featured,</em> <em>News,</em> and
-              <em>Compliance.</em>
-            </p>
+              <h5>A2.6.5.6 ADAM Backend: API and DB</h5>
+              <p>
+                The database in MongoDB is organized into the following
+                collections: <em>Artifacts,</em> <em>Persons,</em>
+                <em>Events,</em> <em>Featured,</em> <em>News,</em> and
+                <em>Compliance.</em>
+              </p>
 
-            <p class="text-center" id="circuits-ablaze-figure-109">
-              <img src="img/picture115.png" alt="Figure 109" class="img-fluid" />
-            </p>
-            <p class="text-secondary text-center">
-              Figure 109: The data model of ADAM
-            </p>
+              <p class="text-center" id="circuits-ablaze-figure-109">
+                <img
+                  src="img/picture115.png"
+                  alt="Figure 109"
+                  class="img-fluid"
+                />
+              </p>
+              <p class="text-secondary text-center">
+                Figure 109: The data model of ADAM
+              </p>
 
-            <h5>A2.6.5.7 API Documentation</h5>
-            <p>
-              <em>Adam-interface.herokuapp.com</em> acts as the API of ADAM,
-              the Archive of Demo Art & Media. It serves as the interface to
-              access and change the data on MongoDB. Artifacts, persons
-              (artists, curators), events, news, the featured items, and the
-              compliance text can all be accessed through HTTP requests in a
-              RESTful manner.
-            </p>
+              <h5>A2.6.5.7 API Documentation</h5>
+              <p>
+                <em>Adam-interface.herokuapp.com</em> acts as the API of ADAM,
+                the Archive of Demo Art & Media. It serves as the interface to
+                access and change the data on MongoDB. Artifacts, persons
+                (artists, curators), events, news, the featured items, and the
+                compliance text can all be accessed through HTTP requests in a
+                RESTful manner.
+              </p>
 
-            <h5>GET (root):</h5>
-            <p>
-              <strong>Example:</strong> GET
-              <a href="https://adam-interface.herokuapp.com/" target="_blank">https://adam-interface.herokuapp.com/</a>"
-            </p>
-            <div class="mx-5">
+              <h5>GET (root):</h5>
               <p>
-                <strong>/</strong> - Provides the API documentation and
-                instructions
+                <strong>Example:</strong> GET
+                <a href="https://adam-interface.herokuapp.com/" target="_blank"
+                  >https://adam-interface.herokuapp.com/</a
+                >"
               </p>
-            </div>
+              <div class="mx-5">
+                <p>
+                  <strong>/</strong> - Provides the API documentation and
+                  instructions
+                </p>
+              </div>
 
-            <h5>GET all:</h5>
-            <p>
-              <strong>Example:</strong> GET
-              <a href="https://adam-interface.herokuapp.com/all"
-                target="_blank">https://adam-interface.herokuapp.com/all</a>
-            </p>
-            <div class="mx-5">
+              <h5>GET all:</h5>
               <p>
-                <strong>/all</strong> - The complete set of archive data (does
-                not include news, compliance text, and featured items)
+                <strong>Example:</strong> GET
+                <a
+                  href="https://adam-interface.herokuapp.com/all"
+                  target="_blank"
+                  >https://adam-interface.herokuapp.com/all</a
+                >
               </p>
-            </div>
+              <div class="mx-5">
+                <p>
+                  <strong>/all</strong> - The complete set of archive data (does
+                  not include news, compliance text, and featured items)
+                </p>
+              </div>
 
-            <h5>GET (WITHOUT an ID):</h5>
-            <p>
-              <strong>Example:</strong> GET
-              <a href="https://adam-interface.herokuapp.com/artifacts"
-                target="_blank">https://adam-interface.herokuapp.com/artifacts</a>
-            </p>
-            <div class="mx-5">
-              <p><strong>/artifacts</strong> - All artifacts</p>
-              <p><strong>/persons</strong> - All persons</p>
-              <p><strong>/events</strong> - All events</p>
-              <p><strong>/news</strong> - All news items</p>
-              <p><strong>/compliance</strong> - All compliance pages</p>
+              <h5>GET (WITHOUT an ID):</h5>
               <p>
-                <strong>/featured</strong> - The four items to be featured on
-                the frontpage
+                <strong>Example:</strong> GET
+                <a
+                  href="https://adam-interface.herokuapp.com/artifacts"
+                  target="_blank"
+                  >https://adam-interface.herokuapp.com/artifacts</a
+                >
               </p>
-            </div>
+              <div class="mx-5">
+                <p><strong>/artifacts</strong> - All artifacts</p>
+                <p><strong>/persons</strong> - All persons</p>
+                <p><strong>/events</strong> - All events</p>
+                <p><strong>/news</strong> - All news items</p>
+                <p><strong>/compliance</strong> - All compliance pages</p>
+                <p>
+                  <strong>/featured</strong> - The four items to be featured on
+                  the frontpage
+                </p>
+              </div>
 
-            <h5>GET (WITH an ID):</h5>
-            <p>
-              <strong>Example:</strong> GET
-              <a href="https://adam-interface.herokuapp.com/artifacts/a1"
-                target="_blank">https://adam-interface.herokuapp.com/artifacts/a1</a>
-            </p>
-            <div class="mx-5">
+              <h5>GET (WITH an ID):</h5>
               <p>
-                <strong>/artifacts/id</strong> - A specific item from the
-                artifacts list
+                <strong>Example:</strong> GET
+                <a
+                  href="https://adam-interface.herokuapp.com/artifacts/a1"
+                  target="_blank"
+                  >https://adam-interface.herokuapp.com/artifacts/a1</a
+                >
               </p>
-              <p>
-                <strong>/persons/id</strong> - A specific item from the
-                persons list
-              </p>
-              <p>
-                <strong>/events/id</strong> - A specific item from the events
-                list
-              </p>
-              <p>
-                <strong>/news/id</strong> - A specific news item from the news
-                list
-              </p>
-              <p>
-                <strong>/featured/id</strong> - A specific item of the four
-                featured on the frontpage
-              </p>
-              <p>
-                <strong>/compliance/id</strong> - A specific compliance page
-              </p>
-            </div>
+              <div class="mx-5">
+                <p>
+                  <strong>/artifacts/id</strong> - A specific item from the
+                  artifacts list
+                </p>
+                <p>
+                  <strong>/persons/id</strong> - A specific item from the
+                  persons list
+                </p>
+                <p>
+                  <strong>/events/id</strong> - A specific item from the events
+                  list
+                </p>
+                <p>
+                  <strong>/news/id</strong> - A specific news item from the news
+                  list
+                </p>
+                <p>
+                  <strong>/featured/id</strong> - A specific item of the four
+                  featured on the frontpage
+                </p>
+                <p>
+                  <strong>/compliance/id</strong> - A specific compliance page
+                </p>
+              </div>
 
-            <h5>DELETE (WITH an ID):</h5>
-            <p>
-              <strong>Example:</strong> DELETE
-              <a
-                href="https://adam-interface.herokuapp.com/artifacts/a1">https://adam-interface.herokuapp.com/artifacts/a1</a>
-            </p>
-            <div class="mx-5">
+              <h5>DELETE (WITH an ID):</h5>
               <p>
-                <strong>/artifacts/id</strong> - Delete a specific item from
-                the artifacts list
+                <strong>Example:</strong> DELETE
+                <a href="https://adam-interface.herokuapp.com/artifacts/a1"
+                  >https://adam-interface.herokuapp.com/artifacts/a1</a
+                >
               </p>
-              <p>
-                <strong>/persons/id</strong> - Delete a specific item from the
-                persons list
-              </p>
-              <p>
-                <strong>/events/id</strong> - Delete a specific item from the
-                events list
-              </p>
-            </div>
+              <div class="mx-5">
+                <p>
+                  <strong>/artifacts/id</strong> - Delete a specific item from
+                  the artifacts list
+                </p>
+                <p>
+                  <strong>/persons/id</strong> - Delete a specific item from the
+                  persons list
+                </p>
+                <p>
+                  <strong>/events/id</strong> - Delete a specific item from the
+                  events list
+                </p>
+              </div>
 
-            <h5>PUT (WITH an ID):</h5>
-            <p>
-              <strong>Example:</strong> PUT
-              <a href="https://adam-interface.herokuapp.com/persons/p0"
-                target="_blank">https://adam-interface.herokuapp.com/persons/p0</a>
-            </p>
-            <div class="mx-5">
+              <h5>PUT (WITH an ID):</h5>
               <p>
-                <strong>/artifacts/id</strong> - Edit a specific item from the
-                artifacts list
+                <strong>Example:</strong> PUT
+                <a
+                  href="https://adam-interface.herokuapp.com/persons/p0"
+                  target="_blank"
+                  >https://adam-interface.herokuapp.com/persons/p0</a
+                >
               </p>
-              <p>
-                <strong>/persons/id</strong> - Edit a specific item from the
-                persons list
-              </p>
-              <p>
-                <strong>/events/id</strong> - Edit a specific item from the
-                events list
-              </p>
-            </div>
+              <div class="mx-5">
+                <p>
+                  <strong>/artifacts/id</strong> - Edit a specific item from the
+                  artifacts list
+                </p>
+                <p>
+                  <strong>/persons/id</strong> - Edit a specific item from the
+                  persons list
+                </p>
+                <p>
+                  <strong>/events/id</strong> - Edit a specific item from the
+                  events list
+                </p>
+              </div>
 
-            <p>
-              Structure of <strong>artifacts,</strong>
-              <strong>persons,</strong> and <strong>events</strong>
-            </p>
-            <pre>
+              <p>
+                Structure of <strong>artifacts,</strong>
+                <strong>persons,</strong> and <strong>events</strong>
+              </p>
+              <pre>
       _id (String)
       ref_id (String)
       category (String)
@@ -1332,19 +1504,20 @@
       artifacts (Array)
       persons (Array)
       events (Array)
-            </pre>
+            </pre
+              >
 
-            <div class="mx-5">
-              <p>
-                <strong>/news</strong> - The contents of all news items must
-                be changed at once.
-              </p>
-            </div>
+              <div class="mx-5">
+                <p>
+                  <strong>/news</strong> - The contents of all news items must
+                  be changed at once.
+                </p>
+              </div>
 
-            <p>There are three news items, each with the structure below.</p>
+              <p>There are three news items, each with the structure below.</p>
 
-            <p>Structure of <strong>news</strong> items:</p>
-            <pre>
+              <p>Structure of <strong>news</strong> items:</p>
+              <pre>
       id (String)
       ref_id (String)
       title (String)
@@ -1354,19 +1527,19 @@
       articletext (String)
               </pre>
 
-            <div class="mx-5">
+              <div class="mx-5">
+                <p>
+                  <strong>/featured/id</strong> - The contents of all featured
+                  items must be changed at once.
+                </p>
+              </div>
+
               <p>
-                <strong>/featured/id</strong> - The contents of all featured
-                items must be changed at once.
+                There are four featured items, each with the structure below.
               </p>
-            </div>
 
-            <p>
-              There are four featured items, each with the structure below.
-            </p>
-
-            <p>Structure of <strong>featured</strong> items:</p>
-            <pre>
+              <p>Structure of <strong>featured</strong> items:</p>
+              <pre>
       ref_id (String)
       image (String)
       title (String)
@@ -1374,19 +1547,19 @@
       link (String)
               </pre>
 
-            <div class="mx-5">
+              <div class="mx-5">
+                <p>
+                  <strong>/compliance/id</strong> - The contents of all
+                  compliance pages must be changed at once.
+                </p>
+              </div>
+
               <p>
-                <strong>/compliance/id</strong> - The contents of all
-                compliance pages must be changed at once.
+                There are five compliance pages, each with the structure below.
               </p>
-            </div>
 
-            <p>
-              There are five compliance pages, each with the structure below.
-            </p>
-
-            <p>Structure of <strong>compliance</strong> items:</p>
-            <pre>
+              <p>Structure of <strong>compliance</strong> items:</p>
+              <pre>
       category (String)
       title (String)
       firstimage (String)
@@ -1394,242 +1567,295 @@
       articletext (String)
               </pre>
 
-            <h5>POST (WITH the parameter 'new')</h5>
-            <p>
-              <strong>Example:</strong> POST
-              adam-interface.herokuapp.com/collections/new
-            </p>
-            <div class="mx-5">
+              <h5>POST (WITH the parameter 'new')</h5>
               <p>
-                <strong>/artifacts/new</strong> - Create a new item in the
-                list of artifacts
+                <strong>Example:</strong> POST
+                adam-interface.herokuapp.com/collections/new
               </p>
-              <p>
-                <strong>/persons/new</strong> - Create a new item in the list
-                of persons
-              </p>
-              <p>
-                <strong>/events/new</strong> - Create a new item in the list
-                of events
-              </p>
-            </div>
+              <div class="mx-5">
+                <p>
+                  <strong>/artifacts/new</strong> - Create a new item in the
+                  list of artifacts
+                </p>
+                <p>
+                  <strong>/persons/new</strong> - Create a new item in the list
+                  of persons
+                </p>
+                <p>
+                  <strong>/events/new</strong> - Create a new item in the list
+                  of events
+                </p>
+              </div>
 
-            <h5>
-              A2.6.5.7 Creating New Archive Entries and Editing Existing Ones
-            </h5>
-            <p>Users can create any of the three types of archive items:</p>
+              <h5>
+                A2.6.5.7 Creating New Archive Entries and Editing Existing Ones
+              </h5>
+              <p>Users can create any of the three types of archive items:</p>
+              <ul>
+                <li>
+                  <strong>Artifacts:</strong> These are items of new media art
+                  or specifically demo art. They can be the artwork produced by
+                  artists, the results of development, the concepts for
+                  unfinished art or art they never started work on. Artifacts
+                  can be described in words and pictures, with videos and links
+                  to their code in a repository. They can also have aliases and
+                  keywords.
+                </li>
+                <li>
+                  <strong>Persons:</strong> These are the people behind the art.
+                  They can be the artists, the curators, the conservators and
+                  art historians. They are individuals with aliases, active
+                  years, specializations, a personal history and related works.
+                </li>
+                <li>
+                  <strong>Events:</strong> Anything restricted in time can be an
+                  event, such as an exhibition, a demo-party, the release of a
+                  piece of art, a competition or award ceremony.
+                </li>
+              </ul>
+
+              <h4>A2.6.6 Conclusion of the Case Study</h4>
+              <p>
+                This case study of ADAM, the Archive of Demo Art & Media, shows
+                how much is possible by using web technologies that were
+                developed by large communities. ADAM is built on these
+                established web technologies, hosted on a managed cloud
+                platform, and leverages MongoDB for its data. ADAM ensures a
+                strict separation between the user interface, the API, and the
+                data.
+              </p>
+              <p>
+                This is not a revolutionary solution, but rather a proven,
+                modern approach that matches the requirements and needs of an
+                archive of digital art. It is expandable and "future-proof."
+                Over the next few years, whenever a certain web technology
+                becomes inevitably deprecated or a far better option arises,
+                that component can be swapped out or migrated to a new
+                technology. When Angular has served its time as the frontend
+                framework used for ADAM, a new framework with the next
+                generation of features can be implemented without interfering
+                with the API and database. If the API's cloud service is no
+                longer a viable option, the existing NodeJS code can be easily
+                moved to a different cloud service. Should MongoDB's great
+                performance and advanced features due to the document-based data
+                model be eclipsed by an even more advanced database solution,
+                then the data can be migrated to this database without requiring
+                changes to the web frontend and with only minor adaptations to
+                the API.
+              </p>
+              <p>
+                By approaching the custom archive solution as component-based
+                building blocks, the archive remains flexible and open to future
+                developments.
+              </p>
+
+              <h5>A2.7 The Right Solution for the Right Archive</h5>
+              <p>
+                In the discussion above, it has been established that using
+                Wikipedia is too broad of a solution that has the risk of
+                submitting to another party's rules and policies. Likewise, a
+                proprietary solution will prove to be expensive, inflexible, and
+                carries the risk of vendor lock-in.
+              </p>
+              <p>
+                The two most viable options to set up an archive of demo art
+                are:
+              </p>
+              <ol>
+                <li>
+                  <strong>The use of a MediaWiki:</strong> Of the two options,
+                  this is the fastest, cheapest, and easiest option while
+                  maintaining some level of control. Future development is
+                  handled by the MediaWiki community, including security patches
+                  and the adoption of next-generation technologies. The major
+                  risk is that the product was developed to meet a very wide
+                  range of needs, most not applicable to an art archive's
+                  specific requirements. This does not necessarily have to be a
+                  disadvantage, but it does risk having to wait for the
+                  MediaWiki community to develop a future feature specific to
+                  the art archive.
+                </li>
+                <li>
+                  <strong
+                    >The custom development of the Archive of Demo Art &
+                    Media:</strong
+                  >
+                  If the necessary financing is secured, then it is relatively
+                  reasonable and affordable to develop an archive solution based
+                  on community-created web technologies. This offsets the need
+                  to develop everything from scratch while still allowing
+                  targeting of the exact requirements. This bespoke approach is
+                  more expensive, but the results are exactly what is needed for
+                  an art archive.
+                </li>
+              </ol>
+              <p>
+                Regardless of the approach taken, an archive should be open and
+                accessible to a large audience and potential contributors. It
+                should allow for federated data sources in other archives. Only
+                by being open can a demo archive be a gift for today's
+                demoscene. Not only that, it can also be a gift for tomorrow's
+                media art historians, artists, and technologists seeking to
+                learn how yesterday's artists were able to create demo art
+                despite the constraints and limitations of the technology used.
+              </p>
+            </section>
+          </article>
+          <hr />
+          <section id="circuits-ablaze-appendix-2-footnotes">
+            <h3 class="mt-5">Footnotes</h3>
+
+            <p id="circuits-ablaze-appendix-2-footnote-a2-99">
+              <sup>[99]</sup>
+              <em>ADA, the Archive of Digital Art, Mission Statement</em>
+              <a
+                href="https://www.digitalartarchive.at/about/mission.html"
+                target="_blank"
+                >https://www.digitalartarchive.at/about/mission.html</a
+              >
+              (Retrieved on August 30, 2020)<br /><a
+                href="#circuits-ablaze-appendix-2-origin-a2-99"
+                class="btn btn-outline-secondary btn-sm"
+              >
+                &raquo; Back [99]</a
+              >
+            </p>
+
+            <p id="circuits-ablaze-appendix-2-footnote-a2-100">
+              <sup>[101]</sup>
+              Grau, Oliver; Hoth, Janina; Wandl-Vogt (Eds.). 2019.
+              <em
+                >Digital Art through the Looking Glass. New strategies for
+                archiving, collecting and preserving in digital humanities.</em
+              >
+              Edition Donau-Universität Krems; ÖAW Austrian Academy of
+              Sciences.<br /><a
+                href="#circuits-ablaze-appendix-2-origin-a2-100"
+                class="btn btn-outline-secondary btn-sm"
+              >
+                &raquo; Back [100]</a
+              >
+            </p>
+
+            <p id="circuits-ablaze-appendix-2-footnote-a2-101">
+              <sup>[101]</sup>
+              Grau, Oliver; Hoth, Janina; Wandl-Vogt (Eds.). 2019.
+              <em
+                >Digital Art through the Looking Glass. New strategies for
+                archiving, collecting and preserving in digital humanities.</em
+              >
+              Edition Donau-Universität Krems; ÖAW Austrian Academy of
+              Sciences.<br /><a
+                href="#circuits-ablaze-appendix-2-origin-a2-101"
+                class="btn btn-outline-secondary btn-sm"
+              >
+                &raquo; Back [101]</a
+              >
+            </p>
+
+            <p id="circuits-ablaze-appendix-2-footnote-a2-102">
+              <sup>[102]</sup>
+              <em>Wikipedia Notability Guidelines.</em>
+              <a
+                href="https://en.wikipedia.org/wiki/Wikipedia:Notability"
+                target="_blank"
+                >https://en.wikipedia.org/wiki/Wikipedia:Notability</a
+              >
+              (Retrieved on September 24, 2020)<br /><a
+                href="#circuits-ablaze-appendix-2-origin-a2-102"
+                class="btn btn-outline-secondary btn-sm"
+              >
+                &raquo; Back [102]</a
+              >
+            </p>
+          </section>
+        </main>
+
+        <aside class="col-md-4">
+          <div
+            class="alert alert-warning position-fixed mx-2"
+            style="overflow-y: scroll; height: 80vh"
+          >
+            <img
+              src="img/circuits-ablaze.jpg"
+              alt="Circuits Ablaze"
+              class="img-fluid rounded"
+            />
+            <p class="mt-2 text-center">
+              <a href="index.html#toc" class="btn btn-outline-primary btn-sm"
+                >&uarr; Table of Contents</a
+              >
+            </p>
+            <hr />
+            <p>
+              <a href="#circuits-ablaze-appendix-2"
+                >Appendix II: Concepts for a Demo Archive</a
+              >
+            </p>
             <ul>
               <li>
-                <strong>Artifacts:</strong> These are items of new media art
-                or specifically demo art. They can be the artwork produced by
-                artists, the results of development, the concepts for
-                unfinished art or art they never started work on. Artifacts
-                can be described in words and pictures, with videos and links
-                to their code in a repository. They can also have aliases and
-                keywords.
+                <a href="#circuits-ablaze-appendix-2-section-1">Introduction</a>
+              </li>
+
+              <li>
+                <a href="#circuits-ablaze-appendix-2-section-2"
+                  >A2.1 The Necessity of Conserving New Media Art in General</a
+                >
               </li>
               <li>
-                <strong>Persons:</strong> These are the people behind the art.
-                They can be the artists, the curators, the conservators and
-                art historians. They are individuals with aliases, active
-                years, specializations, a personal history and related works.
+                <a href="#circuits-ablaze-appendix-2-section-3"
+                  >A2.2 The Quest for the Preservation of Digital Art</a
+                >
               </li>
               <li>
-                <strong>Events:</strong> Anything restricted in time can be an
-                event, such as an exhibition, a demo-party, the release of a
-                piece of art, a competition or award ceremony.
+                <a href="#circuits-ablaze-appendix-2-section-4"
+                  >A2.3 Objectives of a Demo Archive</a
+                >
+              </li>
+              <li>
+                <a href="#circuits-ablaze-appendix-2-section-5">
+                  A2.4 Achieving Critical Mass Through a Collaborative Effort</a
+                >
+              </li>
+              <li>
+                <a href="#circuits-ablaze-appendix-2-section-6"
+                  >A2.5 A New Demo Archive?</a
+                >
+              </li>
+              <li>
+                <a href="#circuits-ablaze-appendix-2-section-7"
+                  >A2.6 Technical Solutions for Implementing a Demo Archive</a
+                >
+              </li>
+              <li>
+                <a href="#circuits-ablaze-appendix-1-footnotes">Footnotes</a>
               </li>
             </ul>
 
-            <h4>A2.6.6 Conclusion of the Case Study</h4>
-            <p>
-              This case study of ADAM, the Archive of Demo Art & Media, shows
-              how much is possible by using web technologies that were
-              developed by large communities. ADAM is built on these
-              established web technologies, hosted on a managed cloud
-              platform, and leverages MongoDB for its data. ADAM ensures a
-              strict separation between the user interface, the API, and the
-              data.
-            </p>
-            <p>
-              This is not a revolutionary solution, but rather a proven,
-              modern approach that matches the requirements and needs of an
-              archive of digital art. It is expandable and "future-proof."
-              Over the next few years, whenever a certain web technology
-              becomes inevitably deprecated or a far better option arises,
-              that component can be swapped out or migrated to a new
-              technology. When Angular has served its time as the frontend
-              framework used for ADAM, a new framework with the next
-              generation of features can be implemented without interfering
-              with the API and database. If the API's cloud service is no
-              longer a viable option, the existing NodeJS code can be easily
-              moved to a different cloud service. Should MongoDB's great
-              performance and advanced features due to the document-based data
-              model be eclipsed by an even more advanced database solution,
-              then the data can be migrated to this database without requiring
-              changes to the web frontend and with only minor adaptations to
-              the API.
-            </p>
-            <p>
-              By approaching the custom archive solution as component-based
-              building blocks, the archive remains flexible and open to future
-              developments.
-            </p>
-
-            <h5>A2.7 The Right Solution for the Right Archive</h5>
-            <p>
-              In the discussion above, it has been established that using
-              Wikipedia is too broad of a solution that has the risk of
-              submitting to another party's rules and policies. Likewise, a
-              proprietary solution will prove to be expensive, inflexible, and
-              carries the risk of vendor lock-in.
-            </p>
-            <p>
-              The two most viable options to set up an archive of demo art
-              are:
-            </p>
-            <ol>
-              <li>
-                <strong>The use of a MediaWiki:</strong> Of the two options,
-                this is the fastest, cheapest, and easiest option while
-                maintaining some level of control. Future development is
-                handled by the MediaWiki community, including security patches
-                and the adoption of next-generation technologies. The major
-                risk is that the product was developed to meet a very wide
-                range of needs, most not applicable to an art archive's
-                specific requirements. This does not necessarily have to be a
-                disadvantage, but it does risk having to wait for the
-                MediaWiki community to develop a future feature specific to
-                the art archive.
-              </li>
-              <li>
-                <strong>The custom development of the Archive of Demo Art &
-                  Media:</strong>
-                If the necessary financing is secured, then it is relatively
-                reasonable and affordable to develop an archive solution based
-                on community-created web technologies. This offsets the need
-                to develop everything from scratch while still allowing
-                targeting of the exact requirements. This bespoke approach is
-                more expensive, but the results are exactly what is needed for
-                an art archive.
-              </li>
-            </ol>
-            <p>
-              Regardless of the approach taken, an archive should be open and
-              accessible to a large audience and potential contributors. It
-              should allow for federated data sources in other archives. Only
-              by being open can a demo archive be a gift for today's
-              demoscene. Not only that, it can also be a gift for tomorrow's
-              media art historians, artists, and technologists seeking to
-              learn how yesterday's artists were able to create demo art
-              despite the constraints and limitations of the technology used.
-            </p>
-          </section>
-        </article>
-        <hr />
-        <section id="circuits-ablaze-appendix-2-footnotes">
-          <h3 class="mt-5">Footnotes</h3>
-
-          <p id="circuits-ablaze-appendix-2-footnote-a2-99">
-            <sup>[99]</sup>
-            <em>ADA, the Archive of Digital Art, Mission Statement</em>
-            <a href="https://www.digitalartarchive.at/about/mission.html"
-              target="_blank">https://www.digitalartarchive.at/about/mission.html</a>
-            (Retrieved on August 30, 2020)<br /><a href="#circuits-ablaze-appendix-2-origin-a2-99"
-              class="btn btn-outline-secondary btn-sm">
-              &raquo; Back [99]</a>
-          </p>
-
-          <p id="circuits-ablaze-appendix-2-footnote-a2-100">
-            <sup>[101]</sup>
-            Grau, Oliver; Hoth, Janina; Wandl-Vogt (Eds.). 2019.
-            <em>Digital Art through the Looking Glass. New strategies for
-              archiving, collecting and preserving in digital humanities.</em>
-            Edition Donau-Universität Krems; ÖAW Austrian Academy of
-            Sciences.<br /><a href="#circuits-ablaze-appendix-2-origin-a2-100" class="btn btn-outline-secondary btn-sm">
-              &raquo; Back [100]</a>
-          </p>
-
-          <p id="circuits-ablaze-appendix-2-footnote-a2-101">
-            <sup>[101]</sup>
-            Grau, Oliver; Hoth, Janina; Wandl-Vogt (Eds.). 2019.
-            <em>Digital Art through the Looking Glass. New strategies for
-              archiving, collecting and preserving in digital humanities.</em>
-            Edition Donau-Universität Krems; ÖAW Austrian Academy of
-            Sciences.<br /><a href="#circuits-ablaze-appendix-2-origin-a2-101" class="btn btn-outline-secondary btn-sm">
-              &raquo; Back [101]</a>
-          </p>
-
-          <p id="circuits-ablaze-appendix-2-footnote-a2-102">
-            <sup>[102]</sup>
-            <em>Wikipedia Notability Guidelines.</em>
-            <a href="https://en.wikipedia.org/wiki/Wikipedia:Notability"
-              target="_blank">https://en.wikipedia.org/wiki/Wikipedia:Notability</a>
-            (Retrieved on September 24, 2020)<br /><a href="#circuits-ablaze-appendix-2-origin-a2-102"
-              class="btn btn-outline-secondary btn-sm">
-              &raquo; Back [102]</a>
-          </p>
-        </section>
-      </main>
-
-      <aside class="col-md-4">
-        <div class="alert alert-warning position-fixed mx-2" style="overflow-y: scroll; height: 80vh">
-          <img src="img/circuits-ablaze.jpg" alt="Circuits Ablaze" class="img-fluid rounded" />
-          <p class="mt-2 text-center">
-            <a href="index.html#toc" class="btn btn-outline-primary btn-sm">&uarr; Table of Contents</a>
-          </p>
-          <hr />
-          <p>
-            <a href="#circuits-ablaze-appendix-2">Appendix II: Concepts for a Demo Archive</a>
-          </p>
-          <ul>
-            <li>
-              <a href="#circuits-ablaze-appendix-2-section-1">Introduction</a>
-            </li>
-
-            <li>
-              <a href="#circuits-ablaze-appendix-2-section-2">A2.1 The Necessity of Conserving New Media Art in
-                General</a>
-            </li>
-            <li>
-              <a href="#circuits-ablaze-appendix-2-section-3">A2.2 The Quest for the Preservation of Digital Art</a>
-            </li>
-            <li>
-              <a href="#circuits-ablaze-appendix-2-section-4">A2.3 Objectives of a Demo Archive</a>
-            </li>
-            <li>
-              <a href="#circuits-ablaze-appendix-2-section-5">
-                A2.4 Achieving Critical Mass Through a Collaborative Effort</a>
-            </li>
-            <li>
-              <a href="#circuits-ablaze-appendix-2-section-6">A2.5 A New Demo Archive?</a>
-            </li>
-            <li>
-              <a href="#circuits-ablaze-appendix-2-section-7">A2.6 Technical Solutions for Implementing a Demo
-                Archive</a>
-            </li>
-            <li>
-              <a href="#circuits-ablaze-appendix-1-footnotes">Footnotes</a>
-            </li>
-          </ul>
-
-          <hr />
-          <div class="row">
-            <div class="col-md-6">
-              <p>
-                <a href="appendix-01.html" class="btn btn-outline-primary btn-sm">&laquo; Appendix I</a>
-              </p>
-            </div>
-            <div class="col-md-6">
-              <p class="text-end">
-                <a href="bibliography.html" class="btn btn-outline-primary btn-sm">Bibliography &raquo;</a>
-              </p>
+            <hr />
+            <div class="row">
+              <div class="col-md-6">
+                <p>
+                  <a
+                    href="appendix-01.html"
+                    class="btn btn-outline-primary btn-sm"
+                    >&laquo; Appendix I</a
+                  >
+                </p>
+              </div>
+              <div class="col-md-6">
+                <p class="text-end">
+                  <a
+                    href="bibliography.html"
+                    class="btn btn-outline-primary btn-sm"
+                    >Bibliography &raquo;</a
+                  >
+                </p>
+              </div>
             </div>
           </div>
-        </div>
-      </aside>
+        </aside>
+      </div>
     </div>
-  </div>
-</body>
-
+  </body>
 </html>

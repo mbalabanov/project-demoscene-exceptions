@@ -1,142 +1,200 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Collections | Circuits Ablaze</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Collections | Circuits Ablaze</title>
-  <link rel="stylesheet" href="css/bootstrap.min.css" />
-</head>
+  <body>
+    <nav
+      class="d-flex flex-wrap justify-content-center p-3 bg-primary bg-gradient text-light"
+    >
+      <a
+        href="https://marincomics.com"
+        class="d-flex align-items-center mb-md-1 me-md-auto text-dark text-decoration-none"
+      >
+        <img
+          src="https://marincomics.com/img/marincomics-logo.png"
+          alt="Marin Comics"
+          height="50px"
+        />
+      </a>
 
-<body>
-  <nav class="d-flex flex-wrap justify-content-center p-3 bg-primary bg-gradient text-light">
-    <a href="https://marincomics.com"
-      class="d-flex align-items-center mb-md-1 me-md-auto text-dark text-decoration-none">
-      <img src="https://marincomics.com/img/marincomics-logo.png" alt="Marin Comics" height="50px" />
-    </a>
-    <ul class="nav nav-pills me-4">
-      <li class="nav-item">
-        <a href="https://marincomics.com/index.html#comics" class="nav-link link-light">Comics</a>
-      </li>
-      <li class="nav-item">
-        <a href="https://marincomics.com/index.html#dev-projects" class="nav-link link-light">Dev-Projects</a>
-      </li>
-      <li class="nav-item">
-        <a href="https://marincomics.com/index.html#writing" class="nav-link link-light">Writing</a>
-      </li>
-      <li class="nav-item">
-        <a href="https://marincomics.com/index.html#videos" class="nav-link link-light">Videos</a>
-      </li>
-      <li class="nav-item">
-        <a href="https://marincomics.com/about.html" class="nav-link link-light">About</a>
-      </li>
-    </ul>
-  </nav>
-  <div class="container mt-2">
-    <div class="row">
-      <main class="col-md-8">
-        <h1>Circuits Ablaze</h1>
-        <h2>
-          How Technical Limitations Pushed the Early Demoscene to Produce
-          Digital Art
-        </h2>
-        <h3>Master's Thesis by Marin Balabanov</h3>
-        <hr />
-        <article id="circuits-ablaze-collections">
-          <h2>Collections</h2>
-          <section id="circuits-ablaze-bibliography">
-            <ul>
-              <li>
-                <a href="http://www.pouet.net" target="_blank">http://www.pouet.net</a>
-                <br />
-                The French pouet.net, acts as the demoscene’s memory, listing
-                and archiving historic demos on legacy systems like the
-                Commodore 64, the Atari 8-bit line, the Commodore Amiga, the
-                Atari ST and many others.
-                <br /><br />
-              </li>
-
-              <li>
-                <a href="https://demozoo.org" target="_blank">https://demozoo.org</a><br />
-                Demozoo is the site that features an archive of demos on
-                modern systems in the active demoscene. It is the archive of
-                current practice. Demozoo provides information and downloads,
-                as well as links to the web locations of the demo-groups that
-                created the demos.
-                <br /><br />
-              </li>
-
-              <li>
-                <a href="https://digitalartarchive.at" target="_blank">https://digitalartarchive.at</a><br />
-                The Archive of Digital Art (ADA)
-                <br /><br />
-              </li>
-
-              <li>
-                <a href="https://github.com/topics/demoscene"
-                  target="_blank">https://github.com/topics/demoscene</a><br />
-                The source code repositories of demos on Github. These
-                repositories not only store the executables of hundreds of
-                classic demos, but also the original source code for many of
-                them.
-                <br /><br />
-              </li>
-
-              <li>
-                <a href="http://www.atarimania.com" target="_blank">http://www.atarimania.com</a><br />
-                An archive of historic Atari software and scanned magazines.
-                <br /><br />
-              </li>
-
-              <li>
-                <a href="https://github.com/ggnkua/Atari_ST_Sources/tree/master/ASM/The%20Exceptions"
-                  target="_blank">https://github.com/ggnkua/Atari_ST_Sources/tree/master/ASM/The%20Exceptions</a><br />
-                The original source code of the Exceptions’ demos is available
-                on Github. This is part of a larger effort to preserve source
-                code of Atari ST applications and demos.
-                <br /><br />
-              </li>
-
-              <li>
-                <a href="https://st-news.com" target="_blank">https://st-news.com</a><br />
-                The archive of the Atari ST diskmagazine ST-NEWS provided by
-                Richard Karsmakers
-                <br /><br />
-              </li>
-            </ul>
-          </section>
-        </article>
-      </main>
-
-      <aside class="col-md-4">
-        <div class="alert alert-warning position-fixed mx-2" style="overflow-y: scroll; height: 80vh">
-          <img src="img/circuits-ablaze.jpg" alt="Circuits Ablaze" class="img-fluid rounded" />
-          <p class="mt-2 text-center">
-            <a href="index.html#toc" class="btn btn-outline-primary btn-sm">&uarr; Table of Contents</a>
-          </p>
+      <ul class="nav nav-pills me-4">
+        <li class="nav-item">
+          <a
+            href="https://marincomics.com/index.html#dev-projects"
+            class="nav-link link-light"
+            >Dev-Projects</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            href="https://marincomics.com/index.html#comics"
+            class="nav-link link-light"
+            >Comics</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            href="https://marincomics.com/index.html#writing"
+            class="nav-link link-light"
+            >Writing</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            href="https://marincomics.com/index.html#videos"
+            class="nav-link link-light"
+            >Videos</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            href="https://marincomics.com/about.html"
+            class="nav-link link-light"
+            >About</a
+          >
+        </li>
+      </ul>
+    </nav>
+    <div class="container mt-2">
+      <div class="row">
+        <main class="col-md-8">
+          <h1>Circuits Ablaze</h1>
+          <h2>
+            How Technical Limitations Pushed the Early Demoscene to Produce
+            Digital Art
+          </h2>
+          <h3>Master's Thesis by Marin Balabanov</h3>
           <hr />
-          <p>
-            <a href="#circuits-ablaze-collections">Collections</a>
-          </p>
+          <article id="circuits-ablaze-collections">
+            <h2>Collections</h2>
+            <section id="circuits-ablaze-bibliography">
+              <ul>
+                <li>
+                  <a href="http://www.pouet.net" target="_blank"
+                    >http://www.pouet.net</a
+                  >
+                  <br />
+                  The French pouet.net, acts as the demoscene’s memory, listing
+                  and archiving historic demos on legacy systems like the
+                  Commodore 64, the Atari 8-bit line, the Commodore Amiga, the
+                  Atari ST and many others.
+                  <br /><br />
+                </li>
 
-          <hr />
-          <div class="row">
-            <div class="col-md-6">
-              <p>
-                <a href="bibliography.html" class="btn btn-outline-primary btn-sm">&laquo; Back to Bibliography</a>
-              </p>
-            </div>
-            <div class="col-md-6">
-              <p class="text-end">
-                <a href="https://marincomics.com/" class="btn btn-outline-primary btn-sm">&uarr; Main Page</a>
-              </p>
+                <li>
+                  <a href="https://demozoo.org" target="_blank"
+                    >https://demozoo.org</a
+                  ><br />
+                  Demozoo is the site that features an archive of demos on
+                  modern systems in the active demoscene. It is the archive of
+                  current practice. Demozoo provides information and downloads,
+                  as well as links to the web locations of the demo-groups that
+                  created the demos.
+                  <br /><br />
+                </li>
+
+                <li>
+                  <a href="https://digitalartarchive.at" target="_blank"
+                    >https://digitalartarchive.at</a
+                  ><br />
+                  The Archive of Digital Art (ADA)
+                  <br /><br />
+                </li>
+
+                <li>
+                  <a href="https://github.com/topics/demoscene" target="_blank"
+                    >https://github.com/topics/demoscene</a
+                  ><br />
+                  The source code repositories of demos on Github. These
+                  repositories not only store the executables of hundreds of
+                  classic demos, but also the original source code for many of
+                  them.
+                  <br /><br />
+                </li>
+
+                <li>
+                  <a href="http://www.atarimania.com" target="_blank"
+                    >http://www.atarimania.com</a
+                  ><br />
+                  An archive of historic Atari software and scanned magazines.
+                  <br /><br />
+                </li>
+
+                <li>
+                  <a
+                    href="https://github.com/ggnkua/Atari_ST_Sources/tree/master/ASM/The%20Exceptions"
+                    target="_blank"
+                    >https://github.com/ggnkua/Atari_ST_Sources/tree/master/ASM/The%20Exceptions</a
+                  ><br />
+                  The original source code of the Exceptions’ demos is available
+                  on Github. This is part of a larger effort to preserve source
+                  code of Atari ST applications and demos.
+                  <br /><br />
+                </li>
+
+                <li>
+                  <a href="https://st-news.com" target="_blank"
+                    >https://st-news.com</a
+                  ><br />
+                  The archive of the Atari ST diskmagazine ST-NEWS provided by
+                  Richard Karsmakers
+                  <br /><br />
+                </li>
+              </ul>
+            </section>
+          </article>
+        </main>
+
+        <aside class="col-md-4">
+          <div
+            class="alert alert-warning position-fixed mx-2"
+            style="overflow-y: scroll; height: 80vh"
+          >
+            <img
+              src="img/circuits-ablaze.jpg"
+              alt="Circuits Ablaze"
+              class="img-fluid rounded"
+            />
+            <p class="mt-2 text-center">
+              <a href="index.html#toc" class="btn btn-outline-primary btn-sm"
+                >&uarr; Table of Contents</a
+              >
+            </p>
+            <hr />
+            <p>
+              <a href="#circuits-ablaze-collections">Collections</a>
+            </p>
+
+            <hr />
+            <div class="row">
+              <div class="col-md-6">
+                <p>
+                  <a
+                    href="bibliography.html"
+                    class="btn btn-outline-primary btn-sm"
+                    >&laquo; Back to Bibliography</a
+                  >
+                </p>
+              </div>
+              <div class="col-md-6">
+                <p class="text-end">
+                  <a
+                    href="https://marincomics.com/"
+                    class="btn btn-outline-primary btn-sm"
+                    >&uarr; Main Page</a
+                  >
+                </p>
+              </div>
             </div>
           </div>
-        </div>
-      </aside>
+        </aside>
+      </div>
     </div>
-  </div>
-</body>
-
+  </body>
 </html>
