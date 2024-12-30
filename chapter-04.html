@@ -1,1290 +1,1669 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>4. Breaking the Limits in 1988 | Circuits Ablaze</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../css/custom.css" />
+    <link
+      rel="canonical"
+      href="https://marincomics.com/project-demoscene-exceptions/chapter-04.html"
+    />
+    <meta
+      property="og:title"
+      content="Circuits Ablaze - 4. Breaking the Limits in 1988"
+    />
+    <meta
+      property="og:description"
+      name="description"
+      content="The focus of this master's thesis is on the demo-group The Exceptions during the years 1987 to 1989 in the Atari ST demoscene. These were the formative years of the Atari ST demoscene, and The Exceptions were the first to produce demos on the computer system."
+    />
+    <meta
+      name="keywords"
+      content="Demoscene, Atari ST, Exceptions, Computer Art, Media Art, Computing History"
+    />
+    <meta
+      property="og:image"
+      content="https://marincomics.com/project-demoscene-exceptions/img/circuits-ablaze.jpg"
+    />
+    <meta name="author" content="Marin Balabanov" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>4. Breaking the Limits in 1988 | Circuits Ablaze</title>
-  <link rel="stylesheet" href="css/bootstrap.min.css" />
-  <link rel="stylesheet" href="../css/custom.css" />
-  <link rel="canonical" href="https://marincomics.com/project-demoscene-exceptions/chapter-04.html" />
-  <meta
-    property="og:title"
-    content="Circuits Ablaze - 4. Breaking the Limits in 1988"
-  />
-  <meta
-    property="og:description"
-    name="description"
-    content="The focus of this master's thesis is on the demo-group The Exceptions during the years 1987 to 1989 in the Atari ST demoscene. These were the formative years of the Atari ST demoscene, and The Exceptions were the first to produce demos on the computer system."
-  />
-  <meta
-    name="keywords"
-    content="Demoscene, Atari ST, Exceptions, Computer Art, Media Art, Computing History"
-  />
-  <meta
-    property="og:image"
-    content="https://marincomics.com/project-demoscene-exceptions/img/circuits-ablaze.jpg"
-  />
-  <meta name="author" content="Marin Balabanov" />
-</head>
+  <body>
+    <nav
+      class="navbar navbar-expand-lg bg-primary bg-gradient"
+      data-bs-theme="dark"
+    >
+      <div class="container">
+        <a class="navbar-brand" href="https://marincomics.com"
+          ><img
+            src="https://marincomics.com/img/marincomics-logo-sm.png"
+            alt="Marin Comics"
+            width="200px"
+            class="mt-2"
+        /></a>
+        <button
+          class="navbar-toggler text-white border-white bg-light"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarMarinComics"
+          aria-controls="navbarMarinComics"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarMarinComics">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a
+                class="nav-link link-light"
+                href="https://marincomics.com/writing.html"
+                >Writing</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link link-light"
+                href="https://marincomics.com/dev.html"
+                >Dev</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link link-light"
+                href="https://marincomics.com/videos.html"
+                >Videos</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link link-light"
+                href="https://marincomics.com/comics.html"
+                >Comics</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link link-light"
+                href="https://marincomics.com/about.html"
+                >About</a
+              >
+            </li>
+          </ul>
+          <a href="#" class="btn btn-outline-light" onclick="triggerSearch()"
+            >Search Site</a
+          >
+        </div>
+      </div>
+    </nav>
 
-<body>
-  <nav class="d-flex flex-wrap justify-content-center p-3 bg-primary bg-gradient text-light">
-    <a href="https://marincomics.com" class="d-flex align-items-center mb-md-1 me-md-auto text-dark text-decoration-none">
-      <img src="/img/marincomics-logo.png" alt="Marin Comics" height="50" />
-    </a>
+    <div class="container mt-2">
+      <div class="row">
+        <main class="col-md-8">
+          <h1 class="text-secondary mt-5">Circuits Ablaze</h1>
+          <article id="circuits-ablaze-chapter-4">
+            <h2>Chapter 4. Breaking the Limits in 1988</h2>
 
-    <ul class="nav nav-pills me-4">
-      <li class="nav-item">
-        <a href="/index.html" class="nav-link link-light">Home</a>
-      </li>
-      <li class="nav-item">
-        <a href="/writing.html" class="nav-link link-light">Writing</a>
-      </li>
-      <li class="nav-item">
-        <a href="/dev.html" class="nav-link link-light">Dev</a>
-      </li>
-      <li class="nav-item">
-        <a href="/videos.html" class="nav-link link-light">Videos</a>
-      </li>
-      <li class="nav-item">
-        <a href="/comics.html" class="nav-link link-light">Comics</a>
-      </li>
-      <li class="nav-item">
-        <a href="/about.html" class="nav-link link-light">About</a>
-      </li>
-    </ul>
-  </nav>
-
-  <div class="container mt-2">
-    <div class="row">
-      <main class="col-md-8">
-        <h1 class="text-secondary mt-5">Circuits Ablaze</h1>
-        <article id="circuits-ablaze-chapter-4">
-          <h2>Chapter 4. Breaking the Limits in 1988</h2>
-
-          <section id="circuits-ablaze-chapter-4-section-1">
-            <p>
-              After 1987, other demo-groups started to form and release their
-              demos. Many came from the cracker scene, pirating games, and now
-              creating demos. The Exceptions started to attract the attention
-              of computer magazines, exposing them to a greater readership.
-              They published a series in a commercial print magazine, and they
-              worked on their first commercial computer game. Even though it
-              looked like they were leaving the demoscene, they wanted to go
-              out with a bang. And what a bang it was'; one might even refer
-              to it as a B.I.G. bang!
-            </p>
-          </section>
-          <section id="circuits-ablaze-chapter-4-section-2">
-            <h3 class="mt-5">4.1 B.I.G. Demo</h3>
-            <div class="video-container">
-              <iframe src="https://youtube.com/embed/6_Rp6YGQzbY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-            <p class="text-center">
-              <a href="https://youtu.be/6_Rp6YGQzbY" target="_blank" rel="noopener" class="btn btn-outline-primary btn-sm m-2">Watch Video on Youtube</a>
-            </p>
-            <p>
-              The <strong>B.I.G. Demo</strong> called itself the "Best In
-              Galaxy" demo and represented the culmination of The Exceptions'
-              work up to this point. It included more than 100 tunes converted
-              from the Commodore 64, displayed an increased number of colors,
-              and the lower screen border removed.
-            </p>
-            <p>
-              Udo Fischer (-ME-), Erik Simon (ES), and Jochen Hippel (Mad Max)
-              were now joined by Michael Raasch (Daryl) and Gunter Bitz (6719)
-              to create the first megademo by a single demo-group.<sup><a id="circuits-ablaze-chapter-4-origin-04-50" href="#circuits-ablaze-chapter-4-footnote-04-50">[50]</a></sup>
-              The whole B.I.G. demo ran on a 512KB machine and was stored on
-              one single-sided disk, which had a capacity of 360KB.
-            </p>
-            <p>
-              It featured 113 music tunes, three so-called "Psych-O-Screens"
-              with the latest effects and a screen with the longest text
-              scroller ever packed into a demo so far. In addition, when you
-              pressed the reset button on the computer, you would get a hidden
-              custom reset screen.
-            </p>
-
-            <h4>4.1.1 Main Screen</h4>
-            <p>
-              The main screen showed a selection of all the 113 music tunes
-              converted at an even higher fidelity from games on the Commodore
-              64 than in the Little Sound Demo and the Little Color Demo.
-            </p>
-            <p>
-              Users navigated the song list using the cursor keys. By hitting
-              "1," "2," or "3," they changed to the Psych-O-Screens and "B"
-              would open the B.I.G.-Scroller.
-            </p>
-
-            <p class="text-center" id="circuits-ablaze-figure-36">
-              <img src="img/picture37.png" alt="Figure 36" class="img-fluid" />
-            </p>
-            <p class="text-secondary text-center">
-              Figure 36: The main screen of the B.I.G.-Demo (screenshot)
-            </p>
-
-            <p>
-              If you listened to all the music, it would take more than four
-              hours, with tunes that range from happy to melancholic, from pop
-              to rock. Some of the 113 games on the Commodore 64 are
-              <em>Sanxion,</em> <em>Lightforce,</em>
-              <em>Master of Magic,</em> <em>Monty On The Run,</em>
-              <em>Crazy Comets,</em> <em>Thing On A Spring,</em> and
-              <em>Auf Wiedersehen Monty</em> (see
-              <a href="#circuits-ablaze-figure-36">figure 36</a>).
-            </p>
-            <p>
-              The scrolling text occupied the bottom part of the screen in the
-              lower border. Erik Simon (ES) used a similarly shaped font to
-              the Super-Neo-Demo-Show, except that in the B.I.G.-Demo, it was
-              much more colorful. It looked like it was embossed in the gray
-              background with multicolored highlights running diagonally
-              across each letter.
-            </p>
-            <p>
-              As can be seen in the screenshot above, a horizontal tubular
-              gradient bar starts within the left border, crosses the main
-              display area, and extends into the right border. At the bottom
-              of the screen, the shadow covers part of the scrolling text.
-              Both the shadow and the bar were achieved by changing the
-              palette registers of the border color, making it look like the
-              main contents extend across the left and right. Beneath the
-              scroller, even further into the lower border, the top half of
-              the logo of TEX protrudes into the screen.
-            </p>
-            <p>
-              The first and main screen of the B.I.G.-Demo is gray with some
-              multicolored highlights. While not exactly the most exciting
-              screen, it is well balanced compared to the previous two demos.
-              It provides instructions to change the music and to switch to
-              the impressive parts of the demo: the insanely technicolored
-              Psycho-O-Screens.
-            </p>
-
-            <h4>
-              4.1.2 Psych-O-Screen 1: The Escher-Perspective of a
-              Rainbow-Pierced Cube
-            </h4>
-            <p>
-              Color changes, color movement, colors spanning across the screen
-              and into the left and right border; the first Psych-O-Screen
-              plays with color cycling and false perspective effects. At the
-              same time, the music from the main screen continues playing
-              relentlessly.
-            </p>
-
-            <p class="text-center" id="circuits-ablaze-figure-37">
-              <img src="img/picture38.png" alt="Figure 37" class="img-fluid" />
-            </p>
-            <p class="text-secondary text-center">
-              Figure 37: The first Psych-O-Screen's animated bar of rainbow
-              colors moving up
-            </p>
-            <p>
-              and down the screen with the frame changing colors (screenshots)
-            </p>
-
-            <p>
-              In the center of the screen, a gray cube with The Exceptions'
-              logo floats in a sea of static (see
-              <a href="#circuits-ablaze-figure-37">figure 37</a>). A bar of
-              rainbow colors as wide as the full screen with borders moves up
-              and down. When the bar reaches the cube, it stretches behind the
-              logo, but in front of the front-facing surface of the cube. At
-              the same time, the bar protrudes behind the cube's sides,
-              something that, according to all laws of perspective, should in
-              fact be displayed behind the bar. This Esherian contraption is
-              emphasized by the patterned frame of colors of a single tone
-              that encase it, though the multicolor bar pierces it. All the
-              while the colors of the frame pulsate in different colors fading
-              in and out of multiple palettes of related shades (see
-              <a href="#circuits-ablaze-figure-38">figures 38</a> and
-              <a href="#circuits-ablaze-figure-39">39</a>).
-            </p>
-            <p>
-              Beneath the frame in the area of the screen's lower border, The
-              Exceptions repeat their trick with graphics in the overscan area
-              by painting in dozens of bright and contrasting colors the words
-              "Colorright by," then a gray tubular representation of their TEX
-              logo.
-            </p>
-
-            <p class="text-center" id="circuits-ablaze-figure-38">
-              <img src="img/picture83.png" alt="Figure 38" class="img-fluid" />
-            </p>
-            <p class="text-secondary text-center">
-              Figure 38: Detailed screenshot of the first Psych-O-Screen
-              (screenshot)
-            </p>
-
-            <p class="text-center" id="circuits-ablaze-figure-39">
-              <img src="img/picture40.jpg" alt="Figure 39" class="img-fluid" />
-            </p>
-            <p class="text-secondary text-center"></p>
-            <p>
-              Figure 39: Warped Perspective in <em>The Cycle</em> by M.C.
-              Escher
-            </p>
-
-            <h4>
-              4.1.3 Psych-O-Screen 2: The Surreal Landscape in Technicolor
-              Space
-            </h4>
-            <p>
-              This screen shows a platform of a hundred colors floating in the
-              blackness of space. On it, different-sized gray spheres cast
-              shadows. Rectangular structures lie between the spheres; in the
-              negative space of the shadows the rectangles cast, you can see
-              the initials ES for the artist Erik Simon, the word TEX for The
-              Exceptions, and the two connected musical notes for the music
-              from the home screen that continues to play.
-            </p>
-
-            <p class="text-center" id="circuits-ablaze-figure-40">
-              <img src="img/picture41.png" alt="Figure 40" class="img-fluid" />
-            </p>
-            <p class="text-secondary text-center">
-              Figure 40: The multicolored platform with surreal shapes
-              floating in an emptiness gradually filled with vibrant but
-              interrupted scanlines
-            </p>
-
-            <p>
-              The surreal "Daliism" of this floating island does not remain
-              alone for long. Starting from the left, multicolored scanlines
-              start to fill the black background with vivid radiance until the
-              whole width of the screen is covered (see
-              <a href="#circuits-ablaze-figure-40">figure 40</a>). Beneath it
-              all, a gray fish inexplicably hovers in the Atari ST's lower
-              border.
-            </p>
-            <p>
-              Only now, as the screen is full of interrupted scanlines of
-              vibrance, can we see a handful of spherical silhouettes right
-              next to the fish. Perhaps these are technicolor bubbles leaving
-              the fish's mouth (see
-              <a href="#circuits-ablaze-figure-41">figure 41</a>).
-            </p>
-
-            <p class="text-center" id="circuits-ablaze-figure-41">
-              <img src="img/picture42.png" alt="Figure 41" class="img-fluid" />
-            </p>
-            <p class="text-secondary text-center">
-              Figure 41: Detailed screenshot of the second Psych-O-Screen
-              (screenshot)
-            </p>
-
-            <p>
-              On the second Psych-O-Screen, The Exceptions outdo themselves in
-              the multitude of colors on the screen at the same time; a number
-              close to the full available spectrum of the Atari ST's 512
-              colors. Surreal shapes in color space are the theme of this
-              image, therefore it makes perfect sense that The Exceptions
-              whimsically post the following text above their epic sea of
-              luminance:
-            </p>
-            <blockquote class="alert alert-secondary">
-              "We hope they never find the corpse of this guy who said, we
-              should make this demo run on monochrome…"
-            </blockquote>
-
-            <h4>
-              4.1.4 Psych-O-Screen 3: The Moiré Fringe of Color Interference
-            </h4>
-            <p>
-              If one could call the previous Psych-O-Screen merely colorful,
-              then this third screen explodes with surreal colors like a
-              digital Jackson Pollock on LSD. The Exceptions push the color
-              limits and use as much of the borders as possible. Despite what
-              the other screens showed, they had not yet managed to draw
-              actual graphics into the side borders. Thus far, they could only
-              produce straight horizontal lines in the left and right overscan
-              area. These techniques fill the whole Psych-O-Screen (see
-              <a href="#circuits-ablaze-figure-42">figure 42</a>).
-            </p>
-
-            <p class="text-center" id="circuits-ablaze-figure-42">
-              <img src="img/picture43.png" alt="Figure 42" class="img-fluid" />
-            </p>
-            <p class="text-secondary text-center">
-              Figure 42: The third Psych-O-Screen of the B.I.G. Demo
-              (screenshot)
-            </p>
-
-            <p>
-              They created a Psych-O-Screen with hundreds of interleaved lines
-              of colors horizontally stacked onto the screen. These lines
-              extended into all the borders, except for the top border. This
-              was the closest to full overscan that the Atari ST had achieved
-              so far.
-            </p>
-
-            <p class="text-center" id="circuits-ablaze-figure-43">
-              <img src="img/picture44.jpg" alt="Figure 43" class="img-fluid" />
-            </p>
-            <p class="text-secondary text-center">
-              Figure 43: Vincent Pomilio's 141 Horizon Lines, 2018, acrylic,
-              pigmented plaster and wax on canvas<br />(Source:
-              <a href="http://www.vincentpomilio.com" target="_blank" rel="noopener">http://www.vincentpomilio.com</a>
-              )
-            </p>
-
-            <h4>4.1.5 Reset Screen</h4>
-            <p>
-              For the final trick, The Exceptions also included a reset
-              screen. When the user pressed the reset button on their Atari
-              ST, the computer did not reboot as it should by default. Showing
-              a bomb on the screen was the standard way the Atari ST's
-              operating system to report a system crash, an error, or an
-              <em>exception.</em> But in this case, the bomb started to
-              multiply and turn into a cartoon version of the system icon. The
-              Exceptions had caught the reset command and created a mock
-              screen with cartoon versions of the bomb.
-            </p>
-
-            <p class="text-center" id="circuits-ablaze-figure-44">
-              <img src="img/picture45.png" alt="Figure 44" class="img-fluid" />
-            </p>
-            <p class="text-secondary text-center">
-              Figure 44: The Reset screen in the B.I.G. Demo (screenshots)
-            </p>
-
-            <h4>4.1.6 B.I.G.-Scroller</h4>
-            <p>
-              The scrolling text from the home screen can also be read in the
-              BIG-Scroller, a separate screen of multicolored text scrolling
-              through a dark cave with stalactites in front of it and
-              stalagmites in the background.
-            </p>
-
-            <p class="text-center" id="circuits-ablaze-figure-45">
-              <img src="img/picture46.png" alt="Figure 45" class="img-fluid" />
-            </p>
-            <p class="text-secondary text-center">
-              Figure 45: The B.I.G.-Scroller (screenshots)
-            </p>
-
-            <p>
-              The "Best in Galaxy" demo had the longest scrolling text ever
-              produced in a demo up to that point (see
-              <a href="#circuits-ablaze-figure-45">figure 45</a>). To this
-              day, it still counts among the longest texts to ever be included
-              in a demo on a 16-bit machine.<sup><a id="circuits-ablaze-chapter-4-origin-04-51" href="#circuits-ablaze-chapter-4-footnote-04-51">[51]</a></sup>
-              The text was distributed between the main screen and the "B.I.G.
-              Scroller" screen and contains around 41,000 characters; these
-              are more than 7,000 words at 42KB. Could it be that these 42KB
-              were used deliberately because according to Douglas Adams in
-              "The Hitch-Hiker's Guide to the Galaxy", the number 42 is the
-              answer to the ultimate question of life, the universe, and
-              everything?<sup><a id="circuits-ablaze-chapter-4-origin-04-52" href="#circuits-ablaze-chapter-4-footnote-04-52">[52]</a></sup>
-            </p>
-            <p>
-              Here is the first paragraph of the B.I.G Demo in all its glory,
-              changed to mixed-case characters for readability.
-            </p>
-            <blockquote class="alert alert-secondary">
-              "TEX is back to strike again!! It has been a long time without
-              demos, but this time we have succeeded in making the biggest
-              demo in the universe: the Best In Galaxy (B.I.G.) Demo, offering
-              113 pieces of music with a total playing time of 243'39'
-              (approximately 4.1 hours)!!! The whole thing is surrounded by
-              stunning graphics, transparent scrolling in the lower border,
-              512 color Psych-O-Screens, the smoothest big scroller you ever
-              saw and a whole bunch of rasters - quite an achievement,
-              wouldn't you say?"
-            </blockquote>
-
-            <h4>4.1.7 A Reading of the Scrolling Text</h4>
-            <p>
-              In this section, the focus will be on the examination of the
-              scrolling text. It is the longest scrolling text in any of their
-              demos up to this point, and therefore provides insights into the
-              self-proclaimed intentions and thinking of the demo-makers. From
-              the onset, it should be established that the majority of the
-              text was not produced by the core members of the Exceptions, but
-              rather by Richard Karsmakers (Cronos from the Amazing Cracking
-              Conspiracy)<sup><a id="circuits-ablaze-chapter-4-origin-04-53" href="#circuits-ablaze-chapter-4-footnote-04-53">[53]</a></sup>, the editor of the diskmag <em>ST-NEWS</em> who helped the
-              demo-makers start on this demo effort and distributed and
-              advertised the demo once it was completed. That being said, the
-              demo itself is the work of The Exceptions. They would not allow
-              the text to contain anything that contradicts their intentions
-              and thinking. The scrolling is summarized below.
-            </p>
-            <p>
-              After the introduction, with a description of the contents and
-              features of the demo, the writer states the playtime of all the
-              music combined and the length of the scrolling text. Then, the
-              writer praises the contributors of the music, the code, the
-              graphics, and himself before decrying the Atari ST's YM-2149
-              sound chip and graphics hardware. The next section is a list of
-              credits for the demo's contributors. This is followed by a list
-              of the records broken by the demo, which include the number of
-              pieces of music, their total length, the length of the scrolling
-              message, and the admirable achievement of compressing it all to
-              a single-sided floppy disk.
-            </p>
-            <p>
-              The longest section is the greetings to other members of the
-              scene. They range from members of the Atari ST demoscene,
-              demo-makers on other systems, developers of commercial software
-              on the ST, as well as people at the Atari Corporation who helped
-              develop the machine. The language tropes used are playful
-              insults, boasts, and other competitive linguistic forms to
-              create sociality in the burgeoning demoscene on the Atari ST.
-              Some of the greetings have playful remarks, such as "Amiga
-              Software Syndicate (though they are working on the wrong
-              machine)." While not explicitly stated, there are only men on
-              the list.
-            </p>
-            <p>
-              Three of the "greetings" were disrespectful messages directed at
-              groups whom The Exceptions despised for acting dishonorably: the
-              cracking groups <em>HSS</em> that distributed programs that were
-              not copy-protected by their publishers (but HSS credited
-              themselves as having cracked the copy protection). the cracker
-              group named <em>Klu Klux Clan Conspiracy</em> in bad taste, and
-              <em>Strike Force.</em> Both wrongfully credited themselves with
-              the cracks done by others:
-            </p>
-            <blockquote>
-              "HSS (the biggest cocksucker around, that always puts his name
-              in programs that others cracked, writes 'cracked by' in loading
-              pictures of non-protected software, and that has to watch his
-              steps before someone will punch his bleedin' nose)
-              <br /><br />
-              Klu Klux Clan Conspiracy (another one of those queers, writing
-              his name in some DMA crackings)
-              <br /><br />
-              Strike Force (a bunch a half-ass fags that put smart-ass intros
-              in front of programs they didn't even crack - using routines
-              they pinched from others)."
-            </blockquote>
-            <p>
-              Richard Karsmakers and The Exceptions use strong language in
-              this section. It is not only offensive, but also sexually
-              violent and homophobic and departs in tone from the other
-              sections. This strong language was deliberately chosen to attack
-              the cracker groups. These paragraphs provide an insight into the
-              unspoken "codex" of the scene, where claiming merits is the
-              primary currency. Wrongfully claiming credit is regarded as a
-              violation of this codex. The Exceptions express their anger and
-              dissatisfaction with these groups who acted dishonorably.
-            </p>
-            <p>
-              The writers are not native English-speakers. Derogatory
-              vernacular in the 1980s was pejoratively directed at sexuality
-              as offensive slurs. From a modern perspective, this is not
-              acceptable and does not conform to our present-day cultural
-              norms nor political correctness. In the context of the times and
-              hyper-masculine action movies of the 1980s as watched by this
-              generation of young men, the choice of words is offensive, but
-              not unusual.
-            </p>
-            <p>
-              In the next section, there is an interesting duality. Richard
-              Karsmakers' demoscene handle is Cronos, he is part of the
-              <em>Amazing Cracking Conspiracy (ACC),</em> and he works on
-              ST-NEWS under his real name, yet in this text, he uses his scene
-              handle. To create distance between his civilian identity and his
-              scene identity, he praises the work of ST-NEWS as though he is
-              not a contributor:
-            </p>
-            <blockquote class="alert alert-secondary">
-              "Amazing Cracking Conspiracy ('ST NEWS' is a great magazine!
-              read more about it further in this scrolling message. Give our
-              love to Willeke!)"
-            </blockquote>
-            <p>
-              There is a mildly profane message to the
-              <em>"motherfucker that brought the virus on the ST."</em>
-              Karsmakers elaborates that
-              <em>"words fail to tell what we think of him, but I can assure
-                you it ain't much good."</em>
-              This was the age when viruses were distributed through infected
-              floppy disks, and in some cases, as infected files in a Bulletin
-              Board System (BBS). Getting a virus into circulation in this way
-              was a very deliberate act. Karsmakers closes with a humorous
-              death curse to the virus maker
-              <em>("...may thunder and lightning split your dim-witted skulls
-                into a thousand tiny fragments…").</em>
-            </p>
-            <p>
-              The next section lists metrics related to the creation of the
-              demo, e.g., the number of developer hours that went into the
-              development (2,019 hours), the number of bottles of soft drinks,
-              beer, and wine, as well as the cups of tea and coffee that they
-              drank during this time. The metrics go on to list materials used
-              like diskettes, adhesive strips, paper, and other materials.
-              They list all the computers they used. Oddly enough, this
-              includes not only the Atari and Commodore 64, but also a
-              Commodore Amiga and an Apple Macintosh II (which at the time was
-              prohibitively expensive). They praise the applications they
-              used, which includes another praise for the pixel-paint
-              application NEOchrome.
-            </p>
-            <p>
-              There is a tidbit alluding to the demo-makers having to neglect
-              their schoolwork due to working on their demo:
-            </p>
-            <blockquote class="alert alert-secondary">
-              "82 hours spent cleaning the schoolyard (due to arriving too
-              late at school or not properly attending the lessons while
-              developing a piece of the demo on chemistry notepaper)."
-            </blockquote>
-            <p>A long section is dedicated to game musician Rob Hubbard:</p>
-            <blockquote class="alert alert-secondary">
-              "To fill this scrolling text with more or less useful things, I
-              think it is more than appropriate to write something about the
-              man to whom this demo program is dedicated: Rob Hubbard (music
-              programmer on various computer systems amongst which are
-              Commodore 64, Commodore Amiga and Atari ST)."
-            </blockquote>
-            <p>
-              Below, Karsmakers describes the games that feature Hubbard's
-              music and how Jochen Hippel (Mad Max) converted the tunes to the
-              ST. Under his pseudonym, Karsmakers advertises his own diskmag
-              ST-NEWS:
-            </p>
-            <blockquote class="alert alert-secondary">
-              "Through TEX, I was told to give some attention to 'ST NEWS', an
-              international disk magazine that is written in English and
-              published through Richard of the ACC as a public domain
-              offering."
-            </blockquote>
-            <p>
-              Again, Richard Karsmakers (Cronos) references himself as a
-              different person.
-            </p>
-            <p>
-              The writer is still trying to make the text longer, so he starts
-              a joke section where he quotes the first joke ever in a
-              scrolling message on the Commodore 64 ("Biggles" by FBG):
-              <em>"What does an elephant use as a tampon? [...] it's a
-                sheep!"</em>
-              An unfunny and mildly offensive joke.
-            </p>
-            <p>
-              What follows is the "obligatory" Amiga vs. ST section. The
-              competition between platforms has been a motivating factor for
-              the demo-makers on the ST since the very beginning:
-            </p>
-            <blockquote class="alert alert-secondary">
-              "Now, many Atari ST users start throwing up when they hear
-              someone mentioning the Amiga, and nearly all Amiga users truly
-              think the Atari ST is a heap of shit (and the worst thing is
-              that they really think it is a heap of shit, whereas Atari ST
-              users just talk negatively about the Amiga for jealousy
-              reasons). That jealousy, by the way, grows less and less by the
-              day because demo programs like this start appearing on the ST,
-              together with more and more excellent games and other programs."
-            </blockquote>
-            <p>
-              This section evokes the inherent technological tribalism of the
-              demoscene. It specifically addresses the envy that owners of the
-              Atari ST feel toward the Amiga's superior capabilities. The text
-              states that Amiga owners look down on the ST for being the
-              inferior machine. Certainly, some Amiga owners and demo-makers
-              held the Atari ST and, by extension, its owners in contempt, but
-              this was not as widespread an opinion in the Amiga demoscene.
-              Many ST demos poked at the Amiga, yet very few Amiga demos
-              attacked the ST.
-            </p>
-            <p>
-              The next section was a useful set of instructions on how to wire
-              the ST's monitor port to an amplifier for stereo sound. This was
-              followed very late in the scrolling text by the instructions on
-              how to use the B.I.G. Demo, how to access the different
-              Psych-O-Screens, and how to change the music. To be fair, the
-              abbreviated instructions are also listed on the main screen.
-            </p>
-            <p>
-              The writers then describe the distribution model of the demo.
-              This is generally how most demos on most computer systems were
-              distributed: freely and as part of the "public domain" software
-              scene. This is not the same legal term for intellectual property
-              that is no longer copyrighted, but a by-now-extinct model of
-              software distribution where public domain software libraries
-              would distribute software that had explicitly been made
-              available by its creators. Usually, the only costs that could be
-              charged were for the disk and the effort to make the copy,
-              therefore they remained affordable.
-            </p>
-            <p>
-              It is striking that The Exceptions urge for the free and wide
-              distribution of their demo in this section. They also ask for
-              donations. This is in 1988, nearly a decade before the
-              prevalence of the free and open-source software movement.
-            </p>
-            <blockquote class="alert alert-secondary">
-              "Since this demo program is public domain (shareware), it may be
-              copied freely. Please copy it to everyone who wants it, as well
-              as those who do not particularly want it (they might be grateful
-              when they find out what they have copied when they start
-              examining it more closely). If you think this demo program might
-              be worth a small donation (please, don't take the word 'small'
-              literally!), you can send any amount of money..."
-            </blockquote>
-            <p>
-              It takes several hours for the full text to scroll by. If you
-              read it on the screen while it scrolls, you would have a good
-              amount of ghosting in your eyes by the end. Even after averting
-              your sight from the screen, you would still see words scrolling
-              by.<sup><a id="circuits-ablaze-chapter-4-origin-04-54" href="#circuits-ablaze-chapter-4-footnote-04-54">[54]</a></sup>
-            </p>
-            <p>
-              If you sat through the full text, right at the very end, you
-              learned the demo-maker Alyssa's secret technique to remove the
-              lower border:
-            </p>
-            <blockquote class="alert alert-secondary">
-              "Ok. In just a few seconds, -ME- from the Exceptions will start
-              explaining how border scrolling techniques work. If you have not
-              yet fetched your notepad and pencil, please prepare yourself for
-              a mind-boggling piece of constant memory....
-              <br /><br />
-              Here it is...."
-              <br /><br />[...]<br /><br />
-
-              "...if you remember our super-neo-demo-show you might have
-              noticed a mistake in the pictures in the bottommost line (at the
-              right border, 16 pixels are missing.....). These are effects of
-              switching off the border. Attention!!! I'm now explaining the
-              principles of switching off the border:
-              <br /><br />
-              In the middle of the last line of the normal screen (no. 199
-              counted from 0) you must change the syncronization frequency
-              from 50Hz to 60Hz. This will cause the Shifter to start the
-              right border 16 pixles earlier than usual. Then wait till the
-              electron beam is in the left border of the next line. There you
-              must switch back from 60Hz to 50Hz and there will be no lower
-              border again. The greatest problem is the exact timing of the
-              synchronization switching!! Your rout will be disturbed by
-              keyboard and timer C interrupts. If you don't succeed in timing
-              the program exactly there might be 2 different effects: In the
-              easier case you'll see the border again for a moment, in the
-              other case you'll see curious things happen on your screen
-              (flickering bitplanes and so on). An other result of switching
-              off the border is a confused video Shifter which is starting the
-              right border 16 pixles too soon as he doesn't want to show the
-              last 2 bytes of the video memory. Therefore the first address
-              displaid in the first line of the 'border' is 31998 bytes behind
-              the first address of the screen !! So you must move your graphix
-              2 bytes to the left for not getting 'funny' pictures!
-              <br /><br />
-              Puh !! Writing this text used much less time than making the
-              lousy Psycho-2-Screen for which I needed 48 hours of hard
-              programming and i don't know how long ES needed to paint the
-              graphix with NEOchrome, the best painting program on the ST!!!
-              That's about it, folks! The 99th percent of this scrolling
-              message has just ticked away and we're unmistakably nearing the
-              100th (and final) percent now.... In a few seconds, the
-              scrolling message will start anew.... Au revoir auf wiedersehen
-              tot ziens arrividerci tschuess good bye houdoe doeg see you
-              later, alligator .....Anyway, we hope to see you again in the
-              next TEX demo (if one should be made sometimes).
-              <br /><br />Bye!"
-            </blockquote>
-
-            <h4>4.1.8 Digital Sound Samples</h4>
-            <p>
-              When you scroll to the very bottom of the music list on the main
-              screen of the B.I.G.-Demo, there is a special entry called "The
-              Digital Department." Selecting it changes the view, and suddenly
-              the Atari ST's speakers produce digital samples of
-              near-professional quality with adaptations of even more games.
-              The music was close to the capabilities of the Amiga.
-            </p>
-            <p>
-              Here, The Exceptions announced another demo called the
-              Amiga-Sound-Demo.
-            </p>
-            <p>
-              After they had adapted nearly all of Rob Hubbard's Commodore 64
-              game music, it was now time to start adapting Hubbard's
-              Commodore Amiga music. And who else would be capable of such a
-              feat if not The Exceptions?
-            </p>
-
-            <h4>
-              4.1.9 The Elements of Design and the Aesthetics of Pixels of the
-              B.I.G. Demo
-            </h4>
-            <p>
-              The images produced for the B.I.G.-Demo looked like they
-              belonged in a computer or video game, but they were not created
-              for that. They were created to stand on their own, to be beheld
-              in their own space, all the while in the context of other images
-              produced on computers. They were images composed of clearly
-              visible and sometimes even distracting building blocks: pixels.
-            </p>
-            <p>
-              In the low-resolution images of the time composed of pixels, the
-              pixels themselves did not simply represent a part of the image
-              that, together with the other pixels, forms a greater whole: but
-              the image as a complete artifact. Pixels were too big, too
-              stark, too noticeable for that. Pixels also existed as
-              independent entities known as "digital brush strokes," as
-              clearly visible building blocks of the entire image. This gives
-              each pixel a life of its own, an unapologetic presence, a value
-              in and of itself, in addition to the part of the whole picture
-              that it represents.
-            </p>
-            <p>
-              This made the pixelated images of this era stand apart from
-              paintings, photography, and film frames. Today's displays with a
-              greater resolution than the eye can discern can take the shape
-              of anything we throw at them. They can "pretend" to show photos
-              or reproductions of paintings or videos. The pixelated images of
-              the Atari ST and similar computers could not pretend to be
-              anything else than what they were. In this way, they truly
-              embrace their form.
-            </p>
-
-            <h4>4.1.10 The Making of the B.I.G.-Demo</h4>
-            <p>
-              Richard Karsmakers (Cronos), the editor of the diskmag
-              <em>ST-NEWS,</em> helped initiate the B.I.G.-Demo and wrote most
-              of the record-breaking scrolling text. He had approached The
-              Exceptions to motivate them to create the biggest and best demo
-              so far. Five months later, they released it on January 24, 1988.
-            </p>
-            <p>
-              Jochen Hippel managed to get the raw data of the original music
-              from the Commodore 64 to the Atari ST using a data cable and a
-              conversion program supplied by Udo Fischer and Erik Simon.
-              However, this does not mean that the music was in any way
-              playable or sounded good on the Atari ST. The further manual
-              conversion work was time-consuming and required many adaptations
-              to the Atari ST's inferior sound chip.
-            </p>
-            <p>
-              The programming of the many Psych-O-Screens required exact
-              timing and expert knowledge of the hardware. Together with the
-              music, graphics, and digi-sound sample, all the data needed to
-              be compressed to a single-sided 3.5" floppy disk so that The
-              Exceptions could allow the demo to run on the largest possible
-              range of Ataris.
-            </p>
-            <p>
-              Richard Karsmakers continued collaborating with members of The
-              Exceptions, who contributed articles, graphics, and music to
-              <em>ST-NEWS.</em> Karsmakers also wrote a first-hand account of
-              how they finished their next demo, called the Amiga Demo.
-            </p>
-          </section>
-          <section id="circuits-ablaze-chapter-4-section-3">
-            <h3 class="mt-5">4.2 Amiga Demo</h3>
-            <div class="video-container">
-              <iframe src="https://youtube.com/embed/k_mGUSzR1aY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-            <p class="text-center">
-              <a href="https://youtu.be/k_mGUSzR1aY" target="_blank" rel="noopener" class="btn btn-outline-primary btn-sm m-2">Watch Video on Youtube</a>
-            </p>
-
-            <p>
-              The <strong>Amiga Demo</strong> directly targeted the superior
-              sound capabilities of the Commodore Amiga by converting tunes
-              that were regarded as impossible on the Atari ST's limited sound
-              hardware. As if to conquer the last territory of the ST's
-              inferiority compared to the Amiga, The Exceptions released the
-              Amiga Demo as their last full demo.
-            </p>
-            <p>
-              In the Little Sound Demo and Little Color Demo, The Exceptions
-              matched the sound generation capabilities of the Commodore 64's
-              SID chip. Now, they conjured the same sound quality as the
-              mighty Paula chip in the Commodore Amiga from the Atari ST's
-              YM-chip. Paula could produce four channels of
-              <sup><a id="circuits-ablaze-chapter-4-origin-04-55" href="#circuits-ablaze-chapter-4-footnote-04-55">[55]</a></sup>
-              sample-based digital sound. Technically, it was ahead of
-              anything at the time, only to be matched on the IBM PC
-              compatible with the introduction of the expensive Sound Blaster
-              sound card and arguably, by the sound capabilities of the Sega
-              MegaDrive/Genesis when it was released in 1988.
-            </p>
-
-            <p class="text-center" id="circuits-ablaze-figure-46">
-              <img src="img/picture47.png" alt="Figure 46" class="img-fluid" />
-            </p>
-            <p class="text-secondary text-center">
-              Figure 46: The music demo screen of the Amiga Demo (screenshot)
-            </p>
-
-            <p>
-              The Amiga Demo consisted of two screens. The first screen is an
-              imitation of a music program on the Commodore Amiga called Aegis
-              Sonix, which was a piece of software not written for the Atari
-              ST (see <a href="#circuits-ablaze-figure-46">figure 46</a>). It
-              takes advantage of the Amiga's sound capabilities and provides
-              users with an environment to compose music using notation. The
-              Exceptions did not port the actual program onto the ST; rather,
-              they created a copy of the file selection screen and a part of
-              the notational screen in the background.
-            </p>
-            <p>
-              They ported seven pieces of music from Amiga games, like
-              <em>Rally Master,</em> <em>Amegas,</em> and
-              <em>Crashin' Robb,</em> for a total of fifteen minutes of
-              high-quality, four-voice musical tunes, even though the Atari ST
-              is only capable of playing three-voice music. Users can switch
-              music by choosing a tune with the cursor keys.
-            </p>
-            <p>
-              This digisound was impressive enough, given the ST's sound and
-              music limitations, but the most impressive screen is accessed by
-              pressing the "O" key (O for overscan). This opens up the
-              overscan screen with no lower border and, for the first time on
-              the Atari ST, no right border. Removing the right border and
-              using the space for graphics was considered impossible. The
-              Exceptions had done it.
-            </p>
-            <p>
-              They filled the screen with a pulsating pattern reminiscent of
-              Yayoi Kusama's colorful polka dot art (see
-              <a href="#circuits-ablaze-figure-47">figures 47</a> and
-              <a href="#circuits-ablaze-figure-48">48</a>). Along the lower
-              half of the screen, a transparent text scrolled. The blue
-              fractal patterns shine through the red text.
-            </p>
-
-            <p class="text-center" id="circuits-ablaze-figure-47">
-              <img src="img/picture48.png" alt="Figure 47" class="img-fluid" />
-            </p>
-            <p class="text-secondary text-center">
-              Figure 47: The scrolling text screen with no right border in the
-              Amiga Demo (screenshot)
-            </p>
-
-            <p class="text-center" id="circuits-ablaze-figure-48">
-              <img src="img/picture49.jpg" alt="Figure 48" class="img-fluid" />
-            </p>
-            <p class="text-secondary text-center">
-              Figure 48: The borderless screen of the Amiga Demo is
-              aesthetically reminiscent of the works of Yayoi Kusama at the
-              Moco Museum
-            </p>
-
-            <h4>4.2.1 The Making of the Amiga Demo</h4>
-            <div class="video-container">
-              <iframe src="https://youtube.com/embed/CR3PFcS6dng" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-            <p class="text-center">
-              <a href="https://youtu.be/CR3PFcS6dng" target="_blank" rel="noopener" class="btn btn-outline-primary btn-sm m-2">Watch Video on Youtube</a>
-            </p>
-            <p>
-              The Exceptions not only broke two new limits of the Atari ST by
-              opening the right border and playing Amiga-quality digimusic,
-              but they also managed to break a personal record for the longest
-              continuous time spent programming without interruption.
-            </p>
-            <p>
-              While the demo-makers were visiting their friend and
-              <em>ST-NEWS</em> editor Richard Karsmakers, they wrote the whole
-              demo in one continuous hackathon. Karsmakers chronicled the
-              creation of the Amiga Demo in <em>ST-NEWS.</em><sup><a id="circuits-ablaze-chapter-4-origin-04-56" href="#circuits-ablaze-chapter-4-footnote-04-56">[56]</a></sup>
-              They worked on the demo for 22 hours straight, fighting against
-              the hardware, using tricks to overcome limitations, and all the
-              while eating pizza and drinking soft drinks until most everyone
-              fell asleep. Udo Fischer (-ME-) was left to wrap up the
-              programming. Karsmakers contributed the contents of the
-              scrolling text, Jochen Hippel (Mad Max) managed to faithfully
-              convert the Amiga music to the ST's hardware, and Erik Simon
-              (ES) created the graphics and the transparent font they needed
-              for the demo.
-            </p>
-
-            <p class="text-center" id="circuits-ablaze-figure-49">
-              <img src="img/picture50.jpg" alt="Figure 49" class="img-fluid" />
-            </p>
-            <p class="text-secondary text-center">
-              Figure 49: The Exceptions in the Netherlands when they wrote the
-              Amiga Demo
-            </p>
-            <p>
-              Left to right: Antiware, Daryl, Es, Mad Max, Robert Heessels
-              (co-owner of STRIKE-a-LIGHT), Cronos, 6719 and half of -ME-.<br />(Source:
-              <em>ST-NEWS</em>
-              <a href="https://st-news.com/gallery/tex-in-holland/the-group-inside/" target="_blank" rel="noopener">https://st-news.com/gallery/tex-in-holland/the-group-inside/</a>
-              )
-            </p>
-          </section>
-          <section id="circuits-ablaze-chapter-4-section-4">
-            <h4>4.3 Mainstream Exposure</h4>
-            <p>
-              In 1988, Tarik Ahmia, the editor-in-chief of the established
-              mainstream computer magazine
-              <em>ST-Magazin 68000er</em> published by
-              <em>Markt & Technik</em> in Bavaria, reached out to Udo Fischer,
-              Erik Simon, Michael Raasch, and Gunter Bitz. The Exceptions had
-              become minor celebrities in the Atari ST demoscene, but they
-              were not widely known to the average computer-using audience.
-              Tarik Ahmia convinced them to write a series of articles about
-              their programming tricks. In five articles in 1988, The
-              Exceptions revealed all of their programming secrets to a major
-              audience and became widely known outside of the niche of the
-              demoscene.<sup><a id="circuits-ablaze-chapter-4-origin-04-57" href="#circuits-ablaze-chapter-4-footnote-04-57">[57]</a></sup>
-              In photos, they were depicted as silhouettes and marketed as
-              secret insiders with only their first names used. This made them
-              seem forbidden and taboo, like true hackers. Undoubtedly, it
-              contributed to their allure.
-            </p>
-            <p>
-              Their series of articles was called <em>Die Hexer</em> (German
-              for "The Wizards" or "The Witchers").
-            </p>
-
-            <p class="text-center" id="circuits-ablaze-figure-50">
-              <img src="img/picture51.png" alt="Figure 50" class="img-fluid" />
-            </p>
-            <p class="text-secondary text-center">
-              Figure 50: The Exceptions wrote about their programming tricks
-              in the established mainstream computer magazine
-              <em>ST-Magazin 68000er</em> and reached a wide audience
-            </p>
-
-            <p>
-              Under Tarik Ahmia's leadership, the
-              <em>ST-Magazin 68000er</em> not only covered computing news,
-              reviewed games and applications, and provided type-in
-              programs,<sup><a id="circuits-ablaze-chapter-4-origin-04-58" href="#circuits-ablaze-chapter-4-footnote-04-58">[58]</a></sup>
-              but it offered several series examining how to produce creative
-              work on the Atari ST. Aside from The Exceptions, the magazine
-              featured series by commercial artists who produced their own
-              magazines using desktop publishing software on the ST, and
-              others creating 3D animations for commercial TV stations in
-              Germany.
-            </p>
-            <p>
-              In this thesis, the articles in <em>ST Magazin 68000er</em> are
-              used as sources for the technical explanations of the
-              achievements of the demos. An in-depth analysis would exceed the
-              scope here, but they warrant a short examination.
-            </p>
-            <p>
-              By the late 1980s, computers had become widespread tools in
-              corporate administration. They were used for calculations,
-              transactions, word processing and other business-related tasks.
-              The use of computers as creative tools had been pioneered in the
-              1960s and 70s, but only started to break into commercial design
-              in the late 1980s. By the time The Exceptions were featured in
-              <em>ST Magazin 68000er,</em> the print industry around news
-              media and publishing was in the process of transforming to
-              digital production. The first Hollywood movies had started to
-              feature computer animations. The tools used in the professional
-              sector like Linotype page setting systems for page layouts in
-              publishing and the Quantel Paintbox for infographics on TV were
-              expensive and specialized. Home computer enthusiasts could
-              identify that even though these systems were far more advanced
-              than their own 16-bit computers, at their core, the expensive
-              machines were not that much different than the higher-end home
-              computers.
-            </p>
-            <p>
-              By showcasing early hobbyist digital creatives like The
-              Exceptions, computer magazines demonstrated the creative
-              potential of the machines. They provided instructions on how
-              home users could produce their own works and inspire them to
-              produce images, music, animations and even demos. Users could
-              recognize that the expensive professional computers were much
-              more capable, but they could also see that compared to the
-              expensive machines, the gap between the capabilities of their
-              own computers was closing. A Paintbox sold for $100,000 only
-              half a decade earlier could display photorealistic images with
-              256 colors from a potential color palette of 16 million. Yet the
-              artists used a graphics program on it that resembled the paint
-              applications on the Atari ST, the Apple Macintosh and the
-              Commodore Amiga. On a $1000 Atari ST, with a lot of effort, home
-              users could create their own graphics that came close to the
-              professional graphics; they could see the potential lying
-              dormant in the technology.
-            </p>
-            <p>
-              By not only reporting <em>about</em> The Exceptions, but by
-              having them write a series of articles, The Exceptions explained
-              how to produce impressive results with the ST. Computer
-              enthusiasts now saw the human beings behind the technology, and
-              that The Exceptions were using the same tools available to home
-              users. Even though it can be assumed that the editors of the
-              magazine revised the articles provided by The Exceptions, there
-              is still an endearing awkwardness in the text. Each article
-              features a different member explaining their skill; for example,
-              explaining how to program smooth scrolling routines, how to
-              produce more colors on the screen, how to paint graphics, and
-              how to write music. The articles are full of enthusiasm and
-              pride at the achievements, yet they are apologetic in their
-              descriptions of the solutions because they emphasize that there
-              might be better ways to achieve the same results. The articles
-              were clearly written by young people who had figured out
-              techniques and wrote about them in a language that resonated
-              with young readers.
-            </p>
-            <p>
-              By the mid-1980s, only a very few programmers were being
-              promoted by name. They were not yet treated like authors of
-              books or rock stars. This was the time before John Carmack and
-              John Romero, who later became famous for the 3D-shooter
-              <em>Doom,</em> and before Shiguro Miyamoto at Nintendo became
-              famous. In the United States, there were already a small number
-              of famous games developers like Richard Garriott (aka "Lord
-              British") who had created the <em>Ultima</em>-Series of
-              computer-role-playing-games; Roberta Williams who had written
-              <em>King's Quest</em> and many other games at her company
-              <em>Sierra On-Line;</em> and Sid Meier who created
-              <em>Pirates</em> and had his name put on the box. In the UK, the
-              <em>Bitmap Brothers</em> were being promoted by their publisher
-              <em>Mirrorsoft</em> like rock stars, using the full public
-              relations power of Robert Maxwell's media empire.<sup><a id="circuits-ablaze-chapter-4-origin-04-59" href="#circuits-ablaze-chapter-4-footnote-04-59">[59]</a></sup>
-            </p>
-            <p>
-              But they all seemed so far away, none of them were from a small
-              town in Germany. It was a breakthrough for members of the
-              demoscene to be featured in a print magazine.
-            </p>
-          </section>
-          <section id="circuits-ablaze-chapter-4-section-5">
-            <h3 class="mt-5">4.4 Conclusion: The Time of Breakthroughs</h3>
-            <p>
-              This was the year that The Exceptions peaked as demo-makers and
-              produced the most demos. Their demos broke numerous hardware
-              limitations, like the ST's color limits, the bottom and the
-              right screen borders, and the limits of the ST's sound chip with
-              their music conversions from other systems like the C64 and the
-              Amiga. In the B.I.G-Demo, they produced the longest scrolling
-              text to date.
-            </p>
-            <p>
-              It was also the year that The Exceptions started to collaborate
-              with others in the demoscene. At first with Alyssa whose
-              programming trick for the removal of the bottom border was used
-              in the Super-Neo-Demo-Show. Then, in the B.I.G.-Demo, they
-              collaborated with the diskmag <em>ST-NEWS</em> for advertising
-              and distribution, as well as the diskmag's editor Richard
-              Karsmakers for project management and scrolling text.
-            </p>
-            <p>
-              1988 was the year that The Exceptions found recognition outside
-              of their small scene by reaching a larger audience in the print
-              publication <em>ST-Magazin 68000er,</em> explaining their
-              programming tricks. But this was also the year that the main
-              members of The Exceptions decided to become legitimate game
-              programmers. They would no longer have time to create full
-              demos, but the move was necessary for them to make a living from
-              their skills.
-            </p>
-            <p>
-              And by 1988, The Exceptions had already inspired so many others
-              in the Atari ST demoscene that they had passed the torch onto
-              other demo-makers. However, in the next year, The Exceptions
-              would still collaborate with others on their mega-demo: the
-              biggest demo of all.
-            </p>
-          </section>
-          <div class="row">
-            <div class="col-6">
+            <section id="circuits-ablaze-chapter-4-section-1">
               <p>
-                <a href="chapter-03.html" class="btn btn-outline-primary btn-sm">&laquo; Previous Chapter</a>
+                After 1987, other demo-groups started to form and release their
+                demos. Many came from the cracker scene, pirating games, and now
+                creating demos. The Exceptions started to attract the attention
+                of computer magazines, exposing them to a greater readership.
+                They published a series in a commercial print magazine, and they
+                worked on their first commercial computer game. Even though it
+                looked like they were leaving the demoscene, they wanted to go
+                out with a bang. And what a bang it was'; one might even refer
+                to it as a B.I.G. bang!
               </p>
-            </div>
-            <div class="col-6">
-              <p class="text-end">
-                <a href="chapter-05.html" class="btn btn-outline-primary btn-sm">Next Chapter &raquo;</a>
+            </section>
+            <section id="circuits-ablaze-chapter-4-section-2">
+              <h3 class="mt-5">4.1 B.I.G. Demo</h3>
+              <div class="video-container">
+                <iframe
+                  src="https://youtube.com/embed/6_Rp6YGQzbY"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                ></iframe>
+              </div>
+              <p class="text-center">
+                <a
+                  href="https://youtu.be/6_Rp6YGQzbY"
+                  target="_blank"
+                  rel="noopener"
+                  class="btn btn-outline-primary btn-sm m-2"
+                  >Watch Video on Youtube</a
+                >
               </p>
+              <p>
+                The <strong>B.I.G. Demo</strong> called itself the "Best In
+                Galaxy" demo and represented the culmination of The Exceptions'
+                work up to this point. It included more than 100 tunes converted
+                from the Commodore 64, displayed an increased number of colors,
+                and the lower screen border removed.
+              </p>
+              <p>
+                Udo Fischer (-ME-), Erik Simon (ES), and Jochen Hippel (Mad Max)
+                were now joined by Michael Raasch (Daryl) and Gunter Bitz (6719)
+                to create the first megademo by a single demo-group.<sup
+                  ><a
+                    id="circuits-ablaze-chapter-4-origin-04-50"
+                    href="#circuits-ablaze-chapter-4-footnote-04-50"
+                    >[50]</a
+                  ></sup
+                >
+                The whole B.I.G. demo ran on a 512KB machine and was stored on
+                one single-sided disk, which had a capacity of 360KB.
+              </p>
+              <p>
+                It featured 113 music tunes, three so-called "Psych-O-Screens"
+                with the latest effects and a screen with the longest text
+                scroller ever packed into a demo so far. In addition, when you
+                pressed the reset button on the computer, you would get a hidden
+                custom reset screen.
+              </p>
+
+              <h4>4.1.1 Main Screen</h4>
+              <p>
+                The main screen showed a selection of all the 113 music tunes
+                converted at an even higher fidelity from games on the Commodore
+                64 than in the Little Sound Demo and the Little Color Demo.
+              </p>
+              <p>
+                Users navigated the song list using the cursor keys. By hitting
+                "1," "2," or "3," they changed to the Psych-O-Screens and "B"
+                would open the B.I.G.-Scroller.
+              </p>
+
+              <p class="text-center" id="circuits-ablaze-figure-36">
+                <img
+                  src="img/picture37.png"
+                  alt="Figure 36"
+                  class="img-fluid"
+                />
+              </p>
+              <p class="text-secondary text-center">
+                Figure 36: The main screen of the B.I.G.-Demo (screenshot)
+              </p>
+
+              <p>
+                If you listened to all the music, it would take more than four
+                hours, with tunes that range from happy to melancholic, from pop
+                to rock. Some of the 113 games on the Commodore 64 are
+                <em>Sanxion,</em> <em>Lightforce,</em>
+                <em>Master of Magic,</em> <em>Monty On The Run,</em>
+                <em>Crazy Comets,</em> <em>Thing On A Spring,</em> and
+                <em>Auf Wiedersehen Monty</em> (see
+                <a href="#circuits-ablaze-figure-36">figure 36</a>).
+              </p>
+              <p>
+                The scrolling text occupied the bottom part of the screen in the
+                lower border. Erik Simon (ES) used a similarly shaped font to
+                the Super-Neo-Demo-Show, except that in the B.I.G.-Demo, it was
+                much more colorful. It looked like it was embossed in the gray
+                background with multicolored highlights running diagonally
+                across each letter.
+              </p>
+              <p>
+                As can be seen in the screenshot above, a horizontal tubular
+                gradient bar starts within the left border, crosses the main
+                display area, and extends into the right border. At the bottom
+                of the screen, the shadow covers part of the scrolling text.
+                Both the shadow and the bar were achieved by changing the
+                palette registers of the border color, making it look like the
+                main contents extend across the left and right. Beneath the
+                scroller, even further into the lower border, the top half of
+                the logo of TEX protrudes into the screen.
+              </p>
+              <p>
+                The first and main screen of the B.I.G.-Demo is gray with some
+                multicolored highlights. While not exactly the most exciting
+                screen, it is well balanced compared to the previous two demos.
+                It provides instructions to change the music and to switch to
+                the impressive parts of the demo: the insanely technicolored
+                Psycho-O-Screens.
+              </p>
+
+              <h4>
+                4.1.2 Psych-O-Screen 1: The Escher-Perspective of a
+                Rainbow-Pierced Cube
+              </h4>
+              <p>
+                Color changes, color movement, colors spanning across the screen
+                and into the left and right border; the first Psych-O-Screen
+                plays with color cycling and false perspective effects. At the
+                same time, the music from the main screen continues playing
+                relentlessly.
+              </p>
+
+              <p class="text-center" id="circuits-ablaze-figure-37">
+                <img
+                  src="img/picture38.png"
+                  alt="Figure 37"
+                  class="img-fluid"
+                />
+              </p>
+              <p class="text-secondary text-center">
+                Figure 37: The first Psych-O-Screen's animated bar of rainbow
+                colors moving up
+              </p>
+              <p>
+                and down the screen with the frame changing colors (screenshots)
+              </p>
+
+              <p>
+                In the center of the screen, a gray cube with The Exceptions'
+                logo floats in a sea of static (see
+                <a href="#circuits-ablaze-figure-37">figure 37</a>). A bar of
+                rainbow colors as wide as the full screen with borders moves up
+                and down. When the bar reaches the cube, it stretches behind the
+                logo, but in front of the front-facing surface of the cube. At
+                the same time, the bar protrudes behind the cube's sides,
+                something that, according to all laws of perspective, should in
+                fact be displayed behind the bar. This Esherian contraption is
+                emphasized by the patterned frame of colors of a single tone
+                that encase it, though the multicolor bar pierces it. All the
+                while the colors of the frame pulsate in different colors fading
+                in and out of multiple palettes of related shades (see
+                <a href="#circuits-ablaze-figure-38">figures 38</a> and
+                <a href="#circuits-ablaze-figure-39">39</a>).
+              </p>
+              <p>
+                Beneath the frame in the area of the screen's lower border, The
+                Exceptions repeat their trick with graphics in the overscan area
+                by painting in dozens of bright and contrasting colors the words
+                "Colorright by," then a gray tubular representation of their TEX
+                logo.
+              </p>
+
+              <p class="text-center" id="circuits-ablaze-figure-38">
+                <img
+                  src="img/picture83.png"
+                  alt="Figure 38"
+                  class="img-fluid"
+                />
+              </p>
+              <p class="text-secondary text-center">
+                Figure 38: Detailed screenshot of the first Psych-O-Screen
+                (screenshot)
+              </p>
+
+              <p class="text-center" id="circuits-ablaze-figure-39">
+                <img
+                  src="img/picture40.jpg"
+                  alt="Figure 39"
+                  class="img-fluid"
+                />
+              </p>
+              <p class="text-secondary text-center"></p>
+              <p>
+                Figure 39: Warped Perspective in <em>The Cycle</em> by M.C.
+                Escher
+              </p>
+
+              <h4>
+                4.1.3 Psych-O-Screen 2: The Surreal Landscape in Technicolor
+                Space
+              </h4>
+              <p>
+                This screen shows a platform of a hundred colors floating in the
+                blackness of space. On it, different-sized gray spheres cast
+                shadows. Rectangular structures lie between the spheres; in the
+                negative space of the shadows the rectangles cast, you can see
+                the initials ES for the artist Erik Simon, the word TEX for The
+                Exceptions, and the two connected musical notes for the music
+                from the home screen that continues to play.
+              </p>
+
+              <p class="text-center" id="circuits-ablaze-figure-40">
+                <img
+                  src="img/picture41.png"
+                  alt="Figure 40"
+                  class="img-fluid"
+                />
+              </p>
+              <p class="text-secondary text-center">
+                Figure 40: The multicolored platform with surreal shapes
+                floating in an emptiness gradually filled with vibrant but
+                interrupted scanlines
+              </p>
+
+              <p>
+                The surreal "Daliism" of this floating island does not remain
+                alone for long. Starting from the left, multicolored scanlines
+                start to fill the black background with vivid radiance until the
+                whole width of the screen is covered (see
+                <a href="#circuits-ablaze-figure-40">figure 40</a>). Beneath it
+                all, a gray fish inexplicably hovers in the Atari ST's lower
+                border.
+              </p>
+              <p>
+                Only now, as the screen is full of interrupted scanlines of
+                vibrance, can we see a handful of spherical silhouettes right
+                next to the fish. Perhaps these are technicolor bubbles leaving
+                the fish's mouth (see
+                <a href="#circuits-ablaze-figure-41">figure 41</a>).
+              </p>
+
+              <p class="text-center" id="circuits-ablaze-figure-41">
+                <img
+                  src="img/picture42.png"
+                  alt="Figure 41"
+                  class="img-fluid"
+                />
+              </p>
+              <p class="text-secondary text-center">
+                Figure 41: Detailed screenshot of the second Psych-O-Screen
+                (screenshot)
+              </p>
+
+              <p>
+                On the second Psych-O-Screen, The Exceptions outdo themselves in
+                the multitude of colors on the screen at the same time; a number
+                close to the full available spectrum of the Atari ST's 512
+                colors. Surreal shapes in color space are the theme of this
+                image, therefore it makes perfect sense that The Exceptions
+                whimsically post the following text above their epic sea of
+                luminance:
+              </p>
+              <blockquote class="alert alert-secondary">
+                "We hope they never find the corpse of this guy who said, we
+                should make this demo run on monochrome…"
+              </blockquote>
+
+              <h4>
+                4.1.4 Psych-O-Screen 3: The Moiré Fringe of Color Interference
+              </h4>
+              <p>
+                If one could call the previous Psych-O-Screen merely colorful,
+                then this third screen explodes with surreal colors like a
+                digital Jackson Pollock on LSD. The Exceptions push the color
+                limits and use as much of the borders as possible. Despite what
+                the other screens showed, they had not yet managed to draw
+                actual graphics into the side borders. Thus far, they could only
+                produce straight horizontal lines in the left and right overscan
+                area. These techniques fill the whole Psych-O-Screen (see
+                <a href="#circuits-ablaze-figure-42">figure 42</a>).
+              </p>
+
+              <p class="text-center" id="circuits-ablaze-figure-42">
+                <img
+                  src="img/picture43.png"
+                  alt="Figure 42"
+                  class="img-fluid"
+                />
+              </p>
+              <p class="text-secondary text-center">
+                Figure 42: The third Psych-O-Screen of the B.I.G. Demo
+                (screenshot)
+              </p>
+
+              <p>
+                They created a Psych-O-Screen with hundreds of interleaved lines
+                of colors horizontally stacked onto the screen. These lines
+                extended into all the borders, except for the top border. This
+                was the closest to full overscan that the Atari ST had achieved
+                so far.
+              </p>
+
+              <p class="text-center" id="circuits-ablaze-figure-43">
+                <img
+                  src="img/picture44.jpg"
+                  alt="Figure 43"
+                  class="img-fluid"
+                />
+              </p>
+              <p class="text-secondary text-center">
+                Figure 43: Vincent Pomilio's 141 Horizon Lines, 2018, acrylic,
+                pigmented plaster and wax on canvas<br />(Source:
+                <a
+                  href="http://www.vincentpomilio.com"
+                  target="_blank"
+                  rel="noopener"
+                  >http://www.vincentpomilio.com</a
+                >
+                )
+              </p>
+
+              <h4>4.1.5 Reset Screen</h4>
+              <p>
+                For the final trick, The Exceptions also included a reset
+                screen. When the user pressed the reset button on their Atari
+                ST, the computer did not reboot as it should by default. Showing
+                a bomb on the screen was the standard way the Atari ST's
+                operating system to report a system crash, an error, or an
+                <em>exception.</em> But in this case, the bomb started to
+                multiply and turn into a cartoon version of the system icon. The
+                Exceptions had caught the reset command and created a mock
+                screen with cartoon versions of the bomb.
+              </p>
+
+              <p class="text-center" id="circuits-ablaze-figure-44">
+                <img
+                  src="img/picture45.png"
+                  alt="Figure 44"
+                  class="img-fluid"
+                />
+              </p>
+              <p class="text-secondary text-center">
+                Figure 44: The Reset screen in the B.I.G. Demo (screenshots)
+              </p>
+
+              <h4>4.1.6 B.I.G.-Scroller</h4>
+              <p>
+                The scrolling text from the home screen can also be read in the
+                BIG-Scroller, a separate screen of multicolored text scrolling
+                through a dark cave with stalactites in front of it and
+                stalagmites in the background.
+              </p>
+
+              <p class="text-center" id="circuits-ablaze-figure-45">
+                <img
+                  src="img/picture46.png"
+                  alt="Figure 45"
+                  class="img-fluid"
+                />
+              </p>
+              <p class="text-secondary text-center">
+                Figure 45: The B.I.G.-Scroller (screenshots)
+              </p>
+
+              <p>
+                The "Best in Galaxy" demo had the longest scrolling text ever
+                produced in a demo up to that point (see
+                <a href="#circuits-ablaze-figure-45">figure 45</a>). To this
+                day, it still counts among the longest texts to ever be included
+                in a demo on a 16-bit machine.<sup
+                  ><a
+                    id="circuits-ablaze-chapter-4-origin-04-51"
+                    href="#circuits-ablaze-chapter-4-footnote-04-51"
+                    >[51]</a
+                  ></sup
+                >
+                The text was distributed between the main screen and the "B.I.G.
+                Scroller" screen and contains around 41,000 characters; these
+                are more than 7,000 words at 42KB. Could it be that these 42KB
+                were used deliberately because according to Douglas Adams in
+                "The Hitch-Hiker's Guide to the Galaxy", the number 42 is the
+                answer to the ultimate question of life, the universe, and
+                everything?<sup
+                  ><a
+                    id="circuits-ablaze-chapter-4-origin-04-52"
+                    href="#circuits-ablaze-chapter-4-footnote-04-52"
+                    >[52]</a
+                  ></sup
+                >
+              </p>
+              <p>
+                Here is the first paragraph of the B.I.G Demo in all its glory,
+                changed to mixed-case characters for readability.
+              </p>
+              <blockquote class="alert alert-secondary">
+                "TEX is back to strike again!! It has been a long time without
+                demos, but this time we have succeeded in making the biggest
+                demo in the universe: the Best In Galaxy (B.I.G.) Demo, offering
+                113 pieces of music with a total playing time of 243'39'
+                (approximately 4.1 hours)!!! The whole thing is surrounded by
+                stunning graphics, transparent scrolling in the lower border,
+                512 color Psych-O-Screens, the smoothest big scroller you ever
+                saw and a whole bunch of rasters - quite an achievement,
+                wouldn't you say?"
+              </blockquote>
+
+              <h4>4.1.7 A Reading of the Scrolling Text</h4>
+              <p>
+                In this section, the focus will be on the examination of the
+                scrolling text. It is the longest scrolling text in any of their
+                demos up to this point, and therefore provides insights into the
+                self-proclaimed intentions and thinking of the demo-makers. From
+                the onset, it should be established that the majority of the
+                text was not produced by the core members of the Exceptions, but
+                rather by Richard Karsmakers (Cronos from the Amazing Cracking
+                Conspiracy)<sup
+                  ><a
+                    id="circuits-ablaze-chapter-4-origin-04-53"
+                    href="#circuits-ablaze-chapter-4-footnote-04-53"
+                    >[53]</a
+                  ></sup
+                >, the editor of the diskmag <em>ST-NEWS</em> who helped the
+                demo-makers start on this demo effort and distributed and
+                advertised the demo once it was completed. That being said, the
+                demo itself is the work of The Exceptions. They would not allow
+                the text to contain anything that contradicts their intentions
+                and thinking. The scrolling is summarized below.
+              </p>
+              <p>
+                After the introduction, with a description of the contents and
+                features of the demo, the writer states the playtime of all the
+                music combined and the length of the scrolling text. Then, the
+                writer praises the contributors of the music, the code, the
+                graphics, and himself before decrying the Atari ST's YM-2149
+                sound chip and graphics hardware. The next section is a list of
+                credits for the demo's contributors. This is followed by a list
+                of the records broken by the demo, which include the number of
+                pieces of music, their total length, the length of the scrolling
+                message, and the admirable achievement of compressing it all to
+                a single-sided floppy disk.
+              </p>
+              <p>
+                The longest section is the greetings to other members of the
+                scene. They range from members of the Atari ST demoscene,
+                demo-makers on other systems, developers of commercial software
+                on the ST, as well as people at the Atari Corporation who helped
+                develop the machine. The language tropes used are playful
+                insults, boasts, and other competitive linguistic forms to
+                create sociality in the burgeoning demoscene on the Atari ST.
+                Some of the greetings have playful remarks, such as "Amiga
+                Software Syndicate (though they are working on the wrong
+                machine)." While not explicitly stated, there are only men on
+                the list.
+              </p>
+              <p>
+                Three of the "greetings" were disrespectful messages directed at
+                groups whom The Exceptions despised for acting dishonorably: the
+                cracking groups <em>HSS</em> that distributed programs that were
+                not copy-protected by their publishers (but HSS credited
+                themselves as having cracked the copy protection). the cracker
+                group named <em>Klu Klux Clan Conspiracy</em> in bad taste, and
+                <em>Strike Force.</em> Both wrongfully credited themselves with
+                the cracks done by others:
+              </p>
+              <blockquote>
+                "HSS (the biggest cocksucker around, that always puts his name
+                in programs that others cracked, writes 'cracked by' in loading
+                pictures of non-protected software, and that has to watch his
+                steps before someone will punch his bleedin' nose)
+                <br /><br />
+                Klu Klux Clan Conspiracy (another one of those queers, writing
+                his name in some DMA crackings)
+                <br /><br />
+                Strike Force (a bunch a half-ass fags that put smart-ass intros
+                in front of programs they didn't even crack - using routines
+                they pinched from others)."
+              </blockquote>
+              <p>
+                Richard Karsmakers and The Exceptions use strong language in
+                this section. It is not only offensive, but also sexually
+                violent and homophobic and departs in tone from the other
+                sections. This strong language was deliberately chosen to attack
+                the cracker groups. These paragraphs provide an insight into the
+                unspoken "codex" of the scene, where claiming merits is the
+                primary currency. Wrongfully claiming credit is regarded as a
+                violation of this codex. The Exceptions express their anger and
+                dissatisfaction with these groups who acted dishonorably.
+              </p>
+              <p>
+                The writers are not native English-speakers. Derogatory
+                vernacular in the 1980s was pejoratively directed at sexuality
+                as offensive slurs. From a modern perspective, this is not
+                acceptable and does not conform to our present-day cultural
+                norms nor political correctness. In the context of the times and
+                hyper-masculine action movies of the 1980s as watched by this
+                generation of young men, the choice of words is offensive, but
+                not unusual.
+              </p>
+              <p>
+                In the next section, there is an interesting duality. Richard
+                Karsmakers' demoscene handle is Cronos, he is part of the
+                <em>Amazing Cracking Conspiracy (ACC),</em> and he works on
+                ST-NEWS under his real name, yet in this text, he uses his scene
+                handle. To create distance between his civilian identity and his
+                scene identity, he praises the work of ST-NEWS as though he is
+                not a contributor:
+              </p>
+              <blockquote class="alert alert-secondary">
+                "Amazing Cracking Conspiracy ('ST NEWS' is a great magazine!
+                read more about it further in this scrolling message. Give our
+                love to Willeke!)"
+              </blockquote>
+              <p>
+                There is a mildly profane message to the
+                <em>"motherfucker that brought the virus on the ST."</em>
+                Karsmakers elaborates that
+                <em
+                  >"words fail to tell what we think of him, but I can assure
+                  you it ain't much good."</em
+                >
+                This was the age when viruses were distributed through infected
+                floppy disks, and in some cases, as infected files in a Bulletin
+                Board System (BBS). Getting a virus into circulation in this way
+                was a very deliberate act. Karsmakers closes with a humorous
+                death curse to the virus maker
+                <em
+                  >("...may thunder and lightning split your dim-witted skulls
+                  into a thousand tiny fragments…").</em
+                >
+              </p>
+              <p>
+                The next section lists metrics related to the creation of the
+                demo, e.g., the number of developer hours that went into the
+                development (2,019 hours), the number of bottles of soft drinks,
+                beer, and wine, as well as the cups of tea and coffee that they
+                drank during this time. The metrics go on to list materials used
+                like diskettes, adhesive strips, paper, and other materials.
+                They list all the computers they used. Oddly enough, this
+                includes not only the Atari and Commodore 64, but also a
+                Commodore Amiga and an Apple Macintosh II (which at the time was
+                prohibitively expensive). They praise the applications they
+                used, which includes another praise for the pixel-paint
+                application NEOchrome.
+              </p>
+              <p>
+                There is a tidbit alluding to the demo-makers having to neglect
+                their schoolwork due to working on their demo:
+              </p>
+              <blockquote class="alert alert-secondary">
+                "82 hours spent cleaning the schoolyard (due to arriving too
+                late at school or not properly attending the lessons while
+                developing a piece of the demo on chemistry notepaper)."
+              </blockquote>
+              <p>A long section is dedicated to game musician Rob Hubbard:</p>
+              <blockquote class="alert alert-secondary">
+                "To fill this scrolling text with more or less useful things, I
+                think it is more than appropriate to write something about the
+                man to whom this demo program is dedicated: Rob Hubbard (music
+                programmer on various computer systems amongst which are
+                Commodore 64, Commodore Amiga and Atari ST)."
+              </blockquote>
+              <p>
+                Below, Karsmakers describes the games that feature Hubbard's
+                music and how Jochen Hippel (Mad Max) converted the tunes to the
+                ST. Under his pseudonym, Karsmakers advertises his own diskmag
+                ST-NEWS:
+              </p>
+              <blockquote class="alert alert-secondary">
+                "Through TEX, I was told to give some attention to 'ST NEWS', an
+                international disk magazine that is written in English and
+                published through Richard of the ACC as a public domain
+                offering."
+              </blockquote>
+              <p>
+                Again, Richard Karsmakers (Cronos) references himself as a
+                different person.
+              </p>
+              <p>
+                The writer is still trying to make the text longer, so he starts
+                a joke section where he quotes the first joke ever in a
+                scrolling message on the Commodore 64 ("Biggles" by FBG):
+                <em
+                  >"What does an elephant use as a tampon? [...] it's a
+                  sheep!"</em
+                >
+                An unfunny and mildly offensive joke.
+              </p>
+              <p>
+                What follows is the "obligatory" Amiga vs. ST section. The
+                competition between platforms has been a motivating factor for
+                the demo-makers on the ST since the very beginning:
+              </p>
+              <blockquote class="alert alert-secondary">
+                "Now, many Atari ST users start throwing up when they hear
+                someone mentioning the Amiga, and nearly all Amiga users truly
+                think the Atari ST is a heap of shit (and the worst thing is
+                that they really think it is a heap of shit, whereas Atari ST
+                users just talk negatively about the Amiga for jealousy
+                reasons). That jealousy, by the way, grows less and less by the
+                day because demo programs like this start appearing on the ST,
+                together with more and more excellent games and other programs."
+              </blockquote>
+              <p>
+                This section evokes the inherent technological tribalism of the
+                demoscene. It specifically addresses the envy that owners of the
+                Atari ST feel toward the Amiga's superior capabilities. The text
+                states that Amiga owners look down on the ST for being the
+                inferior machine. Certainly, some Amiga owners and demo-makers
+                held the Atari ST and, by extension, its owners in contempt, but
+                this was not as widespread an opinion in the Amiga demoscene.
+                Many ST demos poked at the Amiga, yet very few Amiga demos
+                attacked the ST.
+              </p>
+              <p>
+                The next section was a useful set of instructions on how to wire
+                the ST's monitor port to an amplifier for stereo sound. This was
+                followed very late in the scrolling text by the instructions on
+                how to use the B.I.G. Demo, how to access the different
+                Psych-O-Screens, and how to change the music. To be fair, the
+                abbreviated instructions are also listed on the main screen.
+              </p>
+              <p>
+                The writers then describe the distribution model of the demo.
+                This is generally how most demos on most computer systems were
+                distributed: freely and as part of the "public domain" software
+                scene. This is not the same legal term for intellectual property
+                that is no longer copyrighted, but a by-now-extinct model of
+                software distribution where public domain software libraries
+                would distribute software that had explicitly been made
+                available by its creators. Usually, the only costs that could be
+                charged were for the disk and the effort to make the copy,
+                therefore they remained affordable.
+              </p>
+              <p>
+                It is striking that The Exceptions urge for the free and wide
+                distribution of their demo in this section. They also ask for
+                donations. This is in 1988, nearly a decade before the
+                prevalence of the free and open-source software movement.
+              </p>
+              <blockquote class="alert alert-secondary">
+                "Since this demo program is public domain (shareware), it may be
+                copied freely. Please copy it to everyone who wants it, as well
+                as those who do not particularly want it (they might be grateful
+                when they find out what they have copied when they start
+                examining it more closely). If you think this demo program might
+                be worth a small donation (please, don't take the word 'small'
+                literally!), you can send any amount of money..."
+              </blockquote>
+              <p>
+                It takes several hours for the full text to scroll by. If you
+                read it on the screen while it scrolls, you would have a good
+                amount of ghosting in your eyes by the end. Even after averting
+                your sight from the screen, you would still see words scrolling
+                by.<sup
+                  ><a
+                    id="circuits-ablaze-chapter-4-origin-04-54"
+                    href="#circuits-ablaze-chapter-4-footnote-04-54"
+                    >[54]</a
+                  ></sup
+                >
+              </p>
+              <p>
+                If you sat through the full text, right at the very end, you
+                learned the demo-maker Alyssa's secret technique to remove the
+                lower border:
+              </p>
+              <blockquote class="alert alert-secondary">
+                "Ok. In just a few seconds, -ME- from the Exceptions will start
+                explaining how border scrolling techniques work. If you have not
+                yet fetched your notepad and pencil, please prepare yourself for
+                a mind-boggling piece of constant memory....
+                <br /><br />
+                Here it is...."
+                <br /><br />[...]<br /><br />
+
+                "...if you remember our super-neo-demo-show you might have
+                noticed a mistake in the pictures in the bottommost line (at the
+                right border, 16 pixels are missing.....). These are effects of
+                switching off the border. Attention!!! I'm now explaining the
+                principles of switching off the border:
+                <br /><br />
+                In the middle of the last line of the normal screen (no. 199
+                counted from 0) you must change the syncronization frequency
+                from 50Hz to 60Hz. This will cause the Shifter to start the
+                right border 16 pixles earlier than usual. Then wait till the
+                electron beam is in the left border of the next line. There you
+                must switch back from 60Hz to 50Hz and there will be no lower
+                border again. The greatest problem is the exact timing of the
+                synchronization switching!! Your rout will be disturbed by
+                keyboard and timer C interrupts. If you don't succeed in timing
+                the program exactly there might be 2 different effects: In the
+                easier case you'll see the border again for a moment, in the
+                other case you'll see curious things happen on your screen
+                (flickering bitplanes and so on). An other result of switching
+                off the border is a confused video Shifter which is starting the
+                right border 16 pixles too soon as he doesn't want to show the
+                last 2 bytes of the video memory. Therefore the first address
+                displaid in the first line of the 'border' is 31998 bytes behind
+                the first address of the screen !! So you must move your graphix
+                2 bytes to the left for not getting 'funny' pictures!
+                <br /><br />
+                Puh !! Writing this text used much less time than making the
+                lousy Psycho-2-Screen for which I needed 48 hours of hard
+                programming and i don't know how long ES needed to paint the
+                graphix with NEOchrome, the best painting program on the ST!!!
+                That's about it, folks! The 99th percent of this scrolling
+                message has just ticked away and we're unmistakably nearing the
+                100th (and final) percent now.... In a few seconds, the
+                scrolling message will start anew.... Au revoir auf wiedersehen
+                tot ziens arrividerci tschuess good bye houdoe doeg see you
+                later, alligator .....Anyway, we hope to see you again in the
+                next TEX demo (if one should be made sometimes).
+                <br /><br />Bye!"
+              </blockquote>
+
+              <h4>4.1.8 Digital Sound Samples</h4>
+              <p>
+                When you scroll to the very bottom of the music list on the main
+                screen of the B.I.G.-Demo, there is a special entry called "The
+                Digital Department." Selecting it changes the view, and suddenly
+                the Atari ST's speakers produce digital samples of
+                near-professional quality with adaptations of even more games.
+                The music was close to the capabilities of the Amiga.
+              </p>
+              <p>
+                Here, The Exceptions announced another demo called the
+                Amiga-Sound-Demo.
+              </p>
+              <p>
+                After they had adapted nearly all of Rob Hubbard's Commodore 64
+                game music, it was now time to start adapting Hubbard's
+                Commodore Amiga music. And who else would be capable of such a
+                feat if not The Exceptions?
+              </p>
+
+              <h4>
+                4.1.9 The Elements of Design and the Aesthetics of Pixels of the
+                B.I.G. Demo
+              </h4>
+              <p>
+                The images produced for the B.I.G.-Demo looked like they
+                belonged in a computer or video game, but they were not created
+                for that. They were created to stand on their own, to be beheld
+                in their own space, all the while in the context of other images
+                produced on computers. They were images composed of clearly
+                visible and sometimes even distracting building blocks: pixels.
+              </p>
+              <p>
+                In the low-resolution images of the time composed of pixels, the
+                pixels themselves did not simply represent a part of the image
+                that, together with the other pixels, forms a greater whole: but
+                the image as a complete artifact. Pixels were too big, too
+                stark, too noticeable for that. Pixels also existed as
+                independent entities known as "digital brush strokes," as
+                clearly visible building blocks of the entire image. This gives
+                each pixel a life of its own, an unapologetic presence, a value
+                in and of itself, in addition to the part of the whole picture
+                that it represents.
+              </p>
+              <p>
+                This made the pixelated images of this era stand apart from
+                paintings, photography, and film frames. Today's displays with a
+                greater resolution than the eye can discern can take the shape
+                of anything we throw at them. They can "pretend" to show photos
+                or reproductions of paintings or videos. The pixelated images of
+                the Atari ST and similar computers could not pretend to be
+                anything else than what they were. In this way, they truly
+                embrace their form.
+              </p>
+
+              <h4>4.1.10 The Making of the B.I.G.-Demo</h4>
+              <p>
+                Richard Karsmakers (Cronos), the editor of the diskmag
+                <em>ST-NEWS,</em> helped initiate the B.I.G.-Demo and wrote most
+                of the record-breaking scrolling text. He had approached The
+                Exceptions to motivate them to create the biggest and best demo
+                so far. Five months later, they released it on January 24, 1988.
+              </p>
+              <p>
+                Jochen Hippel managed to get the raw data of the original music
+                from the Commodore 64 to the Atari ST using a data cable and a
+                conversion program supplied by Udo Fischer and Erik Simon.
+                However, this does not mean that the music was in any way
+                playable or sounded good on the Atari ST. The further manual
+                conversion work was time-consuming and required many adaptations
+                to the Atari ST's inferior sound chip.
+              </p>
+              <p>
+                The programming of the many Psych-O-Screens required exact
+                timing and expert knowledge of the hardware. Together with the
+                music, graphics, and digi-sound sample, all the data needed to
+                be compressed to a single-sided 3.5" floppy disk so that The
+                Exceptions could allow the demo to run on the largest possible
+                range of Ataris.
+              </p>
+              <p>
+                Richard Karsmakers continued collaborating with members of The
+                Exceptions, who contributed articles, graphics, and music to
+                <em>ST-NEWS.</em> Karsmakers also wrote a first-hand account of
+                how they finished their next demo, called the Amiga Demo.
+              </p>
+            </section>
+            <section id="circuits-ablaze-chapter-4-section-3">
+              <h3 class="mt-5">4.2 Amiga Demo</h3>
+              <div class="video-container">
+                <iframe
+                  src="https://youtube.com/embed/k_mGUSzR1aY"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                ></iframe>
+              </div>
+              <p class="text-center">
+                <a
+                  href="https://youtu.be/k_mGUSzR1aY"
+                  target="_blank"
+                  rel="noopener"
+                  class="btn btn-outline-primary btn-sm m-2"
+                  >Watch Video on Youtube</a
+                >
+              </p>
+
+              <p>
+                The <strong>Amiga Demo</strong> directly targeted the superior
+                sound capabilities of the Commodore Amiga by converting tunes
+                that were regarded as impossible on the Atari ST's limited sound
+                hardware. As if to conquer the last territory of the ST's
+                inferiority compared to the Amiga, The Exceptions released the
+                Amiga Demo as their last full demo.
+              </p>
+              <p>
+                In the Little Sound Demo and Little Color Demo, The Exceptions
+                matched the sound generation capabilities of the Commodore 64's
+                SID chip. Now, they conjured the same sound quality as the
+                mighty Paula chip in the Commodore Amiga from the Atari ST's
+                YM-chip. Paula could produce four channels of
+                <sup
+                  ><a
+                    id="circuits-ablaze-chapter-4-origin-04-55"
+                    href="#circuits-ablaze-chapter-4-footnote-04-55"
+                    >[55]</a
+                  ></sup
+                >
+                sample-based digital sound. Technically, it was ahead of
+                anything at the time, only to be matched on the IBM PC
+                compatible with the introduction of the expensive Sound Blaster
+                sound card and arguably, by the sound capabilities of the Sega
+                MegaDrive/Genesis when it was released in 1988.
+              </p>
+
+              <p class="text-center" id="circuits-ablaze-figure-46">
+                <img
+                  src="img/picture47.png"
+                  alt="Figure 46"
+                  class="img-fluid"
+                />
+              </p>
+              <p class="text-secondary text-center">
+                Figure 46: The music demo screen of the Amiga Demo (screenshot)
+              </p>
+
+              <p>
+                The Amiga Demo consisted of two screens. The first screen is an
+                imitation of a music program on the Commodore Amiga called Aegis
+                Sonix, which was a piece of software not written for the Atari
+                ST (see <a href="#circuits-ablaze-figure-46">figure 46</a>). It
+                takes advantage of the Amiga's sound capabilities and provides
+                users with an environment to compose music using notation. The
+                Exceptions did not port the actual program onto the ST; rather,
+                they created a copy of the file selection screen and a part of
+                the notational screen in the background.
+              </p>
+              <p>
+                They ported seven pieces of music from Amiga games, like
+                <em>Rally Master,</em> <em>Amegas,</em> and
+                <em>Crashin' Robb,</em> for a total of fifteen minutes of
+                high-quality, four-voice musical tunes, even though the Atari ST
+                is only capable of playing three-voice music. Users can switch
+                music by choosing a tune with the cursor keys.
+              </p>
+              <p>
+                This digisound was impressive enough, given the ST's sound and
+                music limitations, but the most impressive screen is accessed by
+                pressing the "O" key (O for overscan). This opens up the
+                overscan screen with no lower border and, for the first time on
+                the Atari ST, no right border. Removing the right border and
+                using the space for graphics was considered impossible. The
+                Exceptions had done it.
+              </p>
+              <p>
+                They filled the screen with a pulsating pattern reminiscent of
+                Yayoi Kusama's colorful polka dot art (see
+                <a href="#circuits-ablaze-figure-47">figures 47</a> and
+                <a href="#circuits-ablaze-figure-48">48</a>). Along the lower
+                half of the screen, a transparent text scrolled. The blue
+                fractal patterns shine through the red text.
+              </p>
+
+              <p class="text-center" id="circuits-ablaze-figure-47">
+                <img
+                  src="img/picture48.png"
+                  alt="Figure 47"
+                  class="img-fluid"
+                />
+              </p>
+              <p class="text-secondary text-center">
+                Figure 47: The scrolling text screen with no right border in the
+                Amiga Demo (screenshot)
+              </p>
+
+              <p class="text-center" id="circuits-ablaze-figure-48">
+                <img
+                  src="img/picture49.jpg"
+                  alt="Figure 48"
+                  class="img-fluid"
+                />
+              </p>
+              <p class="text-secondary text-center">
+                Figure 48: The borderless screen of the Amiga Demo is
+                aesthetically reminiscent of the works of Yayoi Kusama at the
+                Moco Museum
+              </p>
+
+              <h4>4.2.1 The Making of the Amiga Demo</h4>
+              <div class="video-container">
+                <iframe
+                  src="https://youtube.com/embed/CR3PFcS6dng"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                ></iframe>
+              </div>
+              <p class="text-center">
+                <a
+                  href="https://youtu.be/CR3PFcS6dng"
+                  target="_blank"
+                  rel="noopener"
+                  class="btn btn-outline-primary btn-sm m-2"
+                  >Watch Video on Youtube</a
+                >
+              </p>
+              <p>
+                The Exceptions not only broke two new limits of the Atari ST by
+                opening the right border and playing Amiga-quality digimusic,
+                but they also managed to break a personal record for the longest
+                continuous time spent programming without interruption.
+              </p>
+              <p>
+                While the demo-makers were visiting their friend and
+                <em>ST-NEWS</em> editor Richard Karsmakers, they wrote the whole
+                demo in one continuous hackathon. Karsmakers chronicled the
+                creation of the Amiga Demo in <em>ST-NEWS.</em
+                ><sup
+                  ><a
+                    id="circuits-ablaze-chapter-4-origin-04-56"
+                    href="#circuits-ablaze-chapter-4-footnote-04-56"
+                    >[56]</a
+                  ></sup
+                >
+                They worked on the demo for 22 hours straight, fighting against
+                the hardware, using tricks to overcome limitations, and all the
+                while eating pizza and drinking soft drinks until most everyone
+                fell asleep. Udo Fischer (-ME-) was left to wrap up the
+                programming. Karsmakers contributed the contents of the
+                scrolling text, Jochen Hippel (Mad Max) managed to faithfully
+                convert the Amiga music to the ST's hardware, and Erik Simon
+                (ES) created the graphics and the transparent font they needed
+                for the demo.
+              </p>
+
+              <p class="text-center" id="circuits-ablaze-figure-49">
+                <img
+                  src="img/picture50.jpg"
+                  alt="Figure 49"
+                  class="img-fluid"
+                />
+              </p>
+              <p class="text-secondary text-center">
+                Figure 49: The Exceptions in the Netherlands when they wrote the
+                Amiga Demo
+              </p>
+              <p>
+                Left to right: Antiware, Daryl, Es, Mad Max, Robert Heessels
+                (co-owner of STRIKE-a-LIGHT), Cronos, 6719 and half of -ME-.<br />(Source:
+                <em>ST-NEWS</em>
+                <a
+                  href="https://st-news.com/gallery/tex-in-holland/the-group-inside/"
+                  target="_blank"
+                  rel="noopener"
+                  >https://st-news.com/gallery/tex-in-holland/the-group-inside/</a
+                >
+                )
+              </p>
+            </section>
+            <section id="circuits-ablaze-chapter-4-section-4">
+              <h4>4.3 Mainstream Exposure</h4>
+              <p>
+                In 1988, Tarik Ahmia, the editor-in-chief of the established
+                mainstream computer magazine
+                <em>ST-Magazin 68000er</em> published by
+                <em>Markt & Technik</em> in Bavaria, reached out to Udo Fischer,
+                Erik Simon, Michael Raasch, and Gunter Bitz. The Exceptions had
+                become minor celebrities in the Atari ST demoscene, but they
+                were not widely known to the average computer-using audience.
+                Tarik Ahmia convinced them to write a series of articles about
+                their programming tricks. In five articles in 1988, The
+                Exceptions revealed all of their programming secrets to a major
+                audience and became widely known outside of the niche of the
+                demoscene.<sup
+                  ><a
+                    id="circuits-ablaze-chapter-4-origin-04-57"
+                    href="#circuits-ablaze-chapter-4-footnote-04-57"
+                    >[57]</a
+                  ></sup
+                >
+                In photos, they were depicted as silhouettes and marketed as
+                secret insiders with only their first names used. This made them
+                seem forbidden and taboo, like true hackers. Undoubtedly, it
+                contributed to their allure.
+              </p>
+              <p>
+                Their series of articles was called <em>Die Hexer</em> (German
+                for "The Wizards" or "The Witchers").
+              </p>
+
+              <p class="text-center" id="circuits-ablaze-figure-50">
+                <img
+                  src="img/picture51.png"
+                  alt="Figure 50"
+                  class="img-fluid"
+                />
+              </p>
+              <p class="text-secondary text-center">
+                Figure 50: The Exceptions wrote about their programming tricks
+                in the established mainstream computer magazine
+                <em>ST-Magazin 68000er</em> and reached a wide audience
+              </p>
+
+              <p>
+                Under Tarik Ahmia's leadership, the
+                <em>ST-Magazin 68000er</em> not only covered computing news,
+                reviewed games and applications, and provided type-in
+                programs,<sup
+                  ><a
+                    id="circuits-ablaze-chapter-4-origin-04-58"
+                    href="#circuits-ablaze-chapter-4-footnote-04-58"
+                    >[58]</a
+                  ></sup
+                >
+                but it offered several series examining how to produce creative
+                work on the Atari ST. Aside from The Exceptions, the magazine
+                featured series by commercial artists who produced their own
+                magazines using desktop publishing software on the ST, and
+                others creating 3D animations for commercial TV stations in
+                Germany.
+              </p>
+              <p>
+                In this thesis, the articles in <em>ST Magazin 68000er</em> are
+                used as sources for the technical explanations of the
+                achievements of the demos. An in-depth analysis would exceed the
+                scope here, but they warrant a short examination.
+              </p>
+              <p>
+                By the late 1980s, computers had become widespread tools in
+                corporate administration. They were used for calculations,
+                transactions, word processing and other business-related tasks.
+                The use of computers as creative tools had been pioneered in the
+                1960s and 70s, but only started to break into commercial design
+                in the late 1980s. By the time The Exceptions were featured in
+                <em>ST Magazin 68000er,</em> the print industry around news
+                media and publishing was in the process of transforming to
+                digital production. The first Hollywood movies had started to
+                feature computer animations. The tools used in the professional
+                sector like Linotype page setting systems for page layouts in
+                publishing and the Quantel Paintbox for infographics on TV were
+                expensive and specialized. Home computer enthusiasts could
+                identify that even though these systems were far more advanced
+                than their own 16-bit computers, at their core, the expensive
+                machines were not that much different than the higher-end home
+                computers.
+              </p>
+              <p>
+                By showcasing early hobbyist digital creatives like The
+                Exceptions, computer magazines demonstrated the creative
+                potential of the machines. They provided instructions on how
+                home users could produce their own works and inspire them to
+                produce images, music, animations and even demos. Users could
+                recognize that the expensive professional computers were much
+                more capable, but they could also see that compared to the
+                expensive machines, the gap between the capabilities of their
+                own computers was closing. A Paintbox sold for $100,000 only
+                half a decade earlier could display photorealistic images with
+                256 colors from a potential color palette of 16 million. Yet the
+                artists used a graphics program on it that resembled the paint
+                applications on the Atari ST, the Apple Macintosh and the
+                Commodore Amiga. On a $1000 Atari ST, with a lot of effort, home
+                users could create their own graphics that came close to the
+                professional graphics; they could see the potential lying
+                dormant in the technology.
+              </p>
+              <p>
+                By not only reporting <em>about</em> The Exceptions, but by
+                having them write a series of articles, The Exceptions explained
+                how to produce impressive results with the ST. Computer
+                enthusiasts now saw the human beings behind the technology, and
+                that The Exceptions were using the same tools available to home
+                users. Even though it can be assumed that the editors of the
+                magazine revised the articles provided by The Exceptions, there
+                is still an endearing awkwardness in the text. Each article
+                features a different member explaining their skill; for example,
+                explaining how to program smooth scrolling routines, how to
+                produce more colors on the screen, how to paint graphics, and
+                how to write music. The articles are full of enthusiasm and
+                pride at the achievements, yet they are apologetic in their
+                descriptions of the solutions because they emphasize that there
+                might be better ways to achieve the same results. The articles
+                were clearly written by young people who had figured out
+                techniques and wrote about them in a language that resonated
+                with young readers.
+              </p>
+              <p>
+                By the mid-1980s, only a very few programmers were being
+                promoted by name. They were not yet treated like authors of
+                books or rock stars. This was the time before John Carmack and
+                John Romero, who later became famous for the 3D-shooter
+                <em>Doom,</em> and before Shiguro Miyamoto at Nintendo became
+                famous. In the United States, there were already a small number
+                of famous games developers like Richard Garriott (aka "Lord
+                British") who had created the <em>Ultima</em>-Series of
+                computer-role-playing-games; Roberta Williams who had written
+                <em>King's Quest</em> and many other games at her company
+                <em>Sierra On-Line;</em> and Sid Meier who created
+                <em>Pirates</em> and had his name put on the box. In the UK, the
+                <em>Bitmap Brothers</em> were being promoted by their publisher
+                <em>Mirrorsoft</em> like rock stars, using the full public
+                relations power of Robert Maxwell's media empire.<sup
+                  ><a
+                    id="circuits-ablaze-chapter-4-origin-04-59"
+                    href="#circuits-ablaze-chapter-4-footnote-04-59"
+                    >[59]</a
+                  ></sup
+                >
+              </p>
+              <p>
+                But they all seemed so far away, none of them were from a small
+                town in Germany. It was a breakthrough for members of the
+                demoscene to be featured in a print magazine.
+              </p>
+            </section>
+            <section id="circuits-ablaze-chapter-4-section-5">
+              <h3 class="mt-5">4.4 Conclusion: The Time of Breakthroughs</h3>
+              <p>
+                This was the year that The Exceptions peaked as demo-makers and
+                produced the most demos. Their demos broke numerous hardware
+                limitations, like the ST's color limits, the bottom and the
+                right screen borders, and the limits of the ST's sound chip with
+                their music conversions from other systems like the C64 and the
+                Amiga. In the B.I.G-Demo, they produced the longest scrolling
+                text to date.
+              </p>
+              <p>
+                It was also the year that The Exceptions started to collaborate
+                with others in the demoscene. At first with Alyssa whose
+                programming trick for the removal of the bottom border was used
+                in the Super-Neo-Demo-Show. Then, in the B.I.G.-Demo, they
+                collaborated with the diskmag <em>ST-NEWS</em> for advertising
+                and distribution, as well as the diskmag's editor Richard
+                Karsmakers for project management and scrolling text.
+              </p>
+              <p>
+                1988 was the year that The Exceptions found recognition outside
+                of their small scene by reaching a larger audience in the print
+                publication <em>ST-Magazin 68000er,</em> explaining their
+                programming tricks. But this was also the year that the main
+                members of The Exceptions decided to become legitimate game
+                programmers. They would no longer have time to create full
+                demos, but the move was necessary for them to make a living from
+                their skills.
+              </p>
+              <p>
+                And by 1988, The Exceptions had already inspired so many others
+                in the Atari ST demoscene that they had passed the torch onto
+                other demo-makers. However, in the next year, The Exceptions
+                would still collaborate with others on their mega-demo: the
+                biggest demo of all.
+              </p>
+            </section>
+            <div class="row">
+              <div class="col-6">
+                <p>
+                  <a
+                    href="chapter-03.html"
+                    class="btn btn-outline-primary btn-sm"
+                    >&laquo; Previous Chapter</a
+                  >
+                </p>
+              </div>
+              <div class="col-6">
+                <p class="text-end">
+                  <a
+                    href="chapter-05.html"
+                    class="btn btn-outline-primary btn-sm"
+                    >Next Chapter &raquo;</a
+                  >
+                </p>
+              </div>
             </div>
-          </div>
-          <hr />
-          <section id="circuits-ablaze-chapter-4-footnotes">
-            <h3 class="mt-5">Footnotes</h3>
+            <hr />
+            <section id="circuits-ablaze-chapter-4-footnotes">
+              <h3 class="mt-5">Footnotes</h3>
 
-            <p id="circuits-ablaze-chapter-4-footnote-04-50">
-              <sup>[50]</sup>
-              Strictly speaking, though, a mega-demo is not only composed of
-              different sections like the B.I.G.-Demo but each section is also
-              created by one or more different demo-groups.<br /><a href="#circuits-ablaze-chapter-4-origin-04-50" class="btn btn-outline-secondary btn-sm">
-                &raquo; Back [50]</a>
-            </p>
+              <p id="circuits-ablaze-chapter-4-footnote-04-50">
+                <sup>[50]</sup>
+                Strictly speaking, though, a mega-demo is not only composed of
+                different sections like the B.I.G.-Demo but each section is also
+                created by one or more different demo-groups.<br /><a
+                  href="#circuits-ablaze-chapter-4-origin-04-50"
+                  class="btn btn-outline-secondary btn-sm"
+                >
+                  &raquo; Back [50]</a
+                >
+              </p>
 
-            <p id="circuits-ablaze-chapter-4-footnote-04-51">
-              <sup>[51]</sup>
-              The length of the scrolling text was exceeded three years later
-              by the demo “Best Part of Creation” by Delta Force in 1991
-              <a href="https://aldabase.com/2016/01/26/best-part-of-the-creation-by-delta-force/" target="_blank" rel="noopener">https://aldabase.com/2016/01/26/best-part-of-the-creation-by-delta-force/</a>
-              (Retrieved on June 18, 2020)<br /><a href="#circuits-ablaze-chapter-4-origin-04-51" class="btn btn-outline-secondary btn-sm">
-                &raquo; Back [51]</a>
-            </p>
+              <p id="circuits-ablaze-chapter-4-footnote-04-51">
+                <sup>[51]</sup>
+                The length of the scrolling text was exceeded three years later
+                by the demo “Best Part of Creation” by Delta Force in 1991
+                <a
+                  href="https://aldabase.com/2016/01/26/best-part-of-the-creation-by-delta-force/"
+                  target="_blank"
+                  rel="noopener"
+                  >https://aldabase.com/2016/01/26/best-part-of-the-creation-by-delta-force/</a
+                >
+                (Retrieved on June 18, 2020)<br /><a
+                  href="#circuits-ablaze-chapter-4-origin-04-51"
+                  class="btn btn-outline-secondary btn-sm"
+                >
+                  &raquo; Back [51]</a
+                >
+              </p>
 
-            <p id="circuits-ablaze-chapter-4-footnote-04-52">
-              <sup>[53]</sup>
-              Adams, Douglas.
-              <em>The Hitchhiker's Guide to the Galaxy.</em> Random House. New
-              York, 1979.<br /><a href="#circuits-ablaze-chapter-4-origin-04-52" class="btn btn-outline-secondary btn-sm">
-                &raquo; Back [52]</a>
-            </p>
+              <p id="circuits-ablaze-chapter-4-footnote-04-52">
+                <sup>[53]</sup>
+                Adams, Douglas.
+                <em>The Hitchhiker's Guide to the Galaxy.</em> Random House. New
+                York, 1979.<br /><a
+                  href="#circuits-ablaze-chapter-4-origin-04-52"
+                  class="btn btn-outline-secondary btn-sm"
+                >
+                  &raquo; Back [52]</a
+                >
+              </p>
 
-            <p id="circuits-ablaze-chapter-4-footnote-04-53">
-              <sup>[53]</sup>
-              Despite the name that references cracking, Richard Karsmakers'
-              group stopped all illegal pirating activities in 1986 and
-              announced it in <em>ST-NEWS</em> Volume 1, Issue 3 (only
-              available as an RTF file)
-              <a href="https://st-news.com/uploads/ST-News/Vol-1/ST_NEWS_1_3.rtf" target="_blank" rel="noopener">https://st-news.com/uploads/ST-News/Vol-1/ST_NEWS_1_3.rtf</a>
-              (Retrieved on June 4, 2020)<br /><a href="#circuits-ablaze-chapter-4-origin-04-53" class="btn btn-outline-secondary btn-sm">
-                &raquo; Back [53]</a>
-            </p>
+              <p id="circuits-ablaze-chapter-4-footnote-04-53">
+                <sup>[53]</sup>
+                Despite the name that references cracking, Richard Karsmakers'
+                group stopped all illegal pirating activities in 1986 and
+                announced it in <em>ST-NEWS</em> Volume 1, Issue 3 (only
+                available as an RTF file)
+                <a
+                  href="https://st-news.com/uploads/ST-News/Vol-1/ST_NEWS_1_3.rtf"
+                  target="_blank"
+                  rel="noopener"
+                  >https://st-news.com/uploads/ST-News/Vol-1/ST_NEWS_1_3.rtf</a
+                >
+                (Retrieved on June 4, 2020)<br /><a
+                  href="#circuits-ablaze-chapter-4-origin-04-53"
+                  class="btn btn-outline-secondary btn-sm"
+                >
+                  &raquo; Back [53]</a
+                >
+              </p>
 
-            <p id="circuits-ablaze-chapter-4-footnote-04-54">
-              <sup>[54]</sup>
-              The full scrolling text can be found at <em>demozoo.org:</em>
-              <a href="https://demozoo.org/productions/76594/" target="_blank" rel="noopener">https://demozoo.org/productions/76594/</a>
-              (Retrieved on May 30, 2020)<br /><a href="#circuits-ablaze-chapter-4-origin-04-54" class="btn btn-outline-secondary btn-sm">
-                &raquo; Back [54]</a>
-            </p>
+              <p id="circuits-ablaze-chapter-4-footnote-04-54">
+                <sup>[54]</sup>
+                The full scrolling text can be found at <em>demozoo.org:</em>
+                <a
+                  href="https://demozoo.org/productions/76594/"
+                  target="_blank"
+                  rel="noopener"
+                  >https://demozoo.org/productions/76594/</a
+                >
+                (Retrieved on May 30, 2020)<br /><a
+                  href="#circuits-ablaze-chapter-4-origin-04-54"
+                  class="btn btn-outline-secondary btn-sm"
+                >
+                  &raquo; Back [54]</a
+                >
+              </p>
 
-            <p id="circuits-ablaze-chapter-4-footnote-04-55">
-              <sup>[55]</sup>
-              Pulse-code Modulation: Digitally samples of analog sound that
-              sounded like a professional synthesizer with much fewer
-              limitations than merely wave-generating sound chips like those
-              in the Atari ST and the Commodore 64.<br /><a href="#circuits-ablaze-chapter-4-origin-04-55" class="btn btn-outline-secondary btn-sm">
-                &raquo; Back [55]</a>
-            </p>
+              <p id="circuits-ablaze-chapter-4-footnote-04-55">
+                <sup>[55]</sup>
+                Pulse-code Modulation: Digitally samples of analog sound that
+                sounded like a professional synthesizer with much fewer
+                limitations than merely wave-generating sound chips like those
+                in the Atari ST and the Commodore 64.<br /><a
+                  href="#circuits-ablaze-chapter-4-origin-04-55"
+                  class="btn btn-outline-secondary btn-sm"
+                >
+                  &raquo; Back [55]</a
+                >
+              </p>
 
-            <p id="circuits-ablaze-chapter-4-footnote-04-56">
-              <sup>[56]</sup>
-              Richard Karsmakers. <em>TEX in Holland.</em>
-              <em>ST-NEWS</em> Vol. 3 Issue 2.
-              <a href="https://st-news.com/issues/st-news-volume-3-issue-2/features/tex-in-holland/" target="_blank" rel="noopener">https://st-news.com/issues/st-news-volume-3-issue-2/features/tex-in-holland/</a>
-              (Retrieved on June 17, 2020)<br /><a href="#circuits-ablaze-chapter-4-origin-04-56" class="btn btn-outline-secondary btn-sm">
-                &raquo; Back [56]</a>
-            </p>
+              <p id="circuits-ablaze-chapter-4-footnote-04-56">
+                <sup>[56]</sup>
+                Richard Karsmakers. <em>TEX in Holland.</em>
+                <em>ST-NEWS</em> Vol. 3 Issue 2.
+                <a
+                  href="https://st-news.com/issues/st-news-volume-3-issue-2/features/tex-in-holland/"
+                  target="_blank"
+                  rel="noopener"
+                  >https://st-news.com/issues/st-news-volume-3-issue-2/features/tex-in-holland/</a
+                >
+                (Retrieved on June 17, 2020)<br /><a
+                  href="#circuits-ablaze-chapter-4-origin-04-56"
+                  class="btn btn-outline-secondary btn-sm"
+                >
+                  &raquo; Back [56]</a
+                >
+              </p>
 
-            <p id="circuits-ablaze-chapter-4-footnote-04-57">
-              <sup>[57]</sup>
-              STCArchiv. Archive of <em>ST-Magazin 68000er.</em>
-              <a href="http://www.stcarchiv.de/stmagazin.php" target="_blank" rel="noopener">http://www.stcarchiv.de/stmagazin.php</a>
-              (Retrieved on May 30, 2020)<br /><a href="#circuits-ablaze-chapter-4-origin-04-57" class="btn btn-outline-secondary btn-sm">
-                &raquo; Back [57]</a>
-            </p>
+              <p id="circuits-ablaze-chapter-4-footnote-04-57">
+                <sup>[57]</sup>
+                STCArchiv. Archive of <em>ST-Magazin 68000er.</em>
+                <a
+                  href="http://www.stcarchiv.de/stmagazin.php"
+                  target="_blank"
+                  rel="noopener"
+                  >http://www.stcarchiv.de/stmagazin.php</a
+                >
+                (Retrieved on May 30, 2020)<br /><a
+                  href="#circuits-ablaze-chapter-4-origin-04-57"
+                  class="btn btn-outline-secondary btn-sm"
+                >
+                  &raquo; Back [57]</a
+                >
+              </p>
 
-            <p id="circuits-ablaze-chapter-4-footnote-04-58">
-              <sup>[58]</sup>
-              As was customary in the 1980s, applications were distributed as
-              actual type-in program listings that users would type into their
-              machines. In the late 1980s, magazines started to provide
-              software disks on their covers.<br /><a href="#circuits-ablaze-chapter-4-origin-04-58" class="btn btn-outline-secondary btn-sm">
-                &raquo; Back [58]</a>
-            </p>
+              <p id="circuits-ablaze-chapter-4-footnote-04-58">
+                <sup>[58]</sup>
+                As was customary in the 1980s, applications were distributed as
+                actual type-in program listings that users would type into their
+                machines. In the late 1980s, magazines started to provide
+                software disks on their covers.<br /><a
+                  href="#circuits-ablaze-chapter-4-origin-04-58"
+                  class="btn btn-outline-secondary btn-sm"
+                >
+                  &raquo; Back [58]</a
+                >
+              </p>
 
-            <p id="circuits-ablaze-chapter-4-footnote-04-59">
-              <sup>[59]</sup>
-              Harris, Duncan. Wall, Darren. 2016.
-              <em>The Bitmap Brothers: Universe.</em> Read Only Memory<br /><a href="#circuits-ablaze-chapter-4-origin-04-59" class="btn btn-outline-secondary btn-sm">
-                &raquo; Back [59]</a>
-            </p>
-          </section>
-        </article>
-      </main>
+              <p id="circuits-ablaze-chapter-4-footnote-04-59">
+                <sup>[59]</sup>
+                Harris, Duncan. Wall, Darren. 2016.
+                <em>The Bitmap Brothers: Universe.</em> Read Only Memory<br /><a
+                  href="#circuits-ablaze-chapter-4-origin-04-59"
+                  class="btn btn-outline-secondary btn-sm"
+                >
+                  &raquo; Back [59]</a
+                >
+              </p>
+            </section>
+          </article>
+        </main>
 
-      <aside class="col-md-4">
-        <div class="alert alert-warning position-fixed mx-2" id="toc-sidenav">
-          <img src="img/circuits-ablaze.jpg" alt="Circuits Ablaze" class="img-fluid rounded" />
-          <div class="row">
-            <div class="col d-flex justify-content-center">
-              <div class="btn-toolbar my-3" role="toolbar" aria-label="Page selector">
-                <div class="btn-group me-2 btn-group-sm" role="group" aria-label="Link group">
-                  <div class="btn-group btn-group-sm" role="group">
-                    <button type="button" class="btn btn-outline-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                      Intros
-                    </button>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="index.html">ToC</a></li>
-                      <li><a class="dropdown-item" href="abstract.html">Abstract</a></li>
-                      <li><a class="dropdown-item" href="foreword.html">Foreword</a></li>
-                    </ul>
-                  </div>
-                  <a class="btn btn-outline-primary" href="chapter-00.html">0</a>
-                  <a class="btn btn-outline-primary" href="chapter-01.html">1</a>
-                  <a class="btn btn-outline-primary" href="chapter-02.html">2</a>
-                  <a class="btn btn-outline-primary" href="chapter-03.html">3</a>
-                  <a class="btn btn-outline-primary active" href="chapter-04.html">4</a>
-                  <a class="btn btn-outline-primary" href="chapter-05.html">5</a>
-                  <a class="btn btn-outline-primary" href="chapter-06.html">6</a>
-                  <div class="btn-group btn-group-sm" role="group">
-                    <button type="button" class="btn btn-outline-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                      Annexes
-                    </button>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="appendix-01.html">Appendix 1</a></li>
-                      <li><a class="dropdown-item" href="appendix-02.html">Appendix 2</a></li>
-                      <li><a class="dropdown-item" href="bibliography.html">Bibliography</a></li>
-                      <li><a class="dropdown-item" href="collections.html">Collection</a></li>
-                    </ul>
+        <aside class="col-md-4">
+          <div class="alert alert-warning position-fixed mx-2" id="toc-sidenav">
+            <img
+              src="img/circuits-ablaze.jpg"
+              alt="Circuits Ablaze"
+              class="img-fluid rounded"
+            />
+            <div class="row">
+              <div class="col d-flex justify-content-center">
+                <div
+                  class="btn-toolbar my-3"
+                  role="toolbar"
+                  aria-label="Page selector"
+                >
+                  <div
+                    class="btn-group me-2 btn-group-sm"
+                    role="group"
+                    aria-label="Link group"
+                  >
+                    <div class="btn-group btn-group-sm" role="group">
+                      <button
+                        type="button"
+                        class="btn btn-outline-primary dropdown-toggle"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        Intros
+                      </button>
+                      <ul class="dropdown-menu">
+                        <li>
+                          <a class="dropdown-item" href="index.html">ToC</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="abstract.html"
+                            >Abstract</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="foreword.html"
+                            >Foreword</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                    <a class="btn btn-outline-primary" href="chapter-00.html"
+                      >0</a
+                    >
+                    <a class="btn btn-outline-primary" href="chapter-01.html"
+                      >1</a
+                    >
+                    <a class="btn btn-outline-primary" href="chapter-02.html"
+                      >2</a
+                    >
+                    <a class="btn btn-outline-primary" href="chapter-03.html"
+                      >3</a
+                    >
+                    <a
+                      class="btn btn-outline-primary active"
+                      href="chapter-04.html"
+                      >4</a
+                    >
+                    <a class="btn btn-outline-primary" href="chapter-05.html"
+                      >5</a
+                    >
+                    <a class="btn btn-outline-primary" href="chapter-06.html"
+                      >6</a
+                    >
+                    <div class="btn-group btn-group-sm" role="group">
+                      <button
+                        type="button"
+                        class="btn btn-outline-primary dropdown-toggle"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        Annexes
+                      </button>
+                      <ul class="dropdown-menu">
+                        <li>
+                          <a class="dropdown-item" href="appendix-01.html"
+                            >Appendix 1</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="appendix-02.html"
+                            >Appendix 2</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="bibliography.html"
+                            >Bibliography</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="collections.html"
+                            >Collection</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-          <p>
-            <a href="#circuits-ablaze-chapter-4">Chapter 4. Breaking the Limits in 1988</a>
-          </p>
-          <ul>
-            <li>
-              <a href="#circuits-ablaze-chapter-4-section-1">Introduction</a>
-            </li>
-            <li>
-              <a href="#circuits-ablaze-chapter-4-section-2">4.1 B.I.G. Demo</a>
-            </li>
-            <li>
-              <a href="#circuits-ablaze-chapter-4-section-3">4.2 Amiga Demo</a>
-            </li>
-            <li>
-              <a href="#circuits-ablaze-chapter-4-section-4">4.3 Mainstream Exposure</a>
-            </li>
-            <li>
-              <a href="#circuits-ablaze-chapter-4-section-5">4.4 Conclusion: The Time of Breakthroughs</a>
-            </li>
-          </ul>
+            <p>
+              <a href="#circuits-ablaze-chapter-4"
+                >Chapter 4. Breaking the Limits in 1988</a
+              >
+            </p>
+            <ul>
+              <li>
+                <a href="#circuits-ablaze-chapter-4-section-1"
+                  >Chapter Introduction</a
+                >
+              </li>
+              <li>
+                <a href="#circuits-ablaze-chapter-4-section-2"
+                  >4.1 B.I.G. Demo</a
+                >
+              </li>
+              <li>
+                <a href="#circuits-ablaze-chapter-4-section-3"
+                  >4.2 Amiga Demo</a
+                >
+              </li>
+              <li>
+                <a href="#circuits-ablaze-chapter-4-section-4"
+                  >4.3 Mainstream Exposure</a
+                >
+              </li>
+              <li>
+                <a href="#circuits-ablaze-chapter-4-section-5"
+                  >4.4 Conclusion: The Time of Breakthroughs</a
+                >
+              </li>
+            </ul>
 
-          <hr />
-          <div class="row">
-            <div class="col-md-6">
-              <p>
-                <a href="chapter-03.html" class="btn btn-outline-primary btn-sm">&laquo; Previous Chapter</a>
-              </p>
+            <hr />
+            <div class="row">
+              <div class="col-md-6">
+                <p>
+                  <a
+                    href="chapter-03.html"
+                    class="btn btn-outline-primary btn-sm"
+                    >&laquo; Previous Chapter</a
+                  >
+                </p>
+              </div>
+              <div class="col-md-6">
+                <p class="text-end">
+                  <a
+                    href="chapter-05.html"
+                    class="btn btn-outline-primary btn-sm"
+                    >Next Chapter &raquo;</a
+                  >
+                </p>
+              </div>
             </div>
-            <div class="col-md-6">
-              <p class="text-end">
-                <a href="chapter-05.html" class="btn btn-outline-primary btn-sm">Next Chapter &raquo;</a>
-              </p>
-            </div>
+          </div>
+        </aside>
+      </div>
+    </div>
+    <footer class="bg-dark text-muted p-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 text-center">
+            <p class="mb-1">
+              Showcase of side projects, videos and writing about the demoscene,
+              comics, computer history and development.
+            </p>
+          </div>
+          <div class="col-md-3 text-center">
+            <p class="mb-1">
+              <a href="#" class="btn btn-sm btn-outline-secondary"
+                >Back to top</a
+              >
+            </p>
+          </div>
+          <div class="col-md-3 text-center">
+            <p class="mb-1">
+              <a
+                href="/privacy-policy.html"
+                class="btn btn-sm btn-outline-light"
+                >Privacy Policy</a
+              >
+            </p>
           </div>
         </div>
-      </aside>
-    </div>
-  </div>
-  <footer class="bg-dark text-muted p-5 row">
-    <div class="col-md-6 text-center">
-      <p class="mb-1">
-        Showcase of side projects, videos and writing about comics, computer
-        history and development.
-      </p>
-    </div>
-    <div class="col-md-3 text-center">
-      <p class="mb-1">
-        <a rel="noopener" href="#" class="btn btn-sm btn-outline-secondary">Back to top</a>
-      </p>
-    </div>
-    <div class="col-md-3 text-center">
-      <p class="mb-1">
-        <a href="/privacy-policy.html" class="btn btn-sm btn-outline-light">Privacy Policy</a>
-      </p>
-    </div>
-  </footer>
+      </div>
+    </footer>
 
-  <script src="js/bootstrap.bundle.min.js"></script>
-  <script src="../js/search.js"></script>
-</body>
-
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="../js/search.js"></script>
+  </body>
 </html>

@@ -7,11 +7,11 @@
     <title>Collections | Circuits Ablaze</title>
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="../css/custom.css" />
-		<link rel="canonical" href="https://marincomics.com/project-demoscene-exceptions/collections.html" />
-    <meta
-      property="og:title"
-      content="Circuits Ablaze - Collections"
+    <link
+      rel="canonical"
+      href="https://marincomics.com/project-demoscene-exceptions/collections.html"
     />
+    <meta property="og:title" content="Circuits Ablaze - Collections" />
     <meta
       property="og:description"
       name="description"
@@ -30,35 +30,71 @@
 
   <body>
     <nav
-      class="d-flex flex-wrap justify-content-center p-3 bg-primary bg-gradient text-light"
+      class="navbar navbar-expand-lg bg-primary bg-gradient"
+      data-bs-theme="dark"
     >
-      <a
-        href="https://marincomics.com"
-        class="d-flex align-items-center mb-md-1 me-md-auto text-dark text-decoration-none"
-      >
-        <img src="/img/marincomics-logo.png" alt="Marin Comics" height="50" />
-      </a>
-
-      <ul class="nav nav-pills me-4">
-        <li class="nav-item">
-          <a href="/index.html" class="nav-link link-light">Home</a>
-        </li>
-        <li class="nav-item">
-          <a href="/writing.html" class="nav-link link-light">Writing</a>
-        </li>
-        <li class="nav-item">
-          <a href="/dev.html" class="nav-link link-light">Dev</a>
-        </li>
-        <li class="nav-item">
-          <a href="/videos.html" class="nav-link link-light">Videos</a>
-        </li>
-        <li class="nav-item">
-          <a href="/comics.html" class="nav-link link-light">Comics</a>
-        </li>
-        <li class="nav-item">
-          <a href="/about.html" class="nav-link link-light">About</a>
-        </li>
-      </ul>
+      <div class="container">
+        <a class="navbar-brand" href="https://marincomics.com"
+          ><img
+            src="https://marincomics.com/img/marincomics-logo-sm.png"
+            alt="Marin Comics"
+            width="200px"
+            class="mt-2"
+        /></a>
+        <button
+          class="navbar-toggler text-white border-white bg-light"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarMarinComics"
+          aria-controls="navbarMarinComics"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarMarinComics">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a
+                class="nav-link link-light"
+                href="https://marincomics.com/writing.html"
+                >Writing</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link link-light"
+                href="https://marincomics.com/dev.html"
+                >Dev</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link link-light"
+                href="https://marincomics.com/videos.html"
+                >Videos</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link link-light"
+                href="https://marincomics.com/comics.html"
+                >Comics</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link link-light"
+                href="https://marincomics.com/about.html"
+                >About</a
+              >
+            </li>
+          </ul>
+          <a href="#" class="btn btn-outline-light" onclick="triggerSearch()"
+            >Search Site</a
+          >
+        </div>
+      </div>
     </nav>
 
     <div class="container mt-2">
@@ -94,7 +130,10 @@
                 </li>
 
                 <li>
-                  <a href="https://digitalartarchive.at" target="_blank" rel="noopener"
+                  <a
+                    href="https://digitalartarchive.at"
+                    target="_blank"
+                    rel="noopener"
                     >https://digitalartarchive.at</a
                   ><br />
                   The Archive of Digital Art (ADA)
@@ -102,7 +141,10 @@
                 </li>
 
                 <li>
-                  <a href="https://github.com/topics/demoscene" target="_blank" rel="noopener"
+                  <a
+                    href="https://github.com/topics/demoscene"
+                    target="_blank"
+                    rel="noopener"
                     >https://github.com/topics/demoscene</a
                   ><br />
                   The source code repositories of demos on Github. These
@@ -113,7 +155,10 @@
                 </li>
 
                 <li>
-                  <a href="http://www.atarimania.com" target="_blank" rel="noopener"
+                  <a
+                    href="http://www.atarimania.com"
+                    target="_blank"
+                    rel="noopener"
                     >http://www.atarimania.com</a
                   ><br />
                   An archive of historic Atari software and scanned magazines.
@@ -123,7 +168,8 @@
                 <li>
                   <a
                     href="https://github.com/ggnkua/Atari_ST_Sources/tree/master/ASM/The%20Exceptions"
-                    target="_blank" rel="noopener"
+                    target="_blank"
+                    rel="noopener"
                     >https://github.com/ggnkua/Atari_ST_Sources/tree/master/ASM/The%20Exceptions</a
                   ><br />
                   The original source code of the Exceptions’ demos is available
@@ -166,9 +212,7 @@
         </main>
 
         <aside class="col-md-4">
-          <div
-            class="alert alert-warning position-fixed mx-2"
-           id="toc-sidenav">
+          <div class="alert alert-warning position-fixed mx-2" id="toc-sidenav">
             <img
               src="img/circuits-ablaze.jpg"
               alt="Circuits Ablaze"
@@ -176,34 +220,94 @@
             />
             <div class="row">
               <div class="col d-flex justify-content-center">
-                <div class="btn-toolbar my-3" role="toolbar" aria-label="Page selector">
-                  <div class="btn-group me-2 btn-group-sm" role="group" aria-label="Link group">
+                <div
+                  class="btn-toolbar my-3"
+                  role="toolbar"
+                  aria-label="Page selector"
+                >
+                  <div
+                    class="btn-group me-2 btn-group-sm"
+                    role="group"
+                    aria-label="Link group"
+                  >
                     <div class="btn-group btn-group-sm" role="group">
-                      <button type="button" class="btn btn-outline-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                      <button
+                        type="button"
+                        class="btn btn-outline-primary dropdown-toggle"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
                         Intros
                       </button>
                       <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="index.html">ToC</a></li>
-                        <li><a class="dropdown-item" href="abstract.html">Abstract</a></li>
-                        <li><a class="dropdown-item" href="foreword.html">Foreword</a></li>
+                        <li>
+                          <a class="dropdown-item" href="index.html">ToC</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="abstract.html"
+                            >Abstract</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="foreword.html"
+                            >Foreword</a
+                          >
+                        </li>
                       </ul>
                     </div>
-                    <a class="btn btn-outline-primary" href="chapter-00.html">0</a>
-                    <a class="btn btn-outline-primary" href="chapter-01.html">1</a>
-                    <a class="btn btn-outline-primary" href="chapter-02.html">2</a>
-                    <a class="btn btn-outline-primary" href="chapter-03.html">3</a>
-                    <a class="btn btn-outline-primary" href="chapter-04.html">4</a>
-                    <a class="btn btn-outline-primary" href="chapter-05.html">5</a>
-                    <a class="btn btn-outline-primary" href="chapter-06.html">6</a>
+                    <a class="btn btn-outline-primary" href="chapter-00.html"
+                      >0</a
+                    >
+                    <a class="btn btn-outline-primary" href="chapter-01.html"
+                      >1</a
+                    >
+                    <a class="btn btn-outline-primary" href="chapter-02.html"
+                      >2</a
+                    >
+                    <a class="btn btn-outline-primary" href="chapter-03.html"
+                      >3</a
+                    >
+                    <a class="btn btn-outline-primary" href="chapter-04.html"
+                      >4</a
+                    >
+                    <a class="btn btn-outline-primary" href="chapter-05.html"
+                      >5</a
+                    >
+                    <a class="btn btn-outline-primary" href="chapter-06.html"
+                      >6</a
+                    >
                     <div class="btn-group btn-group-sm" role="group">
-                      <button type="button" class="btn btn-outline-primary dropdown-toggle active" data-bs-toggle="dropdown" aria-expanded="false">
+                      <button
+                        type="button"
+                        class="btn btn-outline-primary dropdown-toggle active"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
                         Annexes
                       </button>
                       <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="appendix-01.html">Appendix 1</a></li>
-                        <li><a class="dropdown-item" href="appendix-02.html">Appendix 2</a></li>
-                        <li><a class="dropdown-item" href="bibliography.html">Bibliography</a></li>
-                        <li><a class="dropdown-item active" href="collections.html">Collection</a></li>
+                        <li>
+                          <a class="dropdown-item" href="appendix-01.html"
+                            >Appendix 1</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="appendix-02.html"
+                            >Appendix 2</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="bibliography.html"
+                            >Bibliography</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            class="dropdown-item active"
+                            href="collections.html"
+                            >Collection</a
+                          >
+                        </li>
                       </ul>
                     </div>
                   </div>
@@ -239,27 +343,36 @@
         </aside>
       </div>
     </div>
-    <footer class="bg-dark text-muted p-5 row">
-      <div class="col-md-6 text-center">
-        <p class="mb-1">
-          Showcase of side projects, videos and writing about comics, computer
-          history and development.
-        </p>
-      </div>
-      <div class="col-md-3 text-center">
-        <p class="mb-1">
-          <a rel="noopener" href="#" class="btn btn-sm btn-outline-secondary">Back to top</a>
-        </p>
-      </div>
-      <div class="col-md-3 text-center">
-        <p class="mb-1">
-          <a href="/privacy-policy.html" class="btn btn-sm btn-outline-light">Privacy Policy</a>
-        </p>
+    <footer class="bg-dark text-muted p-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 text-center">
+            <p class="mb-1">
+              Showcase of side projects, videos and writing about the demoscene,
+              comics, computer history and development.
+            </p>
+          </div>
+          <div class="col-md-3 text-center">
+            <p class="mb-1">
+              <a href="#" class="btn btn-sm btn-outline-secondary"
+                >Back to top</a
+              >
+            </p>
+          </div>
+          <div class="col-md-3 text-center">
+            <p class="mb-1">
+              <a
+                href="/privacy-policy.html"
+                class="btn btn-sm btn-outline-light"
+                >Privacy Policy</a
+              >
+            </p>
+          </div>
+        </div>
       </div>
     </footer>
-  
+
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="../js/search.js"></script>
   </body>
-  
-  </html>
+</html>
