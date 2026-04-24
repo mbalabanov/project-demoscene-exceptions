@@ -2,13 +2,13 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>
       Introduction: Beholding the Digital Ephemeral | Circuits Ablaze
     </title>
-    <link rel="stylesheet" href="css/bootstrap.min.css" />
-    <link rel="stylesheet" href="../css/custom.css" />
+    <link rel="stylesheet" href="https://marincomics.com/css/bootstrap.min.css" />
+  <link rel="icon" href="/img/marincomics-logo-sm.webp" type="image/webp" />
+    <link rel="stylesheet" href="https://marincomics.com/css/custom.css" />
     <link
       rel="canonical"
       href="https://marincomics.com/project-demoscene-exceptions/chapter-00.html"
@@ -17,23 +17,49 @@
       property="og:title"
       content="Circuits Ablaze - Introduction: Beholding the Digital Ephemeral"
     />
-    <meta
-      property="og:description"
-      name="description"
-      content="The focus of this master's thesis is on the demo-group The Exceptions during the years 1987 to 1989 in the Atari ST demoscene. These were the formative years of the Atari ST demoscene, and The Exceptions were the first to produce demos on the computer system."
-    />
+    <meta name="description" content="Introduction to computer demos as real-time algorithmic audiovisual art, the demoscene subculture, and the ephemeral nature of demos relying on undocumented hardware tricks." />
+    <meta property="og:description" content="Introduction to computer demos as real-time algorithmic audiovisual art, the demoscene subculture, and the ephemeral nature of demos relying on undocumented hardware tricks." />
     <meta
       name="keywords"
-      content="Demoscene, Atari ST, Exceptions, Computer Art, Media Art, Computing History"
+      content="Demoscene, Computer Demos, Real-Time Art, Algorithmic Art, Digital Ephemeral, Hardware Tricks, Atari ST"
     />
     <meta
       property="og:image"
       content="https://marincomics.com/project-demoscene-exceptions/img/circuits-ablaze.webp"
     />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://marincomics.com/project-demoscene-exceptions/chapter-00.html" />
+    <meta property="og:locale" content="en_US" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Introduction: Beholding the Digital Ephemeral" />
+    <meta name="twitter:description" content="Introduction to Circuits Ablaze, exploring the ephemeral nature of demo art and The Exceptions on the Atari ST." />
+    <meta name="twitter:image" content="https://marincomics.com/project-demoscene-exceptions/img/circuits-ablaze.webp" />
+
     <meta name="author" content="Marin Balabanov" />
-  </head>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "Introduction: Beholding the Digital Ephemeral",
+      "description": "Introduction to Circuits Ablaze, exploring the ephemeral nature of demo art and The Exceptions on the Atari ST.",
+      "url": "https://marincomics.com/project-demoscene-exceptions/chapter-00.html",
+      "image": "https://marincomics.com/project-demoscene-exceptions/img/circuits-ablaze.webp",
+      "author": {
+        "@type": "Person",
+        "name": "Marin Balabanov",
+        "url": "https://marincomics.com"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Marin Comics",
+        "url": "https://marincomics.com"
+      }
+    }
+  </script>
+</head>
 
   <body>
+  <a href="#main" class="visually-hidden-focusable">Skip to main content</a>
     <nav
       class="navbar navbar-expand-lg bg-primary bg-gradient"
       data-bs-theme="dark"
@@ -43,7 +69,7 @@
           ><img
             src="https://marincomics.com/img/marincomics-logo-sm.webp"
             alt="Marin Comics"
-            width="200px"
+            width="200"
             class="mt-2"
         /></a>
         <button
@@ -95,11 +121,9 @@
               >
             </li>
           </ul>
-          <a href="#" class="btn btn-outline-light" onclick="triggerSearch()"
-            >Search Site</a
-          >
+          <a href="#" class="btn btn-outline-light" data-action="search">Search Site</a>
           <a
-            rel="noopener"
+            rel="noopener noreferrer"
             href="https://buymeacoffee.com/marincomics"
             target="_blank"
             class="btn btn-warning m-1"
@@ -111,7 +135,7 @@
 
     <div class="container mt-2">
       <div class="row">
-        <main class="col-md-8">
+        <main id="main" class="col-md-8">
           <article id="circuits-ablaze-introduction">
             <h2 class="text-center mt-5">Introduction</h2>
             <h1 class="text-secondary text-center mb-5">Beholding the Digital Ephemeral</h1>
@@ -124,7 +148,7 @@
               <p>
                 Artists use algorithms to create media art. One kind of
                 algorithmic art is called computer demos. A demo is a
-                computer-generated real-time video clip that shows what kind of
+                computer-generated real-time video clip that shows what
                 graphic and sound effects can be achieved using the computer
                 hardware to its full potential. In many cases, demos are
                 inspired by the aesthetics of video games.
@@ -151,7 +175,7 @@
               <p>
                 Since the early 1980s, enthusiasts have developed demos on a
                 wide range of computer systems like the Commodore 64, Sinclair
-                ZX Spectrum, the Commodore Amiga, Windows PCs and the Atari
+                ZX Spectrum, the Commodore Amiga, Windows PCs, and the Atari
                 ST.<sup
                   ><a
                     id="circuits-ablaze-introduction-origin-00-01"
@@ -164,14 +188,14 @@
                 even pioneering these techniques themselves.
               </p>
               <p>
-                One of the most notable groups of demo creators were
+                One of the most notable groups of demo creators was
                 <em>The Exceptions,</em> who were the first to create demos on
                 the Atari ST home computer in the late 1980s. They did not
-                accept the limitations of the hardware capabilities of this
+                accept the hardware limitations of this
                 16-bit machine and instead set out to break them. They wanted to
                 use more colors on the screen than the ST could display, produce
                 better music than the ST's limited sound chip was capable of
-                producing, and match the effects seen on more capable and more
+                producing, and match the effects seen on more capable and
                 expensive systems.
               </p>
               <p>
@@ -179,7 +203,7 @@
                 that proved that the Atari ST was far more accomplished than
                 even the manufacturer had expected. By distributing their demo
                 programs on public domain disks and Bulletin Board Systems
-                (BBS), they reached out to computer users and other enthusiasts
+                (BBS), they reached computer users and other enthusiasts
                 to amaze and inspire them. This is how they created the Atari ST
                 demoscene.
               </p>
@@ -190,7 +214,7 @@
               </h3>
               <p>
                 This master's thesis describes the demo art created by The
-                Exceptions. The demo-group first originated as crackers but
+                Exceptions. The demo-group originated as crackers but
                 moved away from illegally pirating and distributing games to
                 create demos. The thesis focuses on the analysis of their
                 productions from 1987 to 1989, which were so successful that
@@ -211,11 +235,11 @@
                 Exceptions worked in, their motivating factors, the technical
                 areas they pioneered, and how limitations enable and motivate
                 the creation of art. It retraces the steps that led from the
-                first demos, created by The Exceptions out of the technical
+                first demos, created by The Exceptions in response to the technical
                 limitations of the Atari ST. Subsequently, it recounts how they
                 broke most of the technical restrictions by teaming up with
                 other demo-makers all over Europe. Thus, they laid some of the
-                groundwork for the networked and connected community that
+                groundwork for the networked community that
                 thrives today as the demoscene. The hypothesis that limitations
                 are a motivating factor in art is put to the test by applying it
                 not only to the demoscene, but to a wider variety of individuals
@@ -223,7 +247,7 @@
               </p>
               <p>
                 Finally, the thesis examines the conservation of media art in
-                the archival context, including an examination of the different
+                the archival context, including the different
                 methods to salvage demo files and run demos on original hardware
                 and in emulation. In the final appendix, the thesis concludes
                 with a discussion of archives of media art and the technical
@@ -256,7 +280,7 @@
               <p>
                 Music created in the early demoscene became the foundation for
                 an aesthetic called chip music or chip tunes, where musicians
-                choose to write their music the style of old video games. This
+                choose to write their music in the style of old video games. This
                 form and practice have long been a vivid area of experimentation
                 in the fringes of new media art, but in the past few years has
                 found its way into the mainstream as a retro-aesthetic, e.g., in
@@ -272,7 +296,7 @@
                   ></sup
                 >
                 This is particularly true for the vivid techno music scene of
-                mid 1990s Germany, but also as recently as Kanye West, who wrote
+                mid-1990s Germany, but also as recently as Kanye West, who wrote
                 his first music on a "tracker" on the Commodore Amiga.<sup
                   ><a
                     id="circuits-ablaze-introduction-origin-00-04"
@@ -338,10 +362,10 @@
                   The Exceptions, including all the tricks, processes, and
                   methods they used, had an inspirational effect on other coders
                   and would-be coders. The inner workings and intricacies of a
-                  demo were laid bare, and all the audience had to do was to
+                  demo were laid bare, and all the audience had to do was
                   work hard enough to understand and replicate them to create
                   demos. If the German-speaking demoscene was not already born,
-                  then this was its metaphoric birth. Numerous individual
+                  then this was its metaphorical birth. Numerous individual
                   demo-makers and demo-groups also started creating demos for
                   the Atari ST.<sup
                     ><a
@@ -353,7 +377,7 @@
                 </li>
                 <li>
                   The Exceptions and the Atari ST demoscene that was inspired
-                  from them organized the first demo parties for the system with
+                  by them organized the first demo parties for the system with
                   the
                   <em>ST News International Christmas Coding Convention</em>
                   (STNICC) in 1990. There had been many copy parties where
@@ -398,7 +422,7 @@
               <p>
                 Hartmann's doctoral thesis was published in book form as
                 <em>Digital Art Natives.</em> Botz's
-                <em>Kunst, Code und Machine,</em> together with Tasajrvi's
+                <em>Kunst, Code und Maschine,</em> together with Tasajrvi's
                 <em>Demoscene: The Art of Real-time</em> and Reunanen's
                 licentiate thesis
                 <em>Computer Demos - What Makes Them Tick?</em> are masterful
@@ -410,7 +434,7 @@
               </p>
               <p>
                 There is one aspect that ties the quite different works of
-                Hartmann, Botz, Tasajrvi, and Reunannen together. Out of the
+                Hartmann, Botz, Tasajrvi, and Reunanen together. Out of the
                 necessity to describe and analyze a new area of research, their
                 work is admirably overarching, defining the ground rules for
                 further research and finding and determining the historic
@@ -421,7 +445,7 @@
               <p>
                 The Atari ST demoscene, while immensely productive and
                 inspirational, never produced a number of demos as vast as the
-                scene around the Commodore machines, therefore research in this
+                scene around the Commodore machines; therefore, research in this
                 area has always been limited. Seminal literature on the Atari ST
                 has only recently been published. Marco A. Breddin wrote a
                 trilogy of oral history books that he calls
@@ -462,7 +486,7 @@
                 mid-1990s.
               </p>
               <p>
-                In the past few years, the study of demos has shifted towards
+                In the past few years, the study of demos has shifted toward
                 more detail-oriented research. In her article
                 <em>Demo Age: New Views,</em> Digital Humanities researcher
                 Canan Hastik analyzed the type and frequency of effects in
@@ -478,7 +502,7 @@
                 individual frames of a sequence into a single image. Manovich
                 outlined his methodology in
                 <em
-                  >How To Follow Global Digital Cultures.<sup
+                  >How to Follow Global Digital Cultures.<sup
                     ><a
                       id="circuits-ablaze-introduction-origin-00-11"
                       href="#circuits-ablaze-introduction-footnote-00-11"
@@ -585,7 +609,7 @@
                 Other areas at the time, particularly coding, were not regarded
                 as acts of artistic creativity. In the decades since, the
                 consensus that inventive coding, in fact, constitutes artistic
-                creativity has grown towards acceptance, as argued by Paul
+                creativity has grown toward acceptance, as argued by Paul
                 Graham in
                 <em>Hackers & Painters: Big Ideas from the Computer Age:</em>
               </p>
@@ -770,7 +794,7 @@
 
               <p id="circuits-ablaze-introduction-footnote-00-11">
                 Manovich, Lev. 2009.
-                <em>How To Follow Global Digital Cultures.</em>
+                <em>How to Follow Global Digital Cultures.</em>
                 <a
                   href="http://manovich.net/content/04-projects/062-how-to-follow-global-digital-cultures/59_article_2009.pdf"
                   target="_blank"
@@ -1006,7 +1030,7 @@
       </div>
     </footer>
 
-    <script src="js/bootstrap.bundle.min.js"></script>
-    <script src="../js/search.js"></script>
+    <script src="../../js/bootstrap.bundle.min.js"></script>
+    <script src="../../js/search.js"></script>
   </body>
 </html>

@@ -2,13 +2,13 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>
       Appendix I: Conservation and Preservation of Demos | Circuits Ablaze
     </title>
-    <link rel="stylesheet" href="css/bootstrap.min.css" />
-    <link rel="stylesheet" href="../css/custom.css" />
+    <link rel="stylesheet" href="https://marincomics.com/css/bootstrap.min.css" />
+  <link rel="icon" href="/img/marincomics-logo-sm.webp" type="image/webp" />
+    <link rel="stylesheet" href="https://marincomics.com/css/custom.css" />
     <link
       rel="canonical"
       href="https://marincomics.com/project-demoscene-exceptions/appendix-01.html"
@@ -17,23 +17,49 @@
       property="og:title"
       content="Circuits Ablaze - Appendix I: Conservation and Preservation of Demos"
     />
-    <meta
-      property="og:description"
-      name="description"
-      content="The focus of this master's thesis is on the demo-group The Exceptions during the years 1987 to 1989 in the Atari ST demoscene. These were the formative years of the Atari ST demoscene, and The Exceptions were the first to produce demos on the computer system."
-    />
+    <meta name="description" content="Technical methods for preserving Atari ST demos: salvaging files from obsolete media, running demos on original hardware, and using emulators and FPGAs for conservation." />
+    <meta property="og:description" content="Technical methods for preserving Atari ST demos: salvaging files from obsolete media, running demos on original hardware, and using emulators and FPGAs for conservation." />
     <meta
       name="keywords"
-      content="Demoscene, Atari ST, Exceptions, Computer Art, Media Art, Computing History"
+      content="Demo Preservation, Atari ST Conservation, Emulation, Hatari, MiST FPGA, Obsolete Media, Digital Heritage"
     />
     <meta
       property="og:image"
       content="https://marincomics.com/project-demoscene-exceptions/img/circuits-ablaze.webp"
     />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://marincomics.com/project-demoscene-exceptions/appendix-01.html" />
+    <meta property="og:locale" content="en_US" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Appendix I: Conservation and Preservation of Demos" />
+    <meta name="twitter:description" content="Methods for conserving and preserving demo art as digital cultural heritage." />
+    <meta name="twitter:image" content="https://marincomics.com/project-demoscene-exceptions/img/circuits-ablaze.webp" />
+
     <meta name="author" content="Marin Balabanov" />
-  </head>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "Appendix I: Conservation and Preservation of Demos",
+      "description": "Methods for conserving and preserving demo art as digital cultural heritage.",
+      "url": "https://marincomics.com/project-demoscene-exceptions/appendix-01.html",
+      "image": "https://marincomics.com/project-demoscene-exceptions/img/circuits-ablaze.webp",
+      "author": {
+        "@type": "Person",
+        "name": "Marin Balabanov",
+        "url": "https://marincomics.com"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Marin Comics",
+        "url": "https://marincomics.com"
+      }
+    }
+  </script>
+</head>
 
   <body>
+  <a href="#main" class="visually-hidden-focusable">Skip to main content</a>
     <nav
       class="navbar navbar-expand-lg bg-primary bg-gradient"
       data-bs-theme="dark"
@@ -43,7 +69,7 @@
           ><img
             src="https://marincomics.com/img/marincomics-logo-sm.webp"
             alt="Marin Comics"
-            width="200px"
+            width="200"
             class="mt-2"
         /></a>
         <button
@@ -95,11 +121,9 @@
               >
             </li>
           </ul>
-          <a href="#" class="btn btn-outline-light" onclick="triggerSearch()"
-            >Search Site</a
-          >
+          <a href="#" class="btn btn-outline-light" data-action="search">Search Site</a>
           <a
-            rel="noopener"
+            rel="noopener noreferrer"
             href="https://buymeacoffee.com/marincomics"
             target="_blank"
             class="btn btn-warning m-1"
@@ -111,7 +135,7 @@
 
     <div class="container mt-2">
       <div class="row">
-        <main class="col-md-8">
+        <main id="main" class="col-md-8">
           <article id="circuits-ablaze-appendix-1">
             <h2 class="text-center mt-5">Appendix I</h2>
             <h1 class="text-secondary text-center mb-5">Conservation and Preservation of Demos</h1>
@@ -135,7 +159,7 @@
               <h3 class="mt-5">A1.1. Running the Demos on Original Hardware</h3>
               <p>
                 Once the demo files have been salvaged, the demos can be run on
-                the original computers they were created on. While here are
+                the original computers they were created on. While there are
                 other options, too, the original hardware provides the most
                 authentic experience.
               </p>
@@ -461,7 +485,7 @@
                 causing a slight blur of the pixels and creating a more organic
                 look compared to the stark clarity of LCDs. This analog
                 technology also generates image noise and slight image
-                distortions due to the curved pane of glass.
+                distortions due to the curved glass.
               </p>
               <p>
                 Old computers like the Atari ST have a peculiarity in their
@@ -475,8 +499,8 @@
               </p>
               <p>
                 The number of lines is halved because most old computers and
-                consoles display images either in 50 full images with a vertical
-                resolution of 288 (PAL standard) or 60 full images with a
+                consoles display images either at 50 frames per second with a vertical
+                resolution of 288 (PAL standard) or 60 frames per second with a
                 vertical resolution of 240 (NTSC standard). These resolutions
                 are called 288p and 240p ("p" for "Progressive Scan").
               </p>
@@ -508,7 +532,7 @@
                 <a href="#circuits-ablaze-figure-90">figure 90</a>).
               </p>
               <p>
-                Up until the late 80s, computers were not yet capable of
+                Up until the late 1980s, computers were not yet capable of
                 outputting complete images in full resolution. As a compromise,
                 every second line was simply left black. This has an impact on
                 the aesthetic of computer images produced for and displayed on
@@ -534,7 +558,7 @@
 
               <h4>A1.3.2 The Alluring Beauty of Visible Scanlines</h4>
               <p>
-                Pixel artists in the 80s and 90s counted on these characteristic
+                Pixel artists in the 1980s and 1990s counted on these characteristic
                 scanlines and employed them to make their figures appear more
                 organic. The black scanlines on every other line round off the
                 pixels to a certain extent, and there is beauty in the
@@ -549,7 +573,7 @@
                 on the left and right. This is called "pillarboxing." In
                 addition, modern screens must extrapolate the low resolutions of
                 bygone days to their much higher resolution. Most modern screens
-                do not simply multiply the pixels but try to calculate the image
+                do not simply multiply the pixels but try to interpolate the image
                 smoothly, which not only changes the original aesthetic but also
                 deforms the shape of individual pixels.
               </p>
@@ -590,7 +614,7 @@
               <p>
                 In the retro scene, there is a trend of using CRT TV monitors
                 that were originally used in professional television production
-                in the 90s and early 2000s. They provide excellent images and
+                in the 1990s and early 2000s. They provide excellent images and
                 high build quality. Professional grade displays by Sony, JVC,
                 Panasonic, and Ikegama are very well-suited for retro computers.
               </p>
@@ -1438,7 +1462,7 @@
       </div>
     </footer>
 
-    <script src="js/bootstrap.bundle.min.js"></script>
-    <script src="../js/search.js"></script>
+    <script src="../../js/bootstrap.bundle.min.js"></script>
+    <script src="../../js/search.js"></script>
   </body>
 </html>
